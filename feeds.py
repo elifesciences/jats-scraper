@@ -105,7 +105,7 @@ def main(args):
         print 'Usage: python feeds.py <xml dir>'
         exit(1)
     docs_dir = args[0]
-    from scraper import scraper
+    import scraper
     mod = __import__(__name__)
     res = scraper.scrape(mod, doc_root=docs_dir)
     import json
