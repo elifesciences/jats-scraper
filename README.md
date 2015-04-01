@@ -1,6 +1,7 @@
 # pppp-scraper
 
-This a stand-alone xml data scraper utilizing the elife-tools `parseJATS.py` 
+This a stand-alone xml data scraper utilizing the 
+[elife-tools](https://github.com/elifesciences/elife-tools) `parseJATS.py` 
 library for extracting data from JATS XML files into a single data structure.
 
 When called from the command line, the datastructure is serialized as JSON for
