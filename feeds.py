@@ -1,3 +1,7 @@
+__author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>'
+__copyright__ = 'eLife Sciences'
+__licence__ = 'GNU General Public License (GPL)'
+
 import os
 from elifetools import parseJATS as parser
 from scraper.utils import fattrs

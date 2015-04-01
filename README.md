@@ -6,7 +6,7 @@ library for extracting data from JATS XML files into a single data structure.
 When called from the command line, the datastructure is serialized as JSON for
 the purposes of pretty-printing.
 
-# usage:
+## usage:
 
     $ python feeds.py /path/to/xml/dir/
 
@@ -182,7 +182,7 @@ Will yield something like:
         }
     ]
 
-# Copyright & Licence
+## Copyright & Licence
 
 Copyright 2015 eLife Sciences, licensed under the [GPLv3](gpl.txt)
 
