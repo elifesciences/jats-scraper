@@ -184,7 +184,7 @@ Will yield something like:
 
 ## Copyright & Licence
 
-Copyright 2015 eLife Sciences, licensed under the [GPLv3](gpl.txt)
+Copyright 2015 eLife Sciences. Licensed under the [GPLv3](gpl.txt)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
