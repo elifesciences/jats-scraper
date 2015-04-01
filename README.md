@@ -13,7 +13,7 @@ the purposes of pretty-printing.
     $ workon pppp-scraper
     $ pip install -r requirements.txt
 
-## usage:
+## usage
 
     $ python feeds.py /path/to/xml/dir/
 
