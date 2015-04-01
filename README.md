@@ -7,6 +7,12 @@ library for extracting data from JATS XML files into a single data structure.
 When called from the command line, the datastructure is serialized as JSON for
 the purposes of pretty-printing.
 
+## installation
+
+    $ mkvirtualenv pppp-scraper
+    $ workon pppp-scraper
+    $ pip install -r requirements.txt
+
 ## usage:
 
     $ python feeds.py /path/to/xml/dir/
