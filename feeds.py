@@ -2,7 +2,7 @@ __author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>'
 __copyright__ = 'eLife Sciences'
 __licence__ = 'GNU General Public License (GPL)'
 
-import os
+import os, glob
 from elifetools import parseJATS as parser
 from scraper.utils import fattrs
 
@@ -40,10 +40,9 @@ def unsupported():
 
 @fattrs('doc_root')
 def article_list(doc_root):
-    return map(article_wrapper, [
-        os.path.join(doc_root, 'elife-kitchen-sink.xml'),
-        os.path.join(doc_root, 'elife00013.xml'),
-    ])
+    if os.path.isfile(doc_root):
+        return [article_wrapper(doc_root)]
+    return map(article_wrapper, glob.glob(doc_root + "*.xml"))
 
 @fattrs('parent as article')
 def author_list(article):
@@ -102,7 +101,7 @@ DESCRIPTION = [
 
 def main(args):
     if not len(args) == 1:
-        print 'Usage: python feeds.py <xml dir>'
+        print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
     import scraper
