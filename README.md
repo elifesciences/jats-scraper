@@ -1,4 +1,4 @@
-# pppp-scraper
+# jats-scraper
 
 This a stand-alone xml data scraper utilizing the 
 [elife-tools](https://github.com/elifesciences/elife-tools) `parseJATS.py` 
@@ -9,8 +9,8 @@ the purposes of pretty-printing.
 
 ## installation
 
-    $ mkvirtualenv pppp-scraper
-    $ workon pppp-scraper
+    $ mkvirtualenv jats-scraper
+    $ workon jats-scraper
     $ pip install -r requirements.txt
 
 ## usage
