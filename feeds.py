@@ -38,11 +38,14 @@ def article_wrapper(path):
 def unsupported():
     return '* not implemented *'
 
-@fattrs('doc_root')
-def article_list(doc_root):
-    if os.path.isfile(doc_root):
-        return [article_wrapper(doc_root)]
-    return map(article_wrapper, glob.glob(doc_root + "*.xml"))
+@fattrs('doc')
+def article_list(doc):
+    if os.path.isfile(doc):
+        return [article_wrapper(doc)]
+    elif os.path.isdir(doc):
+        return map(article_wrapper, glob.glob(doc + "*.xml"))
+    elif doc.startswith("<?xml"):
+        return [ParserWrapper(parser.parse_xml(doc))]
 
 @fattrs('parent as article')
 def author_list(article):
@@ -106,7 +109,7 @@ def main(args):
     docs_dir = args[0]
     import scraper
     mod = __import__(__name__)
-    res = scraper.scrape(mod, doc_root=docs_dir)
+    res = scraper.scrape(mod, doc=docs_dir)
     import json
     print json.dumps(res, indent=4)
 
