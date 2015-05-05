@@ -1,5 +1,4 @@
 import os
-import feeds
 import scraper
 
 mod = __import__("feeds")
