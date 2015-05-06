@@ -5,3 +5,5 @@
 *.log
 media/**
 collected-static/**
+elife-articles
+venv
