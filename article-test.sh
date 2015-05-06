@@ -31,10 +31,19 @@ control_c() {
 }
 
 main() {
+    passes=0
     for file in elife-articles/*.xml; do
-        echo "processing $file"
-        eval "$python feeds.py ./$file"
+        echo "processing $file ..."
+        eval "$python feeds.py ./$file" > /dev/null
+        ret=$?
+        if [ $ret != 0 ]; then
+            echo "failed to process article $file. exiting with code $ret after $passes successful article scrapes."
+            exit $ret
+        else
+            passes=$(( $passes + 1 ))
+        fi
     done
+    echo "all done. successfully scraped $passes articles"
 }
 
 trap control_c SIGINT
