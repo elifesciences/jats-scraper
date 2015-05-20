@@ -24,11 +24,11 @@ class ParserWrapper(object):
     def __init__(self, soup):
         self.soup = soup
         
-    def __getattr__(self, attr):
+    def __getattr__(self, attr, *args, **kwargs):
         def awooga(*args,**kwargs):
             logger.warn('* WARNING: I have no attribute %s' % attr)
             return None
-        return getattr(parser, attr, awooga)(self.soup)
+        return getattr(parser, attr, awooga)(self.soup, *args, **kwargs)
 
 def article_wrapper(path):
     soup = parser.parse_document(path)
@@ -52,6 +52,11 @@ def author_list(article):
     x = article.authors
     return x
 
+@fattrs('this as article')
+def issn_electronic(article):
+    return article.__getattr__('journal_issn', pub_format='electronic')
+
+
 #
 #
 #
@@ -63,6 +68,7 @@ DESCRIPTION = [
             'jcode': 'this.journal_id',
             'jtitle': 'this.journal_title',
             'jissn': 'this.journal_issn',
+            'eissn': 'issn_electronic',
 
             'state': 'unsupported',
 
