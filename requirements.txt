@@ -1,2 +1,4 @@
+pytz
 -e hg+https://bitbucket.org/lskibinski/scraper/src#egg=scraper
 -e git+https://github.com/elifesciences/elife-tools.git@master#egg=elifetools
+
