@@ -30,12 +30,12 @@ class ParserWrapper(object):
     def __init__(self, soup):
         self.soup = soup
 
-    def __getattr__(self, attr):
+    def __getattr__(self, attr, *args, **kwargs):
         def awooga(*args, **kwargs):
             logger.warn('* WARNING: I have no attribute %s' % attr)
             return None
 
-        return getattr(parser, attr, awooga)(self.soup)
+        return getattr(parser, attr, awooga)(self.soup, *args, **kwargs)
 
 
 def article_wrapper(path):
@@ -84,6 +84,11 @@ def article_full_version(article):
 def version(article):
     return _VERSION
 
+@fattrs('this as article')
+def issn_electronic(article):
+    return article.__getattr__('journal_issn', pub_format='electronic')
+
+
 
 @fattrs('this as article')
 def article_status(article):
@@ -119,6 +124,7 @@ DESCRIPTION = [
         'attrs': {
             'journal_id': 'this.journal_id',
             'jousrnal_title': 'this.journal_title',
+            'eissn': 'issn_electronic',
             'journal_issn': 'unsupported',  # TODO issue with params for 'issn_electronic',
             'title': ('this.title', None, tidy_whitespace),
             'impact-statement': 'unsupported',  # TODO custom-meta-group
