@@ -89,14 +89,14 @@ def version(article):
 def article_status(article):
     return 'POA' if article.is_poa else 'VOR'
 
-@fattrs('this as article')
-def equal_contrib(article):
-    # return article.full_author_notes(fntype_filter='equal-contrib')
-    equal_contribs = {}
-    notes = article.full_author_notes(fntype_filter='equal-contrib')
-    for note in notes:
-        equal_contribs[note['id']] = note['text']
-    return equal_contribs
+#@fattrs('this as article')
+#def equal_contrib(article):
+#    # return article.full_author_notes(fntype_filter='equal-contrib')
+#    equal_contribs = {}
+#    notes = article.full_author_notes(fntype_filter='equal-contrib')
+#    for note in notes:
+#        equal_contribs[note['id']] = note['text']
+#    return equal_contribs
 
 
 @fattrs('this as article')
@@ -146,7 +146,7 @@ DESCRIPTION = [
 
             'referenced': {
                 'present-addresses': 'unsupported',  # TODO #1
-                'equal-contrib': 'equal_contrib',  # TODO IP
+                'equal-contrib': 'unsupported',  # TODO IP
                 'emails': "this.correspondence",  # TODO #3
                 'fundings': 'unsupported',  # TODO #4
                 'competing-interests': 'unsupported',  # TODO #2
