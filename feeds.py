@@ -47,13 +47,24 @@ def article_wrapper(path):
 def unsupported():
     return '* not implemented *'
 
+
 def unknown():
     return '* source not known *'
+
 
 def tidy_whitespace(string):
     string = re.sub('\n', ' ', string)
     string = re.sub(' +', ' ', string)
     return string
+
+
+def footnote_text(raw_footnote_text):
+    match = re.search('.*?<p>(.*?)</p>', raw_footnote_text)
+    if match is None:
+        return ""
+    text = match.group(1)
+    return text
+
 
 @fattrs('doc')
 def article_list(doc):
@@ -89,19 +100,29 @@ def issn_electronic(article):
     return article.__getattr__('journal_issn', pub_format='electronic')
 
 
-
 @fattrs('this as article')
 def article_status(article):
     return 'POA' if article.is_poa else 'VOR'
 
-#@fattrs('this as article')
-#def equal_contrib(article):
-#    # return article.full_author_notes(fntype_filter='equal-contrib')
-#    equal_contribs = {}
-#    notes = article.full_author_notes(fntype_filter='equal-contrib')
-#    for note in notes:
-#        equal_contribs[note['id']] = note['text']
-#    return equal_contribs
+
+@fattrs('this as article')
+def equal_contrib(article):
+    equal_contribs = {}
+    notes = article.__getattr__('full_author_notes', fntype_filter='equal-contrib')
+    if notes is not None:
+        for note in notes:
+            equal_contribs[note['id']] = footnote_text(note['text'])
+    return equal_contribs
+
+
+@fattrs('this as article')
+def competing_interests(article):
+    interests = {}
+    conflicts = article.__getattr__('competing_interests', fntype_filter='conflict')
+    if conflicts is not None:
+        for conflict in conflicts:
+            interests[conflict['id']] = footnote_text(conflict['text'])
+    return interests
 
 
 @fattrs('this as article')
@@ -117,6 +138,7 @@ def affiliations(article):
 @fattrs('this as article')
 def children(article):
     return ['* not implemented *']  # TODO implement
+
 
 DESCRIPTION = [
     ('article', {
@@ -151,11 +173,11 @@ DESCRIPTION = [
             'citations': 'unsupported',  # TODO check parser/xml
 
             'referenced': {
-                'present-addresses': 'unsupported',  # TODO #1
-                'equal-contrib': 'unsupported',  # TODO IP
+                'present-addresses': 'unsupported',  # TODO #1 (+)
+                'equal-contrib': 'equal_contrib',  # TODO IP
                 'emails': "this.correspondence",  # TODO #3
                 'fundings': 'unsupported',  # TODO #4
-                'competing-interests': 'unsupported',  # TODO #2
+                'competing-interests': 'competing_interests',  # TODO #2 (+)
                 'contributions': 'unsupported',  # TODO check parser/xml
                 'affiliations': 'affiliations',
                 'related-objects': 'unsupported',  # TODO check parser/xml

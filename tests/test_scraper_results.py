@@ -27,5 +27,17 @@ class TestScraperResults(unittest.TestCase):
         for article in self.results.keys():
             self.assertEqual(self.results[article]['title'], self.references[article]['title'])
 
+    def test_journal_id(self):
+        for article in self.results.keys():
+            self.assertEqual(self.results[article]['journal_id'], self.references[article]['title'])
+
+    def test_journal_id_alt(self):
+        for (generated, reference) in self.get_pairs():
+            self.assertEqual(generated['journal_id'], reference['title'])
+
+    def get_pairs(self):
+        for article in self.results.keys():
+            yield (self.results[article], self.references[article])
+
 if __name__ == '__main__':
     unittest.main()
