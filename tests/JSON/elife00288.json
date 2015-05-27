@@ -11,6 +11,27 @@
   "path": "content/2/e00288",
   "article-type": "research-article",
   "status": "VOR",
+  "categories": {
+    "display-channel": [
+      "Research article"
+    ],
+    "heading": [
+      "Immunology",
+      "Microbiology and infectious disease"
+    ]
+  },
+  "keywords": {
+    "author-keywords": [
+      "Herpes simplex",
+      "Mucosal immunity",
+      "Mathematical modeling"
+    ],
+    "research-organism": [
+      "Human",
+      "Viruses",
+      "Other"
+    ]
+  },
   "contributors": [
     {
       "type": "author",
@@ -18,229 +39,259 @@
       "id": "author-1921",
       "surname": "Schiffer",
       "given-names": "Joshua T",
-      "affiliations": [
-        "aff1",
-        "aff2"
-      ],
-      "fundings": [
-        "par-1",
-        "par-4",
-        "par-7"
-      ],
-      "emails": [
-        "cor1"
-      ],
-      "contributions": [
-        "con1"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1",
+          "aff2"
+        ],
+        "funding": [
+          "par-1",
+          "par-4",
+          "par-7"
+        ],
+        "email": [
+          "cor1"
+        ],
+        "contribution": [
+          "con1"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2466",
       "surname": "Swan",
       "given-names": "David",
-      "affiliations": [
-        "aff1"
-      ],
-      "contributions": [
-        "con2"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1"
+        ],
+        "contribution": [
+          "con2"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2467",
       "surname": "Al Sallaq",
       "given-names": "Ramzi",
-      "affiliations": [
-        "aff1"
-      ],
-      "contributions": [
-        "con3"
-      ],
-      "present_addresses": [
-        "pa1"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1"
+        ],
+        "contribution": [
+          "con3"
+        ],
+        "present-address": [
+          "pa1"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2468",
       "surname": "Magaret",
       "given-names": "Amalia",
-      "affiliations": [
-        "aff1",
-        "aff3"
-      ],
-      "fundings": [
-        "par-1"
-      ],
-      "contributions": [
-        "con4"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1",
+          "aff3"
+        ],
+        "funding": [
+          "par-1"
+        ],
+        "contribution": [
+          "con4"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2469",
       "surname": "Johnston",
       "given-names": "Christine",
-      "affiliations": [
-        "aff1",
-        "aff4"
-      ],
-      "fundings": [
-        "par-1",
-        "par-5"
-      ],
-      "contributions": [
-        "con5"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1",
+          "aff4"
+        ],
+        "funding": [
+          "par-1",
+          "par-5"
+        ],
+        "contribution": [
+          "con5"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2470",
       "surname": "Mark",
       "given-names": "Karen E",
-      "affiliations": [
-        "aff4"
-      ],
-      "fundings": [
-        "par-1",
-        "par-6"
-      ],
-      "contributions": [
-        "con6"
-      ],
-      "present_addresses": [
-        "pa2"
-      ]
+      "references": {
+        "affiliation": [
+          "aff4"
+        ],
+        "funding": [
+          "par-1",
+          "par-6"
+        ],
+        "contribution": [
+          "con6"
+        ],
+        "present-address": [
+          "pa2"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2471",
       "surname": "Selke",
       "given-names": "Stacy",
-      "affiliations": [
-        "aff3"
-      ],
-      "contributions": [
-        "con7"
-      ]
+      "references": {
+        "affiliation": [
+          "aff3"
+        ],
+        "contribution": [
+          "con7"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2472",
       "surname": "Ocbamichael",
       "given-names": "Negusse",
-      "affiliations": [
-        "aff3"
-      ],
-      "contributions": [
-        "con8"
-      ]
+      "references": {
+        "affiliation": [
+          "aff3"
+        ],
+        "contribution": [
+          "con8"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2473",
       "surname": "Kuntz",
       "given-names": "Steve",
-      "affiliations": [
-        "aff3"
-      ],
-      "contributions": [
-        "con9"
-      ]
+      "references": {
+        "affiliation": [
+          "aff3"
+        ],
+        "contribution": [
+          "con9"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2474",
       "surname": "Zhu",
       "given-names": "Jia",
-      "affiliations": [
-        "aff1",
-        "aff3"
-      ],
-      "fundings": [
-        "par-1",
-        "par-2"
-      ],
-      "contributions": [
-        "con10"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1",
+          "aff3"
+        ],
+        "funding": [
+          "par-1",
+          "par-2"
+        ],
+        "contribution": [
+          "con10"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2475",
       "surname": "Robinson",
       "given-names": "Barry",
-      "affiliations": [
-        "aff3"
-      ],
-      "contributions": [
-        "con11"
-      ]
+      "references": {
+        "affiliation": [
+          "aff3"
+        ],
+        "contribution": [
+          "con11"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2476",
       "surname": "Huang",
       "given-names": "Meei-Li",
-      "affiliations": [
-        "aff3"
-      ],
-      "fundings": [
-        "par-1"
-      ],
-      "contributions": [
-        "con12"
-      ]
+      "references": {
+        "affiliation": [
+          "aff3"
+        ],
+        "funding": [
+          "par-1"
+        ],
+        "contribution": [
+          "con12"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2477",
       "surname": "Jerome",
       "given-names": "Keith R",
-      "affiliations": [
-        "aff3"
-      ],
-      "contributions": [
-        "con13"
-      ]
+      "references": {
+        "affiliation": [
+          "aff3"
+        ],
+        "contribution": [
+          "con13"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2478",
       "surname": "Wald",
       "given-names": "Anna",
-      "affiliations": [
-        "aff1",
-        "aff3",
-        "aff4",
-        "aff5"
-      ],
-      "fundings": [
-        "par-1",
-        "par-3"
-      ],
-      "contributions": [
-        "con14"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1",
+          "aff3",
+          "aff4",
+          "aff5"
+        ],
+        "funding": [
+          "par-1",
+          "par-3"
+        ],
+        "contribution": [
+          "con14"
+        ]
+      }
     },
     {
       "type": "author",
       "id": "author-2479",
       "surname": "Corey",
       "given-names": "Lawrence",
-      "affiliations": [
-        "aff1",
-        "aff3",
-        "aff4"
-      ],
-      "fundings": [
-        "par-1",
-        "par-2"
-      ],
-      "contributions": [
-        "con15"
-      ]
+      "references": {
+        "affiliation": [
+          "aff1",
+          "aff3",
+          "aff4"
+        ],
+        "funding": [
+          "par-1",
+          "par-2"
+        ],
+        "contribution": [
+          "con15"
+        ]
+      }
     },
     {
       "type": "editor",
@@ -252,90 +303,92 @@
       }
     }
   ],
-  "emails": {
-    "cor1": "jschiffe@fhcrc.org"
-  },
-  "fundings": {
-    "par-1": {
-      "institution": "National Institutes of Health",
-      "award-id": "P01 AI030731"
+  "referenced": {
+    "email": {
+      "cor1": "jschiffe@fhcrc.org"
     },
-    "par-2": {
-      "institution": "National Institutes of Health",
-      "award-id": "R37 AI042528"
+    "funding": {
+      "par-1": {
+        "institution": "National Institutes of Health",
+        "award-id": "P01 AI030731"
+      },
+      "par-2": {
+        "institution": "National Institutes of Health",
+        "award-id": "R37 AI042528"
+      },
+      "par-3": {
+        "institution": "National Institutes of Health",
+        "award-id": "K24 AI07113"
+      },
+      "par-4": {
+        "institution": "National Institutes of Health",
+        "award-id": "K23 AI087206"
+      },
+      "par-5": {
+        "institution": "National Institutes of Health",
+        "award-id": "K23 AI079394"
+      },
+      "par-6": {
+        "institution": "National Institutes of Health",
+        "award-id": "K23 AI071257"
+      },
+      "par-7": {
+        "institution": "National Center For Advancing Translational Sciences of the National Institutes of Health",
+        "award-id": "UL1TR000423"
+      }
     },
-    "par-3": {
-      "institution": "National Institutes of Health",
-      "award-id": "K24 AI07113"
+    "contribution": {
+      "con1": "JTS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents",
+      "con2": "DS, Conception and design, Analysis and interpretation of data",
+      "con3": "RAS, Conception and design, Analysis and interpretation of data",
+      "con4": "AM, Analysis and interpretation of data, Drafting or revising the article",
+      "con5": "CJ, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article",
+      "con6": "KEM, Conception and design, Acquisition of data",
+      "con7": "SS, Conception and design, Acquisition of data",
+      "con8": "NO, Conception and design, Acquisition of data",
+      "con9": "SK, Conception and design, Acquisition of data",
+      "con10": "JZ, Acquisition of data, Analysis and interpretation of data",
+      "con11": "BR, Acquisition of data, Analysis and interpretation of data",
+      "con12": "M-LH, Acquisition of data, Analysis and interpretation of data",
+      "con13": "KRJ, Conception and design, Drafting or revising the article",
+      "con14": "AW, Conception and design, Drafting or revising the article",
+      "con15": "LC, Conception and design, Drafting or revising the article"
     },
-    "par-4": {
-      "institution": "National Institutes of Health",
-      "award-id": "K23 AI087206"
+    "present-address": {
+      "pa1": "College of Nursing Global, New York University, New York, United States",
+      "pa2": "The Office of AIDS, California Department of Public Health, Sacramento, United States"
     },
-    "par-5": {
-      "institution": "National Institutes of Health",
-      "award-id": "K23 AI079394"
-    },
-    "par-6": {
-      "institution": "National Institutes of Health",
-      "award-id": "K23 AI071257"
-    },
-    "par-7": {
-      "institution": "National Center For Advancing Translational Sciences of the National Institutes of Health",
-      "award-id": "UL1TR000423"
-    }
-  },
-  "contributions": {
-    "con1": "JTS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents",
-    "con2": "DS, Conception and design, Analysis and interpretation of data",
-    "con3": "RAS, Conception and design, Analysis and interpretation of data",
-    "con4": "AM, Analysis and interpretation of data, Drafting or revising the article",
-    "con5": "CJ, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article",
-    "con6": "KEM, Conception and design, Acquisition of data",
-    "con7": "SS, Conception and design, Acquisition of data",
-    "con8": "NO, Conception and design, Acquisition of data",
-    "con9": "SK, Conception and design, Acquisition of data",
-    "con10": "JZ, Acquisition of data, Analysis and interpretation of data",
-    "con11": "BR, Acquisition of data, Analysis and interpretation of data",
-    "con12": "M-LH, Acquisition of data, Analysis and interpretation of data",
-    "con13": "KRJ, Conception and design, Drafting or revising the article",
-    "con14": "AW, Conception and design, Drafting or revising the article",
-    "con15": "LC, Conception and design, Drafting or revising the article"
-  },
-  "present_addresses": {
-    "pa1": "College of Nursing Global, New York University, New York, United States",
-    "pa2": "The Office of AIDS, California Department of Public Health, Sacramento, United States"
-  },
-  "affiliations": {
-    "aff1": {
-      "dept": "Vaccine and Infectious Diseases Division",
-      "institution": "Fred Hutchinson Cancer Research Center",
-      "city": "Seattle",
-      "country": "United States"
-    },
-    "aff2": {
-      "dept": "Department of Medicine",
-      "institution": "University of Washington",
-      "city": "Seattle",
-      "country": "United States"
-    },
-    "aff3": {
-      "dept": "Department of Laboratory Medicine",
-      "institution": "University of Washington",
-      "city": "Seattle",
-      "country": "United States"
-    },
-    "aff4": {
-      "dept": "Department of Medicine",
-      "institution": "University of Washington",
-      "city": "Seattle",
-      "country": "United States"
-    },
-    "aff5": {
-      "dept": "Department of Epidemiology",
-      "institution": "University of Washington",
-      "city": "Seattle",
-      "country": "United States"
+    "affiliation": {
+      "aff1": {
+        "dept": "Vaccine and Infectious Diseases Division",
+        "institution": "Fred Hutchinson Cancer Research Center",
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "aff2": {
+        "dept": "Department of Medicine",
+        "institution": "University of Washington",
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "aff3": {
+        "dept": "Department of Laboratory Medicine",
+        "institution": "University of Washington",
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "aff4": {
+        "dept": "Department of Medicine",
+        "institution": "University of Washington",
+        "city": "Seattle",
+        "country": "United States"
+      },
+      "aff5": {
+        "dept": "Department of Epidemiology",
+        "institution": "University of Washington",
+        "city": "Seattle",
+        "country": "United States"
+      }
     }
   },
   "children": {
@@ -610,7 +663,19 @@
       {
         "title": "Decision letter",
         "doi": "10.7554/eLife.00288.042",
-        "path": "content/2/e00288/1"
+        "path": "content/2/e00288/1",
+        "contributors": [
+          {
+            "type": "editor",
+            "surname": "Sgaier",
+            "given-names": "Sema",
+            "role": "Reviewing editor",
+            "affiliation": {
+              "institution": "Bill & Melinda Gates Foundation",
+              "country": "India"
+            }
+          }
+        ]
       },
       {
         "title": "Author response",

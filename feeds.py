@@ -1,15 +1,18 @@
-__author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>'
+__author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>, John Root<john.root@digirati.co.uk>'
 __copyright__ = 'eLife Sciences'
 __licence__ = 'GNU General Public License (GPL)'
+__version__ = 0.1
+__description__ = """This a stand-alone xml data scraper utilizing the  elife-tools parseJATS.py
+                    library for extracting data from JATS XML files into a single data structure"""
 
 import glob
 import logging
 from datetime import datetime
 import time
-import re
 import os
 from elifetools import parseJATS as parser
 from scraper.utils import fattrs
+import re
 
 _VERSION = 1  # TODO change all uses of this to get article version information from ?
 
@@ -59,7 +62,7 @@ def tidy_whitespace(string):
 
 
 def footnote_text(raw_footnote_text):
-    match = re.search('.*?<p>(.*?)</p>', raw_footnote_text)
+    match = re.search('.*?<p>(.*?)</p>', raw_footnote_text, re.DOTALL)
     if match is None:
         return ""
     text = match.group(1)
@@ -114,6 +117,15 @@ def equal_contrib(article):
             equal_contribs[note['id']] = footnote_text(note['text'])
     return equal_contribs
 
+@fattrs('this as article')
+def present_address(article):
+    addresses = {}
+    notes = article.__getattr__('full_author_notes', fntype_filter='present-address')
+    if notes is not None:
+        for note in notes:
+            addresses[note['id']] = tidy_whitespace(footnote_text(note['text']))
+    return addresses
+
 
 @fattrs('this as article')
 def competing_interests(article):
@@ -145,11 +157,11 @@ DESCRIPTION = [
         'iterable': article_list,
         'attrs': {
             'journal_id': 'this.journal_id',
-            'jousrnal_title': 'this.journal_title',
+            'journal_title': 'this.journal_title',
             'eissn': 'issn_electronic',
-            'journal_issn': 'unsupported',  # TODO issue with params for 'issn_electronic',
+            #'journal_issn': 'unsupported',  # TODO issue with params for 'issn_electronic',
             'title': ('this.title', None, tidy_whitespace),
-            'impact-statement': 'unsupported',  # TODO custom-meta-group
+            #'impact-statement': 'unsupported',  # TODO custom-meta-group
             'version': 'version',
             'doi': 'this.doi',
             'publish': ('1', 1, int),  # 1 or 0 means publish immediately or don't publish immediately
@@ -160,27 +172,25 @@ DESCRIPTION = [
             'path': 'article_path',
             'article-type': 'this.article_type',
             'status': 'article_status',
-            'categories': {
-                    'display-channel': 'this.display_channel',  # TODO check parser / xml
-                    'heading': 'this.subject_area'
-            },
-            'keywords': {  # TODO #5 (don't strip tags in parser)
-                'author-keywords': 'this.keywords',
-                'research-organism': 'this.research_organism'
-            },
-            'contributors': 'contributors',
-            'children': 'children',
-            'citations': 'unsupported',  # TODO check parser/xml
+            'categories': 'this.full_subject_area',
+            #'keywords': {  # TODO #5 (don't strip tags in parser)
+            #    'author-keywords': 'this.keywords',
+            #    'research-organism': 'this.research_organism'
+            #},
+            #'contributors': 'contributors',
+            #'children': 'children',
+            #'citations': 'unsupported',  # TODO check parser/xml
+            #'related-articles': 'unsupported', # TODO Nathan says leave for now
 
             'referenced': {
-                'present-addresses': 'unsupported',  # TODO #1 (+)
+                'present-address': 'present_address',  # TODO #1 (+)
                 'equal-contrib': 'equal_contrib',  # TODO IP
-                'emails': "this.correspondence",  # TODO #3
-                'fundings': 'unsupported',  # TODO #4
-                'competing-interests': 'competing_interests',  # TODO #2 (+)
-                'contributions': 'unsupported',  # TODO check parser/xml
-                'affiliations': 'affiliations',
-                'related-objects': 'unsupported',  # TODO check parser/xml
+                'email': "this.full_correspondence",  # TODO #3 IP
+                #'funding': 'unsupported',  # TODO #4
+                'competing-interest': 'competing_interests',  # TODO #2 (+)
+                #'contribution': 'unsupported',  # TODO check parser/xml
+                #'affiliation': 'affiliations',
+                #'related-object': 'unsupported',  # TODO check parser / xml
             }  # referenced
         }
     })  # ends article block
