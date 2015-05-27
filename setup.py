@@ -1,7 +1,8 @@
 from setuptools import setup
 
 setup(
-    name=feeds.py,
+    name='feeds',
+    packages=[''],
     version='0.1',
     description='scrape JATS XML to EIF JSON',
     long_description=open('README.md', 'r').read(),
