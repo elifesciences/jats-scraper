@@ -194,19 +194,23 @@ DESCRIPTION = [
     })  # ends article block
 ]
 
+def scrape(docs_dir, process=None):
+    if docs_dir is not None:
+        import scraper
+        mod = __import__(__name__)
+        res = scraper.scrape(mod, doc=docs_dir)
+        if process:
+            res = process(res)
+        import json
+        res = json.dumps(res, indent=4)
+        return res
 
 def main(args):
     if not len(args) == 1:
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    import scraper
-
-    mod = __import__(__name__)
-    res = scraper.scrape(mod, doc=docs_dir)
-    import json
-
-    print json.dumps(res, indent=4)
+    print scrape(docs_dir)
 
 
 if __name__ == '__main__':
