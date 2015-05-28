@@ -1,4 +1,4 @@
-pytz
+pytz==2015.4
 -e hg+https://bitbucket.org/lskibinski/scraper/src#egg=scraper
 -e git+https://github.com/jrdigi/elife-tools.git@unstable#egg=elifetools
 

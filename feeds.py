@@ -1,9 +1,10 @@
+__name__ = 'jats-scraper'
+__version__ = '2015.05.28'
+__description__ = 'JATS XML in a format suitable for ingestion by the eLife website'
 __author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>, John Root<john.root@digirati.co.uk>'
 __copyright__ = 'eLife Sciences'
 __licence__ = 'GNU General Public License (GPL)'
 __version__ = 0.1
-__description__ = """This a stand-alone xml data scraper utilizing the  elife-tools parseJATS.py
-                    library for extracting data from JATS XML files into a single data structure"""
 
 import glob
 import logging

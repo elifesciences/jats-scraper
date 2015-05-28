@@ -1,6 +1,6 @@
 # jats-scraper
 
-This a stand-alone xml data scraper utilizing the 
+This is a stand-alone xml data scraper utilizing the 
 [elife-tools](https://github.com/elifesciences/elife-tools) `parseJATS.py` 
 library for extracting data from JATS XML files into a single data structure.
 
@@ -16,10 +16,14 @@ the purposes of pretty-printing.
 ## usage
 
     $ python feeds.py /path/to/xml/dir/
+    
+or
 
+    $ python feeds.py /path/to/xml/file.xml
+    
 For example:
 
-    $ python feeds.py /home/yourname/devdir/elife-tools/elifetools/sample-xml/
+    $ python feeds.py .../elife-tools/elifetools/sample-xml/elife-kitchen-sink.xml
         
 Will yield something like:
 
@@ -27,163 +31,68 @@ Will yield something like:
         {
             "article": [
                 {
-                    "title_short": "* not implemented *", 
+                    "referenced": {
+                        "affiliations": [
+                            "* not implemented *"
+                        ], 
+                        "fundings": "* not implemented *", 
+                        "competing-interests": "* not implemented *", 
+                        "related-objects": "* not implemented *", 
+                        "equal-contrib": "* not implemented *", 
+                        "contributions": "* not implemented *", 
+                        "emails": [
+                            "*For\n                        correspondence: jon_clardy@hms.harvard.edu (JC);", 
+                            "nking@berkeley.edu (NK)", 
+                            "mharrison@elifesciences.org (MH)"
+                        ], 
+                        "present-addresses": "* not implemented *"
+                    }, 
+                    "contributors": [
+                        "* not implemented *"
+                    ], 
+                    "journal_issn": "* not implemented *", 
+                    "keywords": {
+                        "author-keywords": [
+                            "\nSalpingoeca rosetta\n", 
+                            "Algoriphagus", 
+                            "bacterial sulfonolipid", 
+                            "multicellular development"
+                        ], 
+                        "research-organism": [
+                            "Mouse", 
+                            "\nC. elegans\n", 
+                            "Other"
+                        ]
+                    }, 
+                    "children": [
+                        "* not implemented *"
+                    ], 
+                    "article-type": "research-article", 
+                    "title": "Bacterial regulation of colony development in the closest living relatives of animals", 
+                    "citations": "* not implemented *", 
+                    "impact-statement": "* not implemented *", 
+                    "journal_id": "eLife", 
+                    "publish": 1, 
+                    "version": 1, 
+                    "status": "VOR", 
+                    "article-id": "10.7554/eLife.00013", 
+                    "volume": 3, 
+                    "article-version-id": "00013.VOR.1", 
+                    "path": "content/3/e00013", 
+                    "eissn": "2050-084X", 
+                    "categories": {
+                        "heading": [
+                            "Research article", 
+                            "Cell biology", 
+                            "Computer science"
+                        ], 
+                        "display-channel": [
+                            "Research article"
+                        ]
+                    }, 
                     "doi": "10.7554/eLife.00013", 
-                    "jcode": "eLife", 
-                    "version": "* not implemented *", 
-                    "category_list": "* not implemented *", 
-                    "title": "Bacterial regulation of colony development in the closest living\n                    relatives of animals", 
-                    "keyword_list": "None", 
-                    "issue": "* not implemented *", 
-                    "first_page": "* not implemented *", 
-                    "volume": "* not implemented *", 
-                    "state": "* not implemented *", 
-                    "last_page": "* not implemented *", 
-                    "epub": "* not implemented *", 
-                    "ppub": "* not implemented *", 
-                    "jissn": null, 
-                    "subtitle": "* not implemented *", 
-                    "type": "research-article", 
-                    "slug": "* not implemented *", 
-                    "jtitle": "eLife", 
-                    "fpub": "* not implemented *", 
-                    "authors": [
-                        {
-                            "first_name": "Rosanna A", 
-                            "last_name": "Alegado", 
-                            "suffix": null, 
-                            "institution": [
-                                "University of California, Berkeley", 
-                                "Harvard Medical School"
-                            ]
-                        }, 
-                        {
-                            "first_name": "Laura W", 
-                            "last_name": "Brown", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Shugeng", 
-                            "last_name": "Cao", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Renee Kathryn", 
-                            "last_name": "Dermenjian", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Richard", 
-                            "last_name": "Zuzow", 
-                            "suffix": null, 
-                            "institution": "Stanford University School of Medicine"
-                        }, 
-                        {
-                            "first_name": "Stephen R", 
-                            "last_name": "Fairclough", 
-                            "suffix": null, 
-                            "institution": "University of California, Berkeley"
-                        }, 
-                        {
-                            "first_name": "Jon", 
-                            "last_name": "Clardy", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Nicole", 
-                            "last_name": "King", 
-                            "suffix": null, 
-                            "institution": "University of California, Berkeley"
-                        }, 
-                        {
-                            "first_name": null, 
-                            "last_name": null, 
-                            "suffix": null, 
-                            "institution": "Stanford University School of Medicine"
-                        }, 
-                        {
-                            "first_name": null, 
-                            "last_name": null, 
-                            "suffix": null, 
-                            "institution": null
-                        }
-                    ]
-                }, 
-                {
-                    "title_short": "* not implemented *", 
-                    "doi": "10.7554/eLife.00013", 
-                    "jcode": "elife", 
-                    "version": "* not implemented *", 
-                    "category_list": "* not implemented *", 
-                    "title": "A bacterial sulfonolipid triggers multicellular development in the closest living relatives of animals", 
-                    "keyword_list": "None", 
-                    "issue": "* not implemented *", 
-                    "first_page": "* not implemented *", 
-                    "volume": "* not implemented *", 
-                    "state": "* not implemented *", 
-                    "last_page": "* not implemented *", 
-                    "epub": "* not implemented *", 
-                    "ppub": "* not implemented *", 
-                    "jissn": null, 
-                    "subtitle": "* not implemented *", 
-                    "type": "research-article", 
-                    "slug": "* not implemented *", 
-                    "jtitle": "eLife", 
-                    "fpub": "* not implemented *", 
-                    "authors": [
-                        {
-                            "first_name": "Rosanna A", 
-                            "last_name": "Alegado", 
-                            "suffix": null, 
-                            "institution": "University of California, Berkeley"
-                        }, 
-                        {
-                            "first_name": "Laura W", 
-                            "last_name": "Brown", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Shugeng", 
-                            "last_name": "Cao", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Renee K", 
-                            "last_name": "Dermenjian", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Richard", 
-                            "last_name": "Zuzow", 
-                            "suffix": null, 
-                            "institution": "Stanford University School of Medicine"
-                        }, 
-                        {
-                            "first_name": "Stephen R", 
-                            "last_name": "Fairclough", 
-                            "suffix": null, 
-                            "institution": "University of California, Berkeley"
-                        }, 
-                        {
-                            "first_name": "Jon", 
-                            "last_name": "Clardy", 
-                            "suffix": null, 
-                            "institution": "Harvard Medical School"
-                        }, 
-                        {
-                            "first_name": "Nicole", 
-                            "last_name": "King", 
-                            "suffix": null, 
-                            "institution": "University of California, Berkeley"
-                        }
-                    ]
+                    "pub-date": "2014-02-28", 
+                    "jousrnal_title": "eLife"
                 }
             ]
         }
