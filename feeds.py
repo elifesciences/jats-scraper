@@ -1,6 +1,3 @@
-__name__ = 'jats-scraper'
-__version__ = '2015.05.28'
-__description__ = 'JATS XML in a format suitable for ingestion by the eLife website'
 __author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>, John Root<john.root@digirati.co.uk>'
 __copyright__ = 'eLife Sciences'
 __licence__ = 'GNU General Public License (GPL)'

@@ -1,11 +1,12 @@
 from setuptools import setup
-#import feeds as module
+
 
 def groupby(f, l):
     x, y = [], []
     for v in l:
-        (x if f(v) else y).append(v)        
+        (x if f(v) else y).append(v)
     return x, y
+
 
 def requirements():
     requisites = open('requirements.txt', 'r').read().splitlines()
@@ -16,16 +17,12 @@ def requirements():
         'dependency_links': non_pypi,
     }
 
-setup(
-    # name = module.__name__,
-    # version = module.__version__,
-    # description = module.__description__,
 
-    name = 'jats-scraper',
-    version = 1,
-    description ='awesome description',
-    long_description = open('README.md', 'r').read(),
-    #packages = [module.__name__],
-    license = open('gpl.txt', 'r').read(),
+setup(
+    name__='jats-scraper',
+    version='2015.05.28',
+    description='JATS XML in a format suitable for ingestion by the eLife website',
+    long_description=open('README.md', 'r').read(),
+    license=open('gpl.txt', 'r').read(),
     **requirements()
 )
