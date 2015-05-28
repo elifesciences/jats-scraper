@@ -1,5 +1,5 @@
 from setuptools import setup
-import feeds as module
+#import feeds as module
 
 def groupby(f, l):
     x, y = [], []
@@ -17,9 +17,13 @@ def requirements():
     }
 
 setup(
-    name = module.__name__,
-    version = module.__version__,
-    description = module.__description__,
+    # name = module.__name__,
+    # version = module.__version__,
+    # description = module.__description__,
+
+    name = 'jats-scraper',
+    version = 1,
+    description ='awesome description',
     long_description = open('README.md', 'r').read(),
     #packages = [module.__name__],
     license = open('gpl.txt', 'r').read(),
