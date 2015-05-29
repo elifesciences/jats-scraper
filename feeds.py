@@ -163,6 +163,7 @@ DESCRIPTION = [
             'version': 'version',
             'doi': 'this.doi',
             'publish': ('1', 1, int),  # 1 or 0 means publish immediately or don't publish immediately
+            'force': ('1', 1, int), # overwrite if present
             'volume': ('this.volume', 0, int),
             'article-id': 'this.doi',
             'article-version-id': 'article_full_version',
