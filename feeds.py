@@ -342,7 +342,7 @@ def scrape(docs_dir, process=None):
         if process:
             res = process(res)
         import json
-        res = json.dumps(res, indent=4)
+        res = json.dumps(res, indent=4, ensure_ascii = False)
         return res
 
 def main(args):
@@ -350,7 +350,7 @@ def main(args):
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir)
+    print scrape(docs_dir).encode('utf8')
 
 
 if __name__ == '__main__':
