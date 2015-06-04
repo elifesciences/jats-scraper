@@ -144,7 +144,7 @@ def contributors(article):
 def affiliations(article):
     return ['* not implemented *']  # TODO implement
 
-def path_token(type, ordinal):
+def fragment_path_token(type, ordinal):
     if type == 'abstract':
         return 'abstract-' + str(ordinal)
         
@@ -173,14 +173,14 @@ def fragment_path(fragment, volume, manuscript_id):
     path = "content/" + str(volume) + '/e' + manuscript_id
 
     if fragment.get('parent_type'):
-        path += "/" + path_token(fragment.get('parent_type'),
+        path += "/" + fragment_path_token(fragment.get('parent_type'),
                                  fragment.get('parent_ordinal'))
 
     if fragment.get('parent_parent_type'):
-        path += "/" + path_token(fragment.get('parent_parent_type'),
+        path += "/" + fragment_path_token(fragment.get('parent_parent_type'),
                                  fragment.get('parent_parent_ordinal'))
 
-    path += "/" + path_token(fragment.get('type'),
+    path += "/" + fragment_path_token(fragment.get('type'),
                        fragment.get('ordinal'))
 
     return path
