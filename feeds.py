@@ -194,6 +194,10 @@ def component_fragment(component, volume = 3):
     fragment['type'] = component.get('type')
     fragment['doi'] = tidy_whitespace(component.get('doi'))
     fragment['ordinal'] = component.get('ordinal')
+    
+    fragment['title'] = ""
+    if component.get('full_label'):
+        fragment['title'] += component.get('full_label')
 
     parent_properties = ['parent_type', 'parent_ordinal',
                          'parent_parent_type', 'parent_parent_ordinal']
