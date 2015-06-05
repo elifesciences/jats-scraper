@@ -168,7 +168,7 @@ def fragment_path_token(fragment_type, ordinal):
         return 'B' + str(ordinal)
 
     if fragment_type == 'media':
-        return 'M' + str(ordinal)
+        return 'media-' + str(ordinal)
 
     if fragment_type == 'chem-struct-wrap':
         return 'C' + str(ordinal)
@@ -176,13 +176,13 @@ def fragment_path_token(fragment_type, ordinal):
 def fragment_path(fragment, volume, manuscript_id):
     path = "content/" + str(volume) + '/e' + manuscript_id
 
-    if fragment.get('parent_type'):
-        path += "/" + fragment_path_token(fragment.get('parent_type'),
-                                 fragment.get('parent_ordinal'))
-
     if fragment.get('parent_parent_type'):
         path += "/" + fragment_path_token(fragment.get('parent_parent_type'),
                                  fragment.get('parent_parent_ordinal'))
+
+    if fragment.get('parent_type'):
+        path += "/" + fragment_path_token(fragment.get('parent_type'),
+                                 fragment.get('parent_ordinal'))
 
     path += "/" + fragment_path_token(fragment.get('type'),
                        fragment.get('ordinal'))
@@ -199,7 +199,13 @@ def component_fragment(component, volume):
     fragment['doi'] = tidy_whitespace(component.get('doi'))
     fragment['ordinal'] = component.get('ordinal')
 
-    if component.get('full_label'):
+    # Quick test for eLife component DOI only
+    if not fragment['doi'].startswith('10.7554/'):
+        return None
+
+    if fragment['type'] == 'sub-article' and component.get('full_title'):
+        fragment['title'] = component.get('full_title')
+    elif fragment['type'] != 'sub-article' and component.get('full_label'):
         fragment['title'] = component.get('full_label')
 
     parent_properties = ['parent_type', 'parent_ordinal',
@@ -263,14 +269,14 @@ def children(article):
         for component in components:
             fragment = component_fragment(component, article.volume)
 
-            if not fragment.get('parent_type'):
+            if fragment and not fragment.get('parent_type'):
                 fragments.append(fragment)
 
         # Populate fragments whose parents are already populated
         for component in components:
             fragment = component_fragment(component, article.volume)
 
-            if fragment.get('parent_type'):
+            if fragment and fragment.get('parent_type'):
                 populate_children(fragment, fragments)
 
         # Populate fragments of fragements
@@ -284,7 +290,7 @@ def children(article):
                     level2_fragments = None
 
                 if level2_fragments:
-                    if fragment.get('parent_type'):
+                    if fragment and fragment.get('parent_type'):
                         populate_children(fragment, level2_fragments)
 
         children['fragment'] = fragments
