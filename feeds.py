@@ -168,7 +168,7 @@ def fragment_path_token(fragment_type, ordinal):
         return 'B' + str(ordinal)
 
     if fragment_type == 'media':
-        return 'M' + str(ordinal)
+        return 'media-' + str(ordinal)
 
     if fragment_type == 'chem-struct-wrap':
         return 'C' + str(ordinal)
