@@ -89,7 +89,7 @@ def issn_electronic(article):
 
 @fattrs('this as article')
 def article_full_version(article):
-    return article.publisher_id + '.' + article_status(article) + '.' + str(_VERSION)
+    return article.publisher_id  + '.' + str(_VERSION)
 
 
 @fattrs('this as article')
@@ -133,6 +133,10 @@ def competing_interests(article):
         for conflict in conflicts:
             interests[conflict['id']] = footnote_text(conflict['text'])
     return interests
+
+@fattrs('this as article')
+def funding(article):
+    return article.full_award_groups
 
 
 @fattrs('this as article')
@@ -319,10 +323,10 @@ DESCRIPTION = [
             #'related-articles': 'unsupported', # TODO Nathan says leave for now
 
             'referenced': {
-                'present-address': 'present_address',  # TODO #1 (+)
-                'equal-contrib': 'equal_contrib',  # TODO IP
-                'email': "this.full_correspondence",  # TODO #3 IP
-                #'funding': 'unsupported',  # TODO #4
+                'present-address': 'present_address',
+                'equal-contrib': 'equal_contrib',
+                'email': "this.full_correspondence",
+                'funding': 'funding',
                 'competing-interest': 'competing_interests',  # TODO #2 (+)
                 #'contribution': 'unsupported',  # TODO check parser/xml
                 #'affiliation': 'affiliations',
