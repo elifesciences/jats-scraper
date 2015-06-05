@@ -199,6 +199,10 @@ def component_fragment(component, volume):
     fragment['doi'] = tidy_whitespace(component.get('doi'))
     fragment['ordinal'] = component.get('ordinal')
 
+    # Quick test for eLife component DOI only
+    if not fragment['doi'].startswith('10.7554'):
+        return None
+
     if component.get('full_label'):
         fragment['title'] = component.get('full_label')
 
@@ -263,14 +267,14 @@ def children(article):
         for component in components:
             fragment = component_fragment(component, article.volume)
 
-            if not fragment.get('parent_type'):
+            if fragment and not fragment.get('parent_type'):
                 fragments.append(fragment)
 
         # Populate fragments whose parents are already populated
         for component in components:
             fragment = component_fragment(component, article.volume)
 
-            if fragment.get('parent_type'):
+            if fragment and fragment.get('parent_type'):
                 populate_children(fragment, fragments)
 
         # Populate fragments of fragements
@@ -284,7 +288,7 @@ def children(article):
                     level2_fragments = None
 
                 if level2_fragments:
-                    if fragment.get('parent_type'):
+                    if fragment and fragment.get('parent_type'):
                         populate_children(fragment, level2_fragments)
 
         children['fragment'] = fragments
