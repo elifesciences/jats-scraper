@@ -185,7 +185,7 @@ def fragment_path(fragment, volume, manuscript_id):
 
     return path
 
-def component_fragment(component, volume = 3):
+def component_fragment(component, volume):
     
     fragment = {}
 
@@ -258,21 +258,21 @@ def children(article):
         
         # First populate with fragments having no parent
         for component in components:
-            fragment = component_fragment(component)
+            fragment = component_fragment(component, article.volume)
 
             if not fragment.get('parent_type'):
                 fragments.append(fragment)
 
         # Populate fragments whose parents are already populated
         for component in components:
-            fragment = component_fragment(component)
+            fragment = component_fragment(component, article.volume)
 
             if fragment.get('parent_type'):
                 populate_children(fragment, fragments)
 
         # Populate fragments of fragements
         for component in components:
-            fragment = component_fragment(component)
+            fragment = component_fragment(component, article.volume)
             level = "parent"
             for level1_fragment in fragments:
                 try:
