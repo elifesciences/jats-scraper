@@ -144,11 +144,149 @@ def contributors(article):
 def affiliations(article):
     return ['* not implemented *']  # TODO implement
 
+def fragment_path_token(type, ordinal):
+    if type == 'abstract':
+        return 'abstract-' + str(ordinal)
+        
+    if type == 'fig':
+        return 'F' + str(ordinal)
+        
+    if type == 'supplementary-material':
+        return 'DC' + str(ordinal)
+
+    if type == 'sub-article':
+        return str(ordinal)
+        
+    if type == 'table-wrap':
+        return 'T' + str(ordinal)
+        
+    if type == 'boxed-text':
+        return 'B' + str(ordinal)
+
+    if type == 'media':
+        return 'M' + str(ordinal)
+        
+    if type == 'chem-struct-wrap':
+        return 'C' + str(ordinal)
+
+def fragment_path(fragment, volume, manuscript_id):
+    path = "content/" + str(volume) + '/e' + manuscript_id
+
+    if fragment.get('parent_type'):
+        path += "/" + fragment_path_token(fragment.get('parent_type'),
+                                 fragment.get('parent_ordinal'))
+
+    if fragment.get('parent_parent_type'):
+        path += "/" + fragment_path_token(fragment.get('parent_parent_type'),
+                                 fragment.get('parent_parent_ordinal'))
+
+    path += "/" + fragment_path_token(fragment.get('type'),
+                       fragment.get('ordinal'))
+
+    return path
+
+def component_fragment(component, volume):
+    
+    fragment = {}
+
+    #fragment_id = component.get('type') + "-" + str(component.get('ordinal'))
+
+    fragment['type'] = component.get('type')
+    fragment['doi'] = tidy_whitespace(component.get('doi'))
+    fragment['ordinal'] = component.get('ordinal')
+    
+    if component.get('full_label'):
+        fragment['title'] = component.get('full_label')
+
+    parent_properties = ['parent_type', 'parent_ordinal',
+                         'parent_parent_type', 'parent_parent_ordinal']
+    for property in parent_properties:
+        if component.get(property):
+            fragment[property] = component.get(property)
+
+    manuscript_id = component.get('article_doi').split('.')[-1]
+    fragment['path'] = fragment_path(fragment, volume, manuscript_id)
+
+    return fragment
+
+def populate_children(fragment, fragments):
+    """
+    Given a fragment with a parent_type and parent_ordinal,
+    find its parent in fragments and if found add the fragment to its children
+    """
+    parent_fragment = None
+
+    for search_fragment in fragments:
+
+        if search_fragment.get('type') == fragment['parent_type'] \
+           and str(search_fragment['ordinal']) == str(fragment['parent_ordinal']):
+            parent_fragment = search_fragment
+            break
+
+    if not parent_fragment:
+        return
+    
+    if parent_fragment:
+        if not parent_fragment.get('children'):
+            parent_fragment['children'] = {}
+            parent_fragment['children']['fragment'] = []
+
+        parent_fragment['children']['fragment'].append(fragment)
+    
+    clean_fragment(fragment)
+
+
+def clean_fragment(fragment):
+    # Remove some values
+    remove_properties = ['parent_type', 'parent_ordinal',
+                         'parent_parent_type', 'parent_parent_ordinal',
+                         'article_doi']
+    for property in remove_properties:
+        try:
+            del(fragment[property])
+        except KeyError:
+            pass
+
 
 @fattrs('this as article')
 def children(article):
-    return ['* not implemented *']  # TODO implement
+    children = {}
+    fragments = []
+    components = article.__getattr__('components')
+    if components is not None:
+        
+        # First populate with fragments having no parent
+        for component in components:
+            fragment = component_fragment(component, article.volume)
 
+            if not fragment.get('parent_type'):
+                fragments.append(fragment)
+
+        # Populate fragments whose parents are already populated
+        for component in components:
+            fragment = component_fragment(component, article.volume)
+
+            if fragment.get('parent_type'):
+                populate_children(fragment, fragments)
+
+        # Populate fragments of fragements
+        for component in components:
+            fragment = component_fragment(component, article.volume)
+            level = "parent"
+            for level1_fragment in fragments:
+                try:
+                    level2_fragments = level1_fragment['children']['fragment']
+                except:
+                    level2_fragments = None
+                    
+                if level2_fragments:
+                    if fragment.get('parent_type'):
+                        populate_children(fragment, level2_fragments)
+                        
+ 
+        children['fragment'] = fragments
+        
+    return children
 
 DESCRIPTION = [
     ('article', {
@@ -177,7 +315,7 @@ DESCRIPTION = [
             #    'research-organism': 'this.research_organism'
             #},
             #'contributors': 'contributors',
-            #'children': 'children',
+            'children': 'children',
             #'citations': 'unsupported',  # TODO check parser/xml
             #'related-articles': 'unsupported', # TODO Nathan says leave for now
 
@@ -203,7 +341,7 @@ def scrape(docs_dir, process=None):
         if process:
             res = process(res)
         import json
-        res = json.dumps(res, indent=4)
+        res = json.dumps(res, indent=4, ensure_ascii = False)
         return res
 
 def main(args):
@@ -211,7 +349,7 @@ def main(args):
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir)
+    print scrape(docs_dir).encode('utf8')
 
 
 if __name__ == '__main__':
