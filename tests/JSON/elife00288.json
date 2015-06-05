@@ -6,11 +6,12 @@
   "publish": "1",
   "volume": "2",
   "article-id": "10.7554/eLife.00288",
-  "article-version-id": "00288.VOR.1",
+  "article-version-id": "00288.1",
   "pub-date": "2013-04-16",
   "path": "content/2/e00288",
   "article-type": "research-article",
   "status": "VOR",
+  "force": "1",
   "categories": {
     "display-channel": [
       "Research article"
@@ -336,6 +337,9 @@
         "institution": "National Center For Advancing Translational Sciences of the National Institutes of Health",
         "award-id": "UL1TR000423"
       }
+    },
+    "competing-interest": {
+      "conf1": "The authors declare that no competing interests exist."
     },
     "contribution": {
       "con1": "JTS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents",
@@ -689,9 +693,18 @@
       "id": "bib1",
       "title": "Agent-based modeling of host-pathogen systems: the successes and challenges",
       "authors": [
-        "AL Bauer",
-        "CA Beauchemin",
-        "AS Perelson"
+        {
+          "group-type": "author",
+          "name": "AL Bauer"
+        },
+        {
+          "group-type": "author",
+          "name": "CA Beauchemin"
+        },
+        {
+          "group-type": "author",
+          "name": "AS Perelson"
+        }
       ],
       "doi": "http://dx.doi.org/10.1016/j.ins.2008.11.012",
       "source": "Inf Sci (Ny)",
@@ -704,10 +717,22 @@
       "id": "bib2",
       "title": "Modeling the mechanisms of acute hepatitis B virus infection",
       "authors": [
-        "SM Ciupe",
-        "RM Ribeiro",
-        "PW Nelson",
-        "AS Perelson"
+        {
+          "group-type": "author",
+          "name": "SM Ciupe"
+        },
+        {
+          "group-type": "author",
+          "name": "RM Ribeiro"
+        },
+        {
+          "group-type": "author",
+          "name": "PW Nelson"
+        },
+        {
+          "group-type": "author",
+          "name": "AS Perelson"
+        }
       ],
       "doi": "http://dx.doi.org/10.1016/j.jtbi.2007.02.017",
       "source": "J Theor Biol",
@@ -720,8 +745,14 @@
       "id": "bib3",
       "title": "Herpes simplex virus gE/gI expressed in epithelial cells interferes with cell-to-cell spread",
       "authors": [
-        "WJ Collins",
-        "DC Johnson"
+        {
+          "group-type": "author",
+          "name": "WJ Collins"
+        },
+        {
+          "group-type": "author",
+          "name": "DC Johnson"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.77.4.2686-2695.2003",
       "source": "J Virol",
@@ -734,12 +765,23 @@
       "id": "bib4",
       "title": "Genital herpes simplex virus infections: clinical manifestations, course, and complications",
       "authors": [
-        "L Corey",
-        "HG Adams",
-        "ZA Brown",
-        "KK Holmes"
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        },
+        {
+          "group-type": "author",
+          "name": "HG Adams"
+        },
+        {
+          "group-type": "author",
+          "name": "ZA Brown"
+        },
+        {
+          "group-type": "author",
+          "name": "KK Holmes"
+        }
       ],
-      "doi": "",
       "source": "Ann Intern Med",
       "volume": "98",
       "fpage": "958",
@@ -750,11 +792,26 @@
       "id": "bib5",
       "title": "Longitudinal study of herpes simplex virus type 2 infection using viral dynamic modelling",
       "authors": [
-        "C Crespi",
-        "W Cumberland",
-        "A Wald",
-        "L Corey",
-        "S Blower"
+        {
+          "group-type": "author",
+          "name": "C Crespi"
+        },
+        {
+          "group-type": "author",
+          "name": "W Cumberland"
+        },
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        },
+        {
+          "group-type": "author",
+          "name": "S Blower"
+        }
       ],
       "doi": "http://dx.doi.org/10.1136/sti.2006.022020",
       "source": "Sex Transm Infect",
@@ -767,11 +824,26 @@
       "id": "bib6",
       "title": "Evolution of recurrent herpes simplex lesions. An immunohistologic study",
       "authors": [
-        "AL Cunningham",
-        "RR Turner",
-        "AC Miller",
-        "MF Para",
-        "TC Merigan"
+        {
+          "group-type": "author",
+          "name": "AL Cunningham"
+        },
+        {
+          "group-type": "author",
+          "name": "RR Turner"
+        },
+        {
+          "group-type": "author",
+          "name": "AC Miller"
+        },
+        {
+          "group-type": "author",
+          "name": "MF Para"
+        },
+        {
+          "group-type": "author",
+          "name": "TC Merigan"
+        }
       ],
       "doi": "http://dx.doi.org/10.1172/JCI111678",
       "source": "J Clin Invest",
@@ -784,11 +856,19 @@
       "id": "bib7",
       "title": "Different dynamics of CD4+ and CD8+ T cell responses during and after acute lymphocytic choriomeningitis virus infection",
       "authors": [
-        "RJ De Boer",
-        "D Homann",
-        "AS Perelson"
+        {
+          "group-type": "author",
+          "name": "RJ De Boer"
+        },
+        {
+          "group-type": "author",
+          "name": "D Homann"
+        },
+        {
+          "group-type": "author",
+          "name": "AS Perelson"
+        }
       ],
-      "doi": "",
       "source": "J Immunol",
       "volume": "171",
       "fpage": "3928",
@@ -799,10 +879,22 @@
       "id": "bib8",
       "title": "Repulsion of superinfecting virions: a mechanism for rapid virus spread",
       "authors": [
-        "V Doceul",
-        "M Hollinshead",
-        "L van der Linden",
-        "GL Smith"
+        {
+          "group-type": "author",
+          "name": "V Doceul"
+        },
+        {
+          "group-type": "author",
+          "name": "M Hollinshead"
+        },
+        {
+          "group-type": "author",
+          "name": "L van der Linden"
+        },
+        {
+          "group-type": "author",
+          "name": "GL Smith"
+        }
       ],
       "doi": "http://dx.doi.org/10.1126/science.1183173",
       "source": "Science",
@@ -815,8 +907,14 @@
       "id": "bib9",
       "title": "Herpes simplex virus gE/gI must accumulate in the trans-Golgi network at early times and then redistribute to cell junctions to promote cell-cell spread",
       "authors": [
-        "A Farnsworth",
-        "DC Johnson"
+        {
+          "group-type": "author",
+          "name": "A Farnsworth"
+        },
+        {
+          "group-type": "author",
+          "name": "DC Johnson"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.80.7.3167-3179.2006",
       "source": "J Virol",
@@ -829,10 +927,22 @@
       "id": "bib10",
       "title": "Factors that make an infectious disease outbreak controllable",
       "authors": [
-        "C Fraser",
-        "S Riley",
-        "RM Anderson",
-        "NM Ferguson"
+        {
+          "group-type": "author",
+          "name": "C Fraser"
+        },
+        {
+          "group-type": "author",
+          "name": "S Riley"
+        },
+        {
+          "group-type": "author",
+          "name": "RM Anderson"
+        },
+        {
+          "group-type": "author",
+          "name": "NM Ferguson"
+        }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.0307506101",
       "source": "Proc Natl Acad Sci USA",
@@ -845,12 +955,30 @@
       "id": "bib11",
       "title": "Memory T cells in nonlymphoid tissue that provide enhanced local immunity during infection with herpes simplex virus",
       "authors": [
-        "T Gebhardt",
-        "LM Wakim",
-        "L Eidsmo",
-        "PC Reading",
-        "WR Heath",
-        "FR Carbone"
+        {
+          "group-type": "author",
+          "name": "T Gebhardt"
+        },
+        {
+          "group-type": "author",
+          "name": "LM Wakim"
+        },
+        {
+          "group-type": "author",
+          "name": "L Eidsmo"
+        },
+        {
+          "group-type": "author",
+          "name": "PC Reading"
+        },
+        {
+          "group-type": "author",
+          "name": "WR Heath"
+        },
+        {
+          "group-type": "author",
+          "name": "FR Carbone"
+        }
       ],
       "doi": "http://dx.doi.org/10.1038/ni.1718",
       "source": "Nat Immunol",
@@ -863,9 +991,18 @@
       "id": "bib12",
       "title": "Inference for nonlinear dynamical systems",
       "authors": [
-        "EL Ionides",
-        "C Breto",
-        "AA King"
+        {
+          "group-type": "author",
+          "name": "EL Ionides"
+        },
+        {
+          "group-type": "author",
+          "name": "C Breto"
+        },
+        {
+          "group-type": "author",
+          "name": "AA King"
+        }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.0603181103",
       "source": "Proc Natl Acad Sci USA",
@@ -878,11 +1015,26 @@
       "id": "bib13",
       "title": "Quantitative stability of DNA after extended storage of clinical specimens as determined by real-time PCR",
       "authors": [
-        "KR Jerome",
-        "ML Huang",
-        "A Wald",
-        "S Selke",
-        "L Corey"
+        {
+          "group-type": "author",
+          "name": "KR Jerome"
+        },
+        {
+          "group-type": "author",
+          "name": "ML Huang"
+        },
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JCM.40.7.2609-2611.2002",
       "source": "J Clin Microbiol",
@@ -895,11 +1047,26 @@
       "id": "bib14",
       "title": "Mutations that decrease DNA binding of the processivity factor of the herpes simplex virus DNA polymerase reduce viral yield, alter the kinetics of viral DNA replication, and decrease the fidelity of DNA replication",
       "authors": [
-        "C Jiang",
-        "YT Hwang",
-        "JC Randell",
-        "DM Coen",
-        "CB Hwang"
+        {
+          "group-type": "author",
+          "name": "C Jiang"
+        },
+        {
+          "group-type": "author",
+          "name": "YT Hwang"
+        },
+        {
+          "group-type": "author",
+          "name": "JC Randell"
+        },
+        {
+          "group-type": "author",
+          "name": "DM Coen"
+        },
+        {
+          "group-type": "author",
+          "name": "CB Hwang"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.02359-06",
       "source": "J Virol",
@@ -912,11 +1079,26 @@
       "id": "bib15",
       "title": "Herpes simplex virus mutants with multiple substitutions affecting DNA binding of UL42 are impaired for viral replication and DNA synthesis",
       "authors": [
-        "C Jiang",
-        "YT Hwang",
-        "G Wang",
-        "JC Randell",
-        "DM Coen"
+        {
+          "group-type": "author",
+          "name": "C Jiang"
+        },
+        {
+          "group-type": "author",
+          "name": "YT Hwang"
+        },
+        {
+          "group-type": "author",
+          "name": "G Wang"
+        },
+        {
+          "group-type": "author",
+          "name": "JC Randell"
+        },
+        {
+          "group-type": "author",
+          "name": "DM Coen"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.01133-07",
       "source": "J Virol",
@@ -929,11 +1111,26 @@
       "id": "bib16",
       "title": "Optimizing PCR positivity criterion for detection of herpes simplex virus DNA on skin and mucosa",
       "authors": [
-        "A Magaret",
-        "A Wald",
-        "M Huang",
-        "S Selke",
-        "L Corey"
+        {
+          "group-type": "author",
+          "name": "A Magaret"
+        },
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "M Huang"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JCM.01405-06",
       "source": "J Clin Microbiol",
@@ -946,10 +1143,22 @@
       "id": "bib17",
       "title": "A methodology for performing global uncertainty and sensitivity analysis in systems biology",
       "authors": [
-        "S Marino",
-        "IB Hogue",
-        "CJ Ray",
-        "DE Kirschner"
+        {
+          "group-type": "author",
+          "name": "S Marino"
+        },
+        {
+          "group-type": "author",
+          "name": "IB Hogue"
+        },
+        {
+          "group-type": "author",
+          "name": "CJ Ray"
+        },
+        {
+          "group-type": "author",
+          "name": "DE Kirschner"
+        }
       ],
       "doi": "http://dx.doi.org/10.1016/j.jtbi.2008.04.011",
       "source": "J Theor Biol",
@@ -962,12 +1171,30 @@
       "id": "bib18",
       "title": "Rapidly cleared episodes of herpes simplex virus reactivation in immunocompetent adults",
       "authors": [
-        "KE Mark",
-        "A Wald",
-        "AS Magaret",
-        "S Selke",
-        "L Olin",
-        "ML Huang"
+        {
+          "group-type": "author",
+          "name": "KE Mark"
+        },
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "AS Magaret"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "L Olin"
+        },
+        {
+          "group-type": "author",
+          "name": "ML Huang"
+        }
       ],
       "doi": "http://dx.doi.org/10.1086/591913",
       "source": "J Infect Dis",
@@ -980,12 +1207,30 @@
       "id": "bib19",
       "title": "Frequency of acquisition of first-episode genital infection with herpes simplex virus from symptomatic and asymptomatic source contacts",
       "authors": [
-        "GJ Mertz",
-        "O Schmidt",
-        "JL Jourden",
-        "ME Guinan",
-        "ML Remington",
-        "A Fahnlander"
+        {
+          "group-type": "author",
+          "name": "GJ Mertz"
+        },
+        {
+          "group-type": "author",
+          "name": "O Schmidt"
+        },
+        {
+          "group-type": "author",
+          "name": "JL Jourden"
+        },
+        {
+          "group-type": "author",
+          "name": "ME Guinan"
+        },
+        {
+          "group-type": "author",
+          "name": "ML Remington"
+        },
+        {
+          "group-type": "author",
+          "name": "A Fahnlander"
+        }
       ],
       "doi": "http://dx.doi.org/10.1097/00007435-198501000-00007",
       "source": "Sex Transm Dis",
@@ -998,12 +1243,30 @@
       "id": "bib20",
       "title": "Transmission of genital herpes in couples with one symptomatic and one asymptomatic partner: a prospective study",
       "authors": [
-        "GJ Mertz",
-        "RW Coombs",
-        "R Ashley",
-        "J Jourden",
-        "M Remington",
-        "C Winter"
+        {
+          "group-type": "author",
+          "name": "GJ Mertz"
+        },
+        {
+          "group-type": "author",
+          "name": "RW Coombs"
+        },
+        {
+          "group-type": "author",
+          "name": "R Ashley"
+        },
+        {
+          "group-type": "author",
+          "name": "J Jourden"
+        },
+        {
+          "group-type": "author",
+          "name": "M Remington"
+        },
+        {
+          "group-type": "author",
+          "name": "C Winter"
+        }
       ],
       "doi": "http://dx.doi.org/10.1093/infdis/157.6.1169",
       "source": "J Infect Dis",
@@ -1016,11 +1279,26 @@
       "id": "bib21",
       "title": "HIV-1 dynamics in vivo: virion clearance rate, infected cell life-span, and viral generation time",
       "authors": [
-        "A Perelson",
-        "A Neumann",
-        "M Markowitz",
-        "J Leonard",
-        "D Ho"
+        {
+          "group-type": "author",
+          "name": "A Perelson"
+        },
+        {
+          "group-type": "author",
+          "name": "A Neumann"
+        },
+        {
+          "group-type": "author",
+          "name": "M Markowitz"
+        },
+        {
+          "group-type": "author",
+          "name": "J Leonard"
+        },
+        {
+          "group-type": "author",
+          "name": "D Ho"
+        }
       ],
       "doi": "http://dx.doi.org/10.1126/science.271.5255.1582",
       "source": "Science",
@@ -1033,12 +1311,30 @@
       "id": "bib22",
       "title": "Estimation of the initial viral growth rate and basic reproductive number during acute HIV-1 infection",
       "authors": [
-        "RM Ribeiro",
-        "L Qin",
-        "LL Chavez",
-        "D Li",
-        "SG Self",
-        "AS Perelson"
+        {
+          "group-type": "author",
+          "name": "RM Ribeiro"
+        },
+        {
+          "group-type": "author",
+          "name": "L Qin"
+        },
+        {
+          "group-type": "author",
+          "name": "LL Chavez"
+        },
+        {
+          "group-type": "author",
+          "name": "D Li"
+        },
+        {
+          "group-type": "author",
+          "name": "SG Self"
+        },
+        {
+          "group-type": "author",
+          "name": "AS Perelson"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.00127-10",
       "source": "J Virol",
@@ -1051,25 +1347,54 @@
       "id": "bib23",
       "title": "Herpes simplex viruses and their replication",
       "authors": [
-        "BKD Roizman"
+        {
+          "group-type": "author",
+          "name": "BKD Roizman"
+        },
+        {
+          "group-type": "editor",
+          "name": "DM Knipe"
+        },
+        {
+          "group-type": "editor",
+          "name": "PM Howley"
+        },
+        {
+          "group-type": "editor",
+          "name": "DE Griffin"
+        },
+        {
+          "group-type": "editor",
+          "name": "MA Martin"
+        },
+        {
+          "group-type": "editor",
+          "name": "RA Lamb"
+        },
+        {
+          "group-type": "editor",
+          "name": "SE Straus"
+        }
       ],
-      "doi": "",
       "source": "Fields Virology",
-      "volume": "",
-      "fpage": "",
-      "lpage": "",
-      "publisher_location": "Philadelphia",
-      "publisher_name": "Lippincott Williams & Wilkins",
+      "edition": "5th ed",
+      "publisher-loc": "Philadelphia",
+      "publisher-name": "Lippincott Williams & Wilkins",
       "year": "2007"
     },
     {
       "id": "bib24",
       "title": "Deletion mutants in the gene encoding the herpes simplex virus type 1 immediate-early protein ICP0 exhibit impaired growth in cell culture",
       "authors": [
-        "WR Sacks",
-        "PA Schaffer"
+        {
+          "group-type": "author",
+          "name": "WR Sacks"
+        },
+        {
+          "group-type": "author",
+          "name": "PA Schaffer"
+        }
       ],
-      "doi": "",
       "source": "J Virol",
       "volume": "61",
       "fpage": "829",
@@ -1080,12 +1405,30 @@
       "id": "bib25",
       "title": "Frequent release of low amounts of herpes simplex virus from neurons: results of a mathematical model",
       "authors": [
-        "JT Schiffer",
-        "L Abu-Raddad",
-        "K Mark",
-        "J Zhu",
-        "S Selke",
-        "A Magaret"
+        {
+          "group-type": "author",
+          "name": "JT Schiffer"
+        },
+        {
+          "group-type": "author",
+          "name": "L Abu-Raddad"
+        },
+        {
+          "group-type": "author",
+          "name": "K Mark"
+        },
+        {
+          "group-type": "author",
+          "name": "J Zhu"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "A Magaret"
+        }
       ],
       "doi": "http://dx.doi.org/10.1126/scitranslmed.3000193",
       "source": "Sci Transl Med",
@@ -1098,12 +1441,30 @@
       "id": "bib26",
       "title": "Mucosal host immune response predicts the severity and duration of herpes simplex virus-2 genital tract shedding episodes",
       "authors": [
-        "JT Schiffer",
-        "L Abu-Raddad",
-        "KE Mark",
-        "J Zhu",
-        "S Selke",
-        "DM Koelle"
+        {
+          "group-type": "author",
+          "name": "JT Schiffer"
+        },
+        {
+          "group-type": "author",
+          "name": "L Abu-Raddad"
+        },
+        {
+          "group-type": "author",
+          "name": "KE Mark"
+        },
+        {
+          "group-type": "author",
+          "name": "J Zhu"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "DM Koelle"
+        }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.1006614107",
       "source": "Proc Natl Acad Sci USA",
@@ -1116,11 +1477,26 @@
       "id": "bib27",
       "title": "Detailed analysis of mucosal herpes simplex virus-2 replication kinetics with and without antiviral therapy",
       "authors": [
-        "JT Schiffer",
-        "A Magaret",
-        "S Selke",
-        "L Corey",
-        "A Wald"
+        {
+          "group-type": "author",
+          "name": "JT Schiffer"
+        },
+        {
+          "group-type": "author",
+          "name": "A Magaret"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        },
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        }
       ],
       "doi": "http://dx.doi.org/10.1093/jac/dkr346",
       "source": "J Antimicrob Chemother",
@@ -1133,11 +1509,26 @@
       "id": "bib28",
       "title": "The kinetics of mucosal herpes simplex virus-2 infection in humans: evidence for rapid viral-host interactions",
       "authors": [
-        "JT Schiffer",
-        "A Wald",
-        "S Selke",
-        "L Corey",
-        "A Magaret"
+        {
+          "group-type": "author",
+          "name": "JT Schiffer"
+        },
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        },
+        {
+          "group-type": "author",
+          "name": "A Magaret"
+        }
       ],
       "doi": "http://dx.doi.org/10.1093/infdis/jir314",
       "source": "J Infect Dis",
@@ -1150,26 +1541,47 @@
       "id": "bib29",
       "title": "A vaccine strategy that protects against genital herpes by establishing local memory T cells",
       "authors": [
-        "H Shin",
-        "A Iwasaki"
+        {
+          "group-type": "author",
+          "name": "H Shin"
+        },
+        {
+          "group-type": "author",
+          "name": "A Iwasaki"
+        }
       ],
       "doi": "http://dx.doi.org/10.1038/nature11522",
       "source": "Nature",
-      "volume": "",
-      "fpage": "",
-      "lpage": "",
       "year": "2012"
     },
     {
       "id": "bib30",
       "title": "The natural history of recurrent herpes simplex labialis: implications for antiviral therapy",
       "authors": [
-        "SL Spruance",
-        "JC Overall, Jnr",
-        "ER Kern",
-        "GG Krueger",
-        "V Pliam",
-        "W Miller"
+        {
+          "group-type": "author",
+          "name": "SL Spruance"
+        },
+        {
+          "group-type": "author",
+          "name": "JC Overall, Jnr"
+        },
+        {
+          "group-type": "author",
+          "name": "ER Kern"
+        },
+        {
+          "group-type": "author",
+          "name": "GG Krueger"
+        },
+        {
+          "group-type": "author",
+          "name": "V Pliam"
+        },
+        {
+          "group-type": "author",
+          "name": "W Miller"
+        }
       ],
       "doi": "http://dx.doi.org/10.1056/NEJM197707142970201",
       "source": "N Engl J Med",
@@ -1182,14 +1594,31 @@
       "id": "bib31",
       "title": "Pathogenesis of herpes simplex labialis: correlation of vesicle fluid interferon with lesion age and virus titer",
       "authors": [
-        "SL Spruance",
-        "JA Green",
-        "G Chiu",
-        "TJ Yeh",
-        "G Wenerstrom",
-        "JC Overall, Jr"
+        {
+          "group-type": "author",
+          "name": "SL Spruance"
+        },
+        {
+          "group-type": "author",
+          "name": "JA Green"
+        },
+        {
+          "group-type": "author",
+          "name": "G Chiu"
+        },
+        {
+          "group-type": "author",
+          "name": "TJ Yeh"
+        },
+        {
+          "group-type": "author",
+          "name": "G Wenerstrom"
+        },
+        {
+          "group-type": "author",
+          "name": "JC Overall, Jr"
+        }
       ],
-      "doi": "",
       "source": "Infect Immun",
       "volume": "36",
       "fpage": "907",
@@ -1200,12 +1629,30 @@
       "id": "bib32",
       "title": "Broadly targeted human cytomegalovirus-specific CD4+ and CD8+ T cells dominate the memory compartments of exposed subjects",
       "authors": [
-        "AW Sylwester",
-        "BL Mitchell",
-        "JB Edgar",
-        "C Taormina",
-        "C Pelte",
-        "F Ruchti"
+        {
+          "group-type": "author",
+          "name": "AW Sylwester"
+        },
+        {
+          "group-type": "author",
+          "name": "BL Mitchell"
+        },
+        {
+          "group-type": "author",
+          "name": "JB Edgar"
+        },
+        {
+          "group-type": "author",
+          "name": "C Taormina"
+        },
+        {
+          "group-type": "author",
+          "name": "C Pelte"
+        },
+        {
+          "group-type": "author",
+          "name": "F Ruchti"
+        }
       ],
       "doi": "http://dx.doi.org/10.1084/jem.20050882",
       "source": "J Exp Med",
@@ -1218,12 +1665,30 @@
       "id": "bib33",
       "title": "Overlapping reactivations of herpes simplex virus type 2 in the genital and perianal mucosa",
       "authors": [
-        "S Tata",
-        "C Johnston",
-        "ML Huang",
-        "S Selke",
-        "A Magaret",
-        "L Corey"
+        {
+          "group-type": "author",
+          "name": "S Tata"
+        },
+        {
+          "group-type": "author",
+          "name": "C Johnston"
+        },
+        {
+          "group-type": "author",
+          "name": "ML Huang"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "A Magaret"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        }
       ],
       "doi": "http://dx.doi.org/10.1086/650302",
       "source": "J Infect Dis",
@@ -1236,12 +1701,23 @@
       "id": "bib34",
       "title": "Shedding and survival of herpes simplex virus from â€˜fever blistersâ€™",
       "authors": [
-        "R Turner",
-        "Z Shehab",
-        "K Osborne",
-        "JO Hendley"
+        {
+          "group-type": "author",
+          "name": "R Turner"
+        },
+        {
+          "group-type": "author",
+          "name": "Z Shehab"
+        },
+        {
+          "group-type": "author",
+          "name": "K Osborne"
+        },
+        {
+          "group-type": "author",
+          "name": "JO Hendley"
+        }
       ],
-      "doi": "",
       "source": "Pediatrics",
       "volume": "70",
       "fpage": "547",
@@ -1252,12 +1728,30 @@
       "id": "bib35",
       "title": "Selective retention of herpes simplex virus-specific T cells in latently infected human trigeminal ganglia",
       "authors": [
-        "GM Verjans",
-        "RQ Hintzen",
-        "JM van Dun",
-        "A Poot",
-        "JC Milikan",
-        "JD Laman"
+        {
+          "group-type": "author",
+          "name": "GM Verjans"
+        },
+        {
+          "group-type": "author",
+          "name": "RQ Hintzen"
+        },
+        {
+          "group-type": "author",
+          "name": "JM van Dun"
+        },
+        {
+          "group-type": "author",
+          "name": "A Poot"
+        },
+        {
+          "group-type": "author",
+          "name": "JC Milikan"
+        },
+        {
+          "group-type": "author",
+          "name": "JD Laman"
+        }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.0610847104",
       "source": "Proc Natl Acad Sci USA",
@@ -1270,11 +1764,26 @@
       "id": "bib36",
       "title": "Virologic characteristics of subclinical and symptomatic genital herpes infections",
       "authors": [
-        "A Wald",
-        "J Zeh",
-        "S Selke",
-        "RL Ashley",
-        "L Corey"
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "J Zeh"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "RL Ashley"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        }
       ],
       "doi": "http://dx.doi.org/10.1056/NEJM199509213331205",
       "source": "N Engl J Med",
@@ -1287,12 +1796,30 @@
       "id": "bib37",
       "title": "Frequent genital herpes simplex virus 2 shedding in immunocompetent women. Effect of acyclovir treatment",
       "authors": [
-        "A Wald",
-        "L Corey",
-        "R Cone",
-        "A Hobson",
-        "G Davis",
-        "J Zeh"
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "L Corey"
+        },
+        {
+          "group-type": "author",
+          "name": "R Cone"
+        },
+        {
+          "group-type": "author",
+          "name": "A Hobson"
+        },
+        {
+          "group-type": "author",
+          "name": "G Davis"
+        },
+        {
+          "group-type": "author",
+          "name": "J Zeh"
+        }
       ],
       "doi": "http://dx.doi.org/10.1172/JCI119237",
       "source": "J Clin Invest",
@@ -1305,12 +1832,30 @@
       "id": "bib38",
       "title": "Reactivation of genital herpes simplex virus type 2 infection in asymptomatic seropositive persons",
       "authors": [
-        "A Wald",
-        "J Zeh",
-        "S Selke",
-        "T Warren",
-        "A Ryncarz",
-        "R Ashley"
+        {
+          "group-type": "author",
+          "name": "A Wald"
+        },
+        {
+          "group-type": "author",
+          "name": "J Zeh"
+        },
+        {
+          "group-type": "author",
+          "name": "S Selke"
+        },
+        {
+          "group-type": "author",
+          "name": "T Warren"
+        },
+        {
+          "group-type": "author",
+          "name": "A Ryncarz"
+        },
+        {
+          "group-type": "author",
+          "name": "R Ashley"
+        }
       ],
       "doi": "http://dx.doi.org/10.1056/NEJM200003233421203",
       "source": "N Engl J Med",
@@ -1323,11 +1868,26 @@
       "id": "bib39",
       "title": "Laser-capture microdissection: refining estimates of the quantity and distribution of latent herpes simplex virus 1 and varicella-zoster virus DNA in human trigeminal Ganglia at the single-cell level",
       "authors": [
-        "K Wang",
-        "T Lau",
-        "M Morales",
-        "E Mont",
-        "S Straus"
+        {
+          "group-type": "author",
+          "name": "K Wang"
+        },
+        {
+          "group-type": "author",
+          "name": "T Lau"
+        },
+        {
+          "group-type": "author",
+          "name": "M Morales"
+        },
+        {
+          "group-type": "author",
+          "name": "E Mont"
+        },
+        {
+          "group-type": "author",
+          "name": "S Straus"
+        }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.79.22.14079-14087.2005",
       "source": "J Virol",
@@ -1340,12 +1900,30 @@
       "id": "bib40",
       "title": "Virus-specific CD8+ T cells accumulate near sensory nerve endings in genital skin during subclinical HSV-2 reactivation",
       "authors": [
-        "J Zhu",
-        "D Koelle",
-        "J Cao",
-        "J Vazquez",
-        "M Huang",
-        "F Hladik"
+        {
+          "group-type": "author",
+          "name": "J Zhu"
+        },
+        {
+          "group-type": "author",
+          "name": "D Koelle"
+        },
+        {
+          "group-type": "author",
+          "name": "J Cao"
+        },
+        {
+          "group-type": "author",
+          "name": "J Vazquez"
+        },
+        {
+          "group-type": "author",
+          "name": "M Huang"
+        },
+        {
+          "group-type": "author",
+          "name": "F Hladik"
+        }
       ],
       "doi": "http://dx.doi.org/10.1084/jem.20061792",
       "source": "J Exp Med",
@@ -1358,12 +1936,30 @@
       "id": "bib41",
       "title": "Persistence of HIV-1 receptor-positive cells after HSV-2 reactivation is a potential mechanism for increased HIV-1 acquisition",
       "authors": [
-        "J Zhu",
-        "F Hladik",
-        "A Woodward",
-        "A Klock",
-        "T Peng",
-        "C Johnston"
+        {
+          "group-type": "author",
+          "name": "J Zhu"
+        },
+        {
+          "group-type": "author",
+          "name": "F Hladik"
+        },
+        {
+          "group-type": "author",
+          "name": "A Woodward"
+        },
+        {
+          "group-type": "author",
+          "name": "A Klock"
+        },
+        {
+          "group-type": "author",
+          "name": "T Peng"
+        },
+        {
+          "group-type": "author",
+          "name": "C Johnston"
+        }
       ],
       "doi": "http://dx.doi.org/10.1038/nm.2006",
       "source": "Nat Med",

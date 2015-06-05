@@ -44,7 +44,7 @@ class TestScraperResults(unittest.TestCase):
                                    % (path, type(generated), type(reference)))
                 return
             elif len(generated) != len(reference):
-                self.error.append("Generated list at %s is different length (%i) to reference (%i)"
+                self.errors.append("Generated list at %s is different length (%i) to reference (%i)"
                                   % (path, len(generated), len(reference)))
                 return
             else:
@@ -60,13 +60,16 @@ class TestScraperResults(unittest.TestCase):
                 return
             elif set(reference.keys()) != set(generated.keys()):
                 self.errors.append("Dictionaries at %s have different keys" % path)
-                return
-            else:
-                for key in reference.keys():
-                    new_path = path + "/" + str(key)
-                    new_reference_element = reference[key]
+
+            for key in reference.keys():
+                new_path = path + "/" + str(key)
+                new_reference_element = reference[key]
+                if key in generated:
                     new_generated_element = generated[key]
                     self.compare(new_path, new_generated_element, new_reference_element)
+                else:
+                    self.errors.append("Dictionary at %s doesn't have key %s" % (path, key))
+
         else:
             if not (generated == reference):
                 self.errors.append("Generated element %s at %s doesn't match reference %s"
