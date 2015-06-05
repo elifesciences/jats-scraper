@@ -176,13 +176,13 @@ def fragment_path_token(fragment_type, ordinal):
 def fragment_path(fragment, volume, manuscript_id):
     path = "content/" + str(volume) + '/e' + manuscript_id
 
-    if fragment.get('parent_type'):
-        path += "/" + fragment_path_token(fragment.get('parent_type'),
-                                 fragment.get('parent_ordinal'))
-
     if fragment.get('parent_parent_type'):
         path += "/" + fragment_path_token(fragment.get('parent_parent_type'),
                                  fragment.get('parent_parent_ordinal'))
+
+    if fragment.get('parent_type'):
+        path += "/" + fragment_path_token(fragment.get('parent_type'),
+                                 fragment.get('parent_ordinal'))
 
     path += "/" + fragment_path_token(fragment.get('type'),
                        fragment.get('ordinal'))
