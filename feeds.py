@@ -203,7 +203,9 @@ def component_fragment(component, volume):
     if not fragment['doi'].startswith('10.7554/'):
         return None
 
-    if component.get('full_label'):
+    if fragment['type'] == 'sub-article' and component.get('full_title'):
+        fragment['title'] = component.get('full_title')
+    elif fragment['type'] != 'sub-article' and component.get('full_label'):
         fragment['title'] = component.get('full_label')
 
     parent_properties = ['parent_type', 'parent_ordinal',
