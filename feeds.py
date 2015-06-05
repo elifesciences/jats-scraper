@@ -200,7 +200,7 @@ def component_fragment(component, volume):
     fragment['ordinal'] = component.get('ordinal')
 
     # Quick test for eLife component DOI only
-    if not fragment['doi'].startswith('10.7554'):
+    if not fragment['doi'].startswith('10.7554/'):
         return None
 
     if component.get('full_label'):
