@@ -12,7 +12,7 @@ from elifetools import parseJATS as parser
 from scraper.utils import fattrs
 import re
 
-_VERSION = 1  # TODO change all uses of this to get article version information from ?
+_VERSION = "1"  # TODO change all uses of this to get article version information from ?
 
 FORMAT = logging.Formatter("%(created)f - %(levelname)s - %(processName)s - %(name)s - %(message)s")
 LOGFILE = "%s.log" % __file__
@@ -154,17 +154,17 @@ DESCRIPTION = [
     ('article', {
         'iterable': article_list,
         'attrs': {
-            'journal_id': 'this.journal_id',
-            'journal_title': 'this.journal_title',
-            'eissn': 'issn_electronic',
+            #'journal_id': 'this.journal_id',
+            #'journal_title': 'this.journal_title',
+            #'eissn': 'issn_electronic',
             #'journal_issn': 'unsupported',  # TODO issue with params for 'issn_electronic',
             'title': ('this.title', None, tidy_whitespace),
             #'impact-statement': 'unsupported',  # TODO custom-meta-group
             'version': 'version',
             'doi': 'this.doi',
-            'publish': ('1', 1, int),  # 1 or 0 means publish immediately or don't publish immediately
-            'force': ('1', 1, int), # overwrite if present
-            'volume': ('this.volume', 0, int),
+            'publish': ('"1"', "1", str),  # 1 or 0 means publish immediately or don't publish immediately
+            'force': ('"1"', "1", str),  # overwrite if present
+            'volume': ('this.volume', "0", str),
             'article-id': 'this.doi',
             'article-version-id': 'article_full_version',
             'pub-date': ('this.pub_date', None, lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%d")),
