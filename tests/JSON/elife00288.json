@@ -661,10 +661,9 @@
         "title": "Table 6.",
         "doi": "10.7554/eLife.00288.041",
         "path": "content/2/e00288/T6"
-      }
-    ],
-    "sub-article": [
+      },
       {
+        "type": "sub-article",
         "title": "Decision letter",
         "doi": "10.7554/eLife.00288.042",
         "path": "content/2/e00288/1",
@@ -682,15 +681,15 @@
         ]
       },
       {
+        "type": "sub-article",
         "title": "Author response",
         "doi": "10.7554/eLife.00288.043",
         "path": "content/2/e00288/2"
       }
     ]
   },
-  "citations": [
-    {
-      "id": "bib1",
+  "citations": {
+    "bib1": {
       "title": "Agent-based modeling of host-pathogen systems: the successes and challenges",
       "authors": [
         {
@@ -707,14 +706,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1016/j.ins.2008.11.012",
-      "source": "Inf Sci (Ny)",
-      "volume": "179",
-      "fpage": "1379",
-      "lpage": "89",
       "year": "2009"
     },
-    {
-      "id": "bib2",
+    "bib2": {
       "title": "Modeling the mechanisms of acute hepatitis B virus infection",
       "authors": [
         {
@@ -735,14 +729,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1016/j.jtbi.2007.02.017",
-      "source": "J Theor Biol",
-      "volume": "247",
-      "fpage": "23",
-      "lpage": "35",
       "year": "2007"
     },
-    {
-      "id": "bib3",
+    "bib3": {
       "title": "Herpes simplex virus gE/gI expressed in epithelial cells interferes with cell-to-cell spread",
       "authors": [
         {
@@ -755,14 +744,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.77.4.2686-2695.2003",
-      "source": "J Virol",
-      "volume": "77",
-      "fpage": "2686",
-      "lpage": "95",
       "year": "2003"
     },
-    {
-      "id": "bib4",
+    "bib4": {
       "title": "Genital herpes simplex virus infections: clinical manifestations, course, and complications",
       "authors": [
         {
@@ -782,14 +766,9 @@
           "name": "KK Holmes"
         }
       ],
-      "source": "Ann Intern Med",
-      "volume": "98",
-      "fpage": "958",
-      "lpage": "72",
       "year": "1983"
     },
-    {
-      "id": "bib5",
+    "bib5": {
       "title": "Longitudinal study of herpes simplex virus type 2 infection using viral dynamic modelling",
       "authors": [
         {
@@ -814,14 +793,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1136/sti.2006.022020",
-      "source": "Sex Transm Infect",
-      "volume": "83",
-      "fpage": "359",
-      "lpage": "64",
       "year": "2007"
     },
-    {
-      "id": "bib6",
+    "bib6": {
       "title": "Evolution of recurrent herpes simplex lesions. An immunohistologic study",
       "authors": [
         {
@@ -846,14 +820,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1172/JCI111678",
-      "source": "J Clin Invest",
-      "volume": "75",
-      "fpage": "226",
-      "lpage": "33",
       "year": "1985"
     },
-    {
-      "id": "bib7",
+    "bib7": {
       "title": "Different dynamics of CD4+ and CD8+ T cell responses during and after acute lymphocytic choriomeningitis virus infection",
       "authors": [
         {
@@ -869,14 +838,9 @@
           "name": "AS Perelson"
         }
       ],
-      "source": "J Immunol",
-      "volume": "171",
-      "fpage": "3928",
-      "lpage": "35",
       "year": "2003"
     },
-    {
-      "id": "bib8",
+    "bib8": {
       "title": "Repulsion of superinfecting virions: a mechanism for rapid virus spread",
       "authors": [
         {
@@ -897,14 +861,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1126/science.1183173",
-      "source": "Science",
-      "volume": "327",
-      "fpage": "873",
-      "lpage": "6",
       "year": "2010"
     },
-    {
-      "id": "bib9",
+    "bib9": {
       "title": "Herpes simplex virus gE/gI must accumulate in the trans-Golgi network at early times and then redistribute to cell junctions to promote cell-cell spread",
       "authors": [
         {
@@ -917,14 +876,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.80.7.3167-3179.2006",
-      "source": "J Virol",
-      "volume": "80",
-      "fpage": "3167",
-      "lpage": "79",
       "year": "2006"
     },
-    {
-      "id": "bib10",
+    "bib10": {
       "title": "Factors that make an infectious disease outbreak controllable",
       "authors": [
         {
@@ -945,14 +899,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.0307506101",
-      "source": "Proc Natl Acad Sci USA",
-      "volume": "101",
-      "fpage": "6146",
-      "lpage": "51",
       "year": "2004"
     },
-    {
-      "id": "bib11",
+    "bib11": {
       "title": "Memory T cells in nonlymphoid tissue that provide enhanced local immunity during infection with herpes simplex virus",
       "authors": [
         {
@@ -981,14 +930,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1038/ni.1718",
-      "source": "Nat Immunol",
-      "volume": "10",
-      "fpage": "524",
-      "lpage": "30",
       "year": "2009"
     },
-    {
-      "id": "bib12",
+    "bib12": {
       "title": "Inference for nonlinear dynamical systems",
       "authors": [
         {
@@ -1005,14 +949,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.0603181103",
-      "source": "Proc Natl Acad Sci USA",
-      "volume": "103",
-      "fpage": "18438",
-      "lpage": "43",
       "year": "2006"
     },
-    {
-      "id": "bib13",
+    "bib13": {
       "title": "Quantitative stability of DNA after extended storage of clinical specimens as determined by real-time PCR",
       "authors": [
         {
@@ -1037,14 +976,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JCM.40.7.2609-2611.2002",
-      "source": "J Clin Microbiol",
-      "volume": "40",
-      "fpage": "2609",
-      "lpage": "11",
       "year": "2002"
     },
-    {
-      "id": "bib14",
+    "bib14": {
       "title": "Mutations that decrease DNA binding of the processivity factor of the herpes simplex virus DNA polymerase reduce viral yield, alter the kinetics of viral DNA replication, and decrease the fidelity of DNA replication",
       "authors": [
         {
@@ -1069,14 +1003,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.02359-06",
-      "source": "J Virol",
-      "volume": "81",
-      "fpage": "3495",
-      "lpage": "502",
       "year": "2007a"
     },
-    {
-      "id": "bib15",
+    "bib15": {
       "title": "Herpes simplex virus mutants with multiple substitutions affecting DNA binding of UL42 are impaired for viral replication and DNA synthesis",
       "authors": [
         {
@@ -1101,14 +1030,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.01133-07",
-      "source": "J Virol",
-      "volume": "81",
-      "fpage": "12077",
-      "lpage": "9",
       "year": "2007b"
     },
-    {
-      "id": "bib16",
+    "bib16": {
       "title": "Optimizing PCR positivity criterion for detection of herpes simplex virus DNA on skin and mucosa",
       "authors": [
         {
@@ -1133,14 +1057,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JCM.01405-06",
-      "source": "J Clin Microbiol",
-      "volume": "45",
-      "fpage": "1618",
-      "lpage": "20",
       "year": "2007"
     },
-    {
-      "id": "bib17",
+    "bib17": {
       "title": "A methodology for performing global uncertainty and sensitivity analysis in systems biology",
       "authors": [
         {
@@ -1161,14 +1080,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1016/j.jtbi.2008.04.011",
-      "source": "J Theor Biol",
-      "volume": "254",
-      "fpage": "178",
-      "lpage": "96",
       "year": "2008"
     },
-    {
-      "id": "bib18",
+    "bib18": {
       "title": "Rapidly cleared episodes of herpes simplex virus reactivation in immunocompetent adults",
       "authors": [
         {
@@ -1197,14 +1111,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1086/591913",
-      "source": "J Infect Dis",
-      "volume": "198",
-      "fpage": "1141",
-      "lpage": "9",
       "year": "2008"
     },
-    {
-      "id": "bib19",
+    "bib19": {
       "title": "Frequency of acquisition of first-episode genital infection with herpes simplex virus from symptomatic and asymptomatic source contacts",
       "authors": [
         {
@@ -1233,14 +1142,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1097/00007435-198501000-00007",
-      "source": "Sex Transm Dis",
-      "volume": "12",
-      "fpage": "33",
-      "lpage": "9",
       "year": "1985"
     },
-    {
-      "id": "bib20",
+    "bib20": {
       "title": "Transmission of genital herpes in couples with one symptomatic and one asymptomatic partner: a prospective study",
       "authors": [
         {
@@ -1269,14 +1173,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1093/infdis/157.6.1169",
-      "source": "J Infect Dis",
-      "volume": "157",
-      "fpage": "1169",
-      "lpage": "77",
       "year": "1988"
     },
-    {
-      "id": "bib21",
+    "bib21": {
       "title": "HIV-1 dynamics in vivo: virion clearance rate, infected cell life-span, and viral generation time",
       "authors": [
         {
@@ -1301,14 +1200,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1126/science.271.5255.1582",
-      "source": "Science",
-      "volume": "271",
-      "fpage": "1582",
-      "lpage": "6",
       "year": "1996"
     },
-    {
-      "id": "bib22",
+    "bib22": {
       "title": "Estimation of the initial viral growth rate and basic reproductive number during acute HIV-1 infection",
       "authors": [
         {
@@ -1337,14 +1231,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.00127-10",
-      "source": "J Virol",
-      "volume": "84",
-      "fpage": "6096",
-      "lpage": "102",
       "year": "2010"
     },
-    {
-      "id": "bib23",
+    "bib23": {
       "title": "Herpes simplex viruses and their replication",
       "authors": [
         {
@@ -1376,14 +1265,9 @@
           "name": "SE Straus"
         }
       ],
-      "source": "Fields Virology",
-      "edition": "5th ed",
-      "publisher-loc": "Philadelphia",
-      "publisher-name": "Lippincott Williams & Wilkins",
       "year": "2007"
     },
-    {
-      "id": "bib24",
+    "bib24": {
       "title": "Deletion mutants in the gene encoding the herpes simplex virus type 1 immediate-early protein ICP0 exhibit impaired growth in cell culture",
       "authors": [
         {
@@ -1395,14 +1279,9 @@
           "name": "PA Schaffer"
         }
       ],
-      "source": "J Virol",
-      "volume": "61",
-      "fpage": "829",
-      "lpage": "39",
       "year": "1987"
     },
-    {
-      "id": "bib25",
+    "bib25": {
       "title": "Frequent release of low amounts of herpes simplex virus from neurons: results of a mathematical model",
       "authors": [
         {
@@ -1431,14 +1310,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1126/scitranslmed.3000193",
-      "source": "Sci Transl Med",
-      "volume": "1",
-      "fpage": "1",
-      "lpage": "9",
       "year": "2009"
     },
-    {
-      "id": "bib26",
+    "bib26": {
       "title": "Mucosal host immune response predicts the severity and duration of herpes simplex virus-2 genital tract shedding episodes",
       "authors": [
         {
@@ -1467,14 +1341,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.1006614107",
-      "source": "Proc Natl Acad Sci USA",
-      "volume": "107",
-      "fpage": "18973",
-      "lpage": "8",
       "year": "2010"
     },
-    {
-      "id": "bib27",
+    "bib27": {
       "title": "Detailed analysis of mucosal herpes simplex virus-2 replication kinetics with and without antiviral therapy",
       "authors": [
         {
@@ -1499,14 +1368,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1093/jac/dkr346",
-      "source": "J Antimicrob Chemother",
-      "volume": "66",
-      "fpage": "2593",
-      "lpage": "600",
       "year": "2011a"
     },
-    {
-      "id": "bib28",
+    "bib28": {
       "title": "The kinetics of mucosal herpes simplex virus-2 infection in humans: evidence for rapid viral-host interactions",
       "authors": [
         {
@@ -1531,14 +1395,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1093/infdis/jir314",
-      "source": "J Infect Dis",
-      "volume": "204",
-      "fpage": "554",
-      "lpage": "61",
       "year": "2011b"
     },
-    {
-      "id": "bib29",
+    "bib29": {
       "title": "A vaccine strategy that protects against genital herpes by establishing local memory T cells",
       "authors": [
         {
@@ -1551,11 +1410,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1038/nature11522",
-      "source": "Nature",
       "year": "2012"
     },
-    {
-      "id": "bib30",
+    "bib30": {
       "title": "The natural history of recurrent herpes simplex labialis: implications for antiviral therapy",
       "authors": [
         {
@@ -1584,14 +1441,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1056/NEJM197707142970201",
-      "source": "N Engl J Med",
-      "volume": "297",
-      "fpage": "69",
-      "lpage": "75",
       "year": "1977"
     },
-    {
-      "id": "bib31",
+    "bib31": {
       "title": "Pathogenesis of herpes simplex labialis: correlation of vesicle fluid interferon with lesion age and virus titer",
       "authors": [
         {
@@ -1619,14 +1471,9 @@
           "name": "JC Overall, Jr"
         }
       ],
-      "source": "Infect Immun",
-      "volume": "36",
-      "fpage": "907",
-      "lpage": "10",
       "year": "1982"
     },
-    {
-      "id": "bib32",
+    "bib32": {
       "title": "Broadly targeted human cytomegalovirus-specific CD4+ and CD8+ T cells dominate the memory compartments of exposed subjects",
       "authors": [
         {
@@ -1655,14 +1502,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1084/jem.20050882",
-      "source": "J Exp Med",
-      "volume": "202",
-      "fpage": "673",
-      "lpage": "85",
       "year": "2005"
     },
-    {
-      "id": "bib33",
+    "bib33": {
       "title": "Overlapping reactivations of herpes simplex virus type 2 in the genital and perianal mucosa",
       "authors": [
         {
@@ -1691,14 +1533,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1086/650302",
-      "source": "J Infect Dis",
-      "volume": "201",
-      "fpage": "499",
-      "lpage": "504",
       "year": "2010"
     },
-    {
-      "id": "bib34",
+    "bib34": {
       "title": "Shedding and survival of herpes simplex virus from â€˜fever blistersâ€™",
       "authors": [
         {
@@ -1718,14 +1555,9 @@
           "name": "JO Hendley"
         }
       ],
-      "source": "Pediatrics",
-      "volume": "70",
-      "fpage": "547",
-      "lpage": "9",
       "year": "1982"
     },
-    {
-      "id": "bib35",
+    "bib35": {
       "title": "Selective retention of herpes simplex virus-specific T cells in latently infected human trigeminal ganglia",
       "authors": [
         {
@@ -1754,14 +1586,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1073/pnas.0610847104",
-      "source": "Proc Natl Acad Sci USA",
-      "volume": "104",
-      "fpage": "3496",
-      "lpage": "501",
       "year": "2007"
     },
-    {
-      "id": "bib36",
+    "bib36": {
       "title": "Virologic characteristics of subclinical and symptomatic genital herpes infections",
       "authors": [
         {
@@ -1786,14 +1613,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1056/NEJM199509213331205",
-      "source": "N Engl J Med",
-      "volume": "333",
-      "fpage": "770",
-      "lpage": "5",
       "year": "1995"
     },
-    {
-      "id": "bib37",
+    "bib37": {
       "title": "Frequent genital herpes simplex virus 2 shedding in immunocompetent women. Effect of acyclovir treatment",
       "authors": [
         {
@@ -1822,14 +1644,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1172/JCI119237",
-      "source": "J Clin Invest",
-      "volume": "99",
-      "fpage": "1092",
-      "lpage": "7",
       "year": "1997"
     },
-    {
-      "id": "bib38",
+    "bib38": {
       "title": "Reactivation of genital herpes simplex virus type 2 infection in asymptomatic seropositive persons",
       "authors": [
         {
@@ -1858,14 +1675,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1056/NEJM200003233421203",
-      "source": "N Engl J Med",
-      "volume": "342",
-      "fpage": "844",
-      "lpage": "50",
       "year": "2000"
     },
-    {
-      "id": "bib39",
+    "bib39": {
       "title": "Laser-capture microdissection: refining estimates of the quantity and distribution of latent herpes simplex virus 1 and varicella-zoster virus DNA in human trigeminal Ganglia at the single-cell level",
       "authors": [
         {
@@ -1890,14 +1702,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1128/JVI.79.22.14079-14087.2005",
-      "source": "J Virol",
-      "volume": "79",
-      "fpage": "14079",
-      "lpage": "87",
       "year": "2005"
     },
-    {
-      "id": "bib40",
+    "bib40": {
       "title": "Virus-specific CD8+ T cells accumulate near sensory nerve endings in genital skin during subclinical HSV-2 reactivation",
       "authors": [
         {
@@ -1926,14 +1733,9 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1084/jem.20061792",
-      "source": "J Exp Med",
-      "volume": "204",
-      "fpage": "595",
-      "lpage": "603",
       "year": "2007"
     },
-    {
-      "id": "bib41",
+    "bib41": {
       "title": "Persistence of HIV-1 receptor-positive cells after HSV-2 reactivation is a potential mechanism for increased HIV-1 acquisition",
       "authors": [
         {
@@ -1962,11 +1764,7 @@
         }
       ],
       "doi": "http://dx.doi.org/10.1038/nm.2006",
-      "source": "Nat Med",
-      "volume": "15",
-      "fpage": "886",
-      "lpage": "92",
       "year": "2009"
     }
-  ]
+  }
 }
