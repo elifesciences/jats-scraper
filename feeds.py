@@ -302,7 +302,7 @@ DESCRIPTION = [
         'iterable': article_list,
         'attrs': {
             'title': ('this.title', None, tidy_whitespace),
-            #'impact-statement': 'unsupported',  # TODO custom-meta-group
+            'impact-statement': 'this.impact_statement',
             'version': 'version',
             'doi': 'this.doi',
             'publish': ('"1"', "1", str),  # 1 or 0 means publish immediately or don't publish immediately
@@ -330,7 +330,7 @@ DESCRIPTION = [
                 'competing-interest': 'competing_interests',
                 #'contribution': 'unsupported',  # TODO check parser/xml
                 'affiliation': 'this.full_affiliation',
-                #'related-object': 'unsupported',  # soon (just id)
+                'related-object': 'this.related_object_ids',
             }  # referenced
         }
     })  # ends article block
