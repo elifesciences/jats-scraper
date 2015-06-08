@@ -301,10 +301,6 @@ DESCRIPTION = [
     ('article', {
         'iterable': article_list,
         'attrs': {
-            #'journal_id': 'this.journal_id',
-            #'journal_title': 'this.journal_title',
-            #'eissn': 'issn_electronic',
-            #'journal_issn': 'unsupported',  # TODO issue with params for 'issn_electronic',
             'title': ('this.title', None, tidy_whitespace),
             #'impact-statement': 'unsupported',  # TODO custom-meta-group
             'version': 'version',
@@ -319,13 +315,11 @@ DESCRIPTION = [
             'article-type': 'this.article_type',
             'status': 'article_status',
             'categories': 'this.full_subject_area',
-            #'keywords': {  # TODO #5 (don't strip tags in parser)
-            #    'author-keywords': 'this.keywords',
-            #    'research-organism': 'this.research_organism'
-            #},
-            #'contributors': 'contributors',
+            'keywords': 'this.full_keyword_groups',
+            #'contributors': 'contributors', # TODO 2
             'children': 'children',
-            #'citations': 'unsupported',  # TODO check parser/xml
+            # TODO : sub display channel
+            #'citations': 'unsupported',  # TODO check parser/xml move on to TODO 3
             #'related-articles': 'unsupported', # TODO Nathan says leave for now
 
             'referenced': {
@@ -333,10 +327,10 @@ DESCRIPTION = [
                 'equal-contrib': 'equal_contrib',
                 'email': "this.full_correspondence",
                 'funding': 'funding',
-                'competing-interest': 'competing_interests',  # TODO #2 (+)
+                'competing-interest': 'competing_interests',
                 #'contribution': 'unsupported',  # TODO check parser/xml
-                #'affiliation': 'affiliations',
-                #'related-object': 'unsupported',  # TODO check parser / xml
+                'affiliation': 'this.full_affiliation',
+                #'related-object': 'unsupported',  # soon (just id)
             }  # referenced
         }
     })  # ends article block
