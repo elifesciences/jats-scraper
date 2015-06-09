@@ -316,11 +316,10 @@ DESCRIPTION = [
             'status': 'article_status',
             'categories': 'this.full_subject_area',
             'keywords': 'this.full_keyword_groups',
-            #'contributors': 'contributors', # TODO 2
+            'contributors': 'this.contributors',
             'children': 'children',
-            # TODO : sub display channel
-            #'citations': 'unsupported',  # TODO check parser/xml move on to TODO 3
-            #'related-articles': 'unsupported', # TODO Nathan says leave for now
+            # 'citations': 'this.refs', # TODO!
+            #'related-articles': 'unsupported', # TODO leave for now
 
             'referenced': {
                 'present-address': 'present_address',

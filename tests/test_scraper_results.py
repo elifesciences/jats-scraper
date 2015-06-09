@@ -35,6 +35,7 @@ class TestScraperResults(unittest.TestCase):
             self.compare(article, generated, reference)
             for error in self.errors:
                 print error
+            self.assertTrue(len(self.errors) == 0)
 
     def compare(self, path, generated, reference):
 
@@ -45,7 +46,7 @@ class TestScraperResults(unittest.TestCase):
                 return
             elif len(generated) != len(reference):
                 self.errors.append("Generated list at %s is different length (%i) to reference (%i)"
-                                  % (path, len(generated), len(reference)))
+                                   % (path, len(generated), len(reference)))
                 return
             else:
                 for i in range(0, len(reference)):
@@ -73,10 +74,10 @@ class TestScraperResults(unittest.TestCase):
         else:
             if not (generated == reference):
                 self.errors.append("Generated element %s at %s doesn't match reference %s"
-                                   % (path, str(generated), str(reference)))
+                                   % (path, generated.encode('utf-8'), reference.encode('utf-8')))
                 return
             else:
-                self.checked.append("> %s|ref> %s |gen> %s" % (path, str(reference), str(generated)))
+                self.checked.append("> %s|ref> %s |gen> %s" % (path, reference.encode('utf-8'), generated.encode('utf-8')))
 
 if __name__ == '__main__':
     unittest.main()
