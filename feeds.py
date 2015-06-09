@@ -134,10 +134,6 @@ def competing_interests(article):
             interests[conflict['id']] = footnote_text(conflict['text'])
     return interests
 
-@fattrs('this as article')
-def funding(article):
-    return article.full_award_groups
-
 
 @fattrs('this as article')
 def contributors(article):
@@ -325,7 +321,7 @@ DESCRIPTION = [
                 'present-address': 'present_address',
                 'equal-contrib': 'equal_contrib',
                 'email': "this.full_correspondence",
-                'funding': 'funding',
+                'funding': 'this.full_award_groups',
                 'competing-interest': 'competing_interests',
                 #'contribution': 'unsupported',  # TODO check parser/xml
                 'affiliation': 'this.full_affiliation',
