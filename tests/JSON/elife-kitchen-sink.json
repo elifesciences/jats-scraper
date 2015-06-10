@@ -703,14 +703,14 @@
             {
               "type": "fig",
               "title": "Author response image 1",
-              "doi": "10.7554/eLife.00013.038",
-              "path": "content/3/e00288/2/F25"
+              "doi": "10.7554/eLife.00013.039",
+              "path": "content/3/e00013/2/F25"
             },
             {
               "type": "table-wrap",
               "title": "Author response table 1.",
-              "doi": "10.7554/eLife.00013.039",
-              "path": "content/3/e00288/2/T4"
+              "doi": "10.7554/eLife.00013.040",
+              "path": "content/3/e00013/2/T4"
             }
           ]
         }
