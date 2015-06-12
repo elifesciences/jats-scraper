@@ -199,9 +199,9 @@ def component_fragment(component, volume):
     if not fragment['doi'].startswith('10.7554/'):
         return None
 
-    if fragment['type'] == 'sub-article' and component.get('full_title'):
+    if fragment['type'] in ['sub-article','abstract'] and component.get('full_title'):
         fragment['title'] = component.get('full_title')
-    elif fragment['type'] != 'sub-article' and component.get('full_label'):
+    elif fragment['type'] not in ['sub-article','abstract'] and component.get('full_label'):
         fragment['title'] = component.get('full_label')
 
     if fragment['type'] == 'sub-article' and component.get('contributors'):
