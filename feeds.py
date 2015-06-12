@@ -243,14 +243,19 @@ def populate_children(fragment, fragments):
 
         parent_fragment['children']['fragment'].append(fragment)
 
-    clean_fragment(fragment)
 
-
+def clean_fragments(fragments):
+    # Recursive fragment cleaner
+    for fragment in fragments:
+        if 'children' in fragment:
+            clean_fragments(fragment['children']['fragment'])
+        clean_fragment(fragment)
+        
 def clean_fragment(fragment):
     # Remove some values
     remove_properties = ['parent_type', 'parent_ordinal',
                          'parent_parent_type', 'parent_parent_ordinal',
-                         'article_doi']
+                         'article_doi', 'ordinal']
     for property in remove_properties:
         try:
             del(fragment[property])
@@ -293,6 +298,9 @@ def children(article):
                     if fragment and fragment.get('parent_type'):
                         populate_children(fragment, level2_fragments)
 
+        # Remove tags by cleaning fragments recursively
+        clean_fragments(fragments)
+        
         children['fragment'] = fragments
 
     return children
