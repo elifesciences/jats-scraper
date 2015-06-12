@@ -314,8 +314,8 @@ DESCRIPTION = [
             'keywords': 'this.full_keyword_groups',
             'contributors': 'this.contributors',
             'children': 'children',
-            # 'citations': 'this.refs', # TODO!
-            #'related-articles': 'unsupported', # TODO leave for now
+            # 'citations': 'this.refs', # TODO 2
+            #'related-articles': 'unsupported', # TODO but leave for now
 
             'referenced': {
                 'present-address': 'present_address',
@@ -323,7 +323,7 @@ DESCRIPTION = [
                 'email': "this.full_correspondence",
                 'funding': 'this.full_award_groups',
                 'competing-interest': 'competing_interests',
-                #'contribution': 'unsupported',  # TODO check parser/xml
+                #'contribution': 'unsupported',  # TODO 1
                 'affiliation': 'this.full_affiliation',
                 'related-object': 'this.related_object_ids',
             }  # referenced
