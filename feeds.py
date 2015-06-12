@@ -192,11 +192,12 @@ def component_fragment(component, volume):
     #fragment_id = component.get('type') + "-" + str(component.get('ordinal'))
 
     fragment['type'] = component.get('type')
-    fragment['doi'] = tidy_whitespace(component.get('doi'))
+    if component.get('doi'):
+        fragment['doi'] = tidy_whitespace(component.get('doi'))
     fragment['ordinal'] = component.get('ordinal')
 
     # Quick test for eLife component DOI only
-    if not fragment['doi'].startswith('10.7554/'):
+    if 'doi' in fragment and not fragment['doi'].startswith('10.7554/'):
         return None
 
     if fragment['type'] in ['sub-article','abstract'] and component.get('full_title'):
