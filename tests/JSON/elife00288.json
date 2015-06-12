@@ -298,10 +298,12 @@
       "type": "editor",
       "surname": "Sgaier",
       "given-names": "Sema",
-      "affiliation": {
-        "institution": "Bill & Melinda Gates Foundation",
-        "country": "India"
-      }
+      "affiliations": [
+        {
+          "institution": "Bill & Melinda Gates Foundation",
+          "country": "India"
+        }
+      ]
     }
   ],
   "referenced": {
@@ -395,299 +397,289 @@
       }
     }
   },
-  "children": {
-    "fragment": [
-      {
-        "type": "abstract",
-        "doi": "10.7554/eLife.00288.001",
-        "path": "content/2/e00288/abstract-1"
-      },
-      {
-        "type": "abstract",
-        "abstract-type": "executive-summary",
-        "doi": "10.7554/eLife.00288.002",
-        "path": "content/2/e00288/abstract-2"
-      },
-      {
-        "type": "table-wrap",
-        "title": "Table 1.",
-        "doi": "10.7554/eLife.00288.003",
-        "path": "content/2/e00288/T1"
-      },
-      {
-        "type": "boxed-text",
-        "title": "Box 1.",
-        "doi": "10.7554/eLife.00288.004",
-        "path": "content/2/e00288/B1"
-      },
-      {
-        "type": "boxed-text",
-        "title": "Box 2.",
-        "doi": "10.7554/eLife.00288.005",
-        "path": "content/2/e00288/B2"
-      },
-      {
-        "type": "boxed-text",
-        "title": "Box 3.",
-        "doi": "10.7554/eLife.00288.006",
-        "path": "content/2/e00288/B3"
-      },
-      {
-        "type": "fig",
-        "title": "Figure 1.",
-        "doi": "10.7554/eLife.00288.007",
-        "path": "content/2/e00288/F1",
-        "children": {
-          "fragment": [
-            {
-              "type": "supplementary-material",
-              "title": "Figure 1—source data 1.",
-              "doi": "10.7554/eLife.00288.008",
-              "path": "content/2/e00288/F1/DC1"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 1—figure supplement 1.",
-              "doi": "10.7554/eLife.00288.009",
-              "path": "content/2/e00288/F1/F2"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 1—figure supplement 2.",
-              "doi": "10.7554/eLife.00288.010",
-              "path": "content/2/e00288/F1/F3"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 1—figure supplement 3.",
-              "doi": "10.7554/eLife.00288.011",
-              "path": "content/2/e00288/F1/F4"
-            }
-          ]
+  "fragments": [
+    {
+      "type": "abstract",
+      "doi": "10.7554/eLife.00288.001",
+      "path": "content/2/e00288/abstract-1"
+    },
+    {
+      "type": "abstract",
+      "title": "eLife digest",
+      "doi": "10.7554/eLife.00288.002",
+      "path": "content/2/e00288/abstract-2"
+    },
+    {
+      "type": "table-wrap",
+      "title": "Table 1.",
+      "doi": "10.7554/eLife.00288.003",
+      "path": "content/2/e00288/T1"
+    },
+    {
+      "type": "boxed-text",
+      "title": "Box 1.",
+      "doi": "10.7554/eLife.00288.004",
+      "path": "content/2/e00288/B1"
+    },
+    {
+      "type": "boxed-text",
+      "title": "Box 2.",
+      "doi": "10.7554/eLife.00288.005",
+      "path": "content/2/e00288/B2"
+    },
+    {
+      "type": "boxed-text",
+      "title": "Box 3.",
+      "doi": "10.7554/eLife.00288.006",
+      "path": "content/2/e00288/B3"
+    },
+    {
+      "type": "fig",
+      "title": "Figure 1.",
+      "doi": "10.7554/eLife.00288.007",
+      "path": "content/2/e00288/F1",
+      "fragments": [
+        {
+          "type": "supplementary-material",
+          "title": "Figure 1—source data 1.",
+          "doi": "10.7554/eLife.00288.008",
+          "path": "content/2/e00288/F1/DC1"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 1—figure supplement 1.",
+          "doi": "10.7554/eLife.00288.009",
+          "path": "content/2/e00288/F1/F2"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 1—figure supplement 2.",
+          "doi": "10.7554/eLife.00288.010",
+          "path": "content/2/e00288/F1/F3"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 1—figure supplement 3.",
+          "doi": "10.7554/eLife.00288.011",
+          "path": "content/2/e00288/F1/F4"
         }
-      },
-      {
-        "type": "boxed-text",
-        "title": "Box 4.",
-        "doi": "10.7554/eLife.00288.012",
-        "path": "content/2/e00288/B4"
-      },
-      {
-        "type": "fig",
-        "title": "Figure 2.",
-        "doi": "10.7554/eLife.00288.013",
-        "path": "content/2/e00288/F5",
-        "children": {
-          "fragment": [
-            {
-              "type": "supplementary-material",
-              "title": "Figure 2—source data 1.",
-              "doi": "10.7554/eLife.00288.014",
-              "path": "content/2/e00288/F5/DC2"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 2—figure supplement 1.",
-              "doi": "10.7554/eLife.00288.015",
-              "path": "content/2/e00288/F5/F6"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 2—figure supplement 2.",
-              "doi": "10.7554/eLife.00288.016",
-              "path": "content/2/e00288/F5/F7"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 2—figure supplement 3.",
-              "doi": "10.7554/eLife.00288.017",
-              "path": "content/2/e00288/F5/F8"
-            }
-          ]
+      ]
+    },
+    {
+      "type": "boxed-text",
+      "title": "Box 4.",
+      "doi": "10.7554/eLife.00288.012",
+      "path": "content/2/e00288/B4"
+    },
+    {
+      "type": "fig",
+      "title": "Figure 2.",
+      "doi": "10.7554/eLife.00288.013",
+      "path": "content/2/e00288/F5",
+      "fragments": [
+        {
+          "type": "supplementary-material",
+          "title": "Figure 2—source data 1.",
+          "doi": "10.7554/eLife.00288.014",
+          "path": "content/2/e00288/F5/DC2"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 2—figure supplement 1.",
+          "doi": "10.7554/eLife.00288.015",
+          "path": "content/2/e00288/F5/F6"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 2—figure supplement 2.",
+          "doi": "10.7554/eLife.00288.016",
+          "path": "content/2/e00288/F5/F7"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 2—figure supplement 3.",
+          "doi": "10.7554/eLife.00288.017",
+          "path": "content/2/e00288/F5/F8"
         }
-      },
-      {
-        "type": "boxed-text",
-        "title": "Box 5.",
-        "doi": "10.7554/eLife.00288.018",
-        "path": "content/2/e00288/B5"
-      },
-      {
-        "type": "fig",
-        "title": "Figure 3.",
-        "doi": "10.7554/eLife.00288.019",
-        "path": "content/2/e00288/F9",
-        "children": {
-          "fragment": [
-            {
-              "type": "fig",
-              "title": "Figure 3—figure supplement 1.",
-              "doi": "10.7554/eLife.00288.020",
-              "path": "content/2/e00288/F9/F10"
-            }
-          ]
+      ]
+    },
+    {
+      "type": "boxed-text",
+      "title": "Box 5.",
+      "doi": "10.7554/eLife.00288.018",
+      "path": "content/2/e00288/B5"
+    },
+    {
+      "type": "fig",
+      "title": "Figure 3.",
+      "doi": "10.7554/eLife.00288.019",
+      "path": "content/2/e00288/F9",
+      "fragments": [
+        {
+          "type": "fig",
+          "title": "Figure 3—figure supplement 1.",
+          "doi": "10.7554/eLife.00288.020",
+          "path": "content/2/e00288/F9/F10"
         }
-      },
-      {
-        "type": "fig",
-        "title": "Figure 4.",
-        "doi": "10.7554/eLife.00288.021",
-        "path": "content/2/e00288/F11",
-        "children": {
-          "fragment": [
-            {
-              "type": "supplementary-material",
-              "title": "Figure 4—source data 1.",
-              "doi": "10.7554/eLife.00288.022",
-              "path": "content/2/e00288/F11/DC3"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 4—figure supplement 1.",
-              "doi": "10.7554/eLife.00288.023",
-              "path": "content/2/e00288/F11/F12"
-            }
-          ]
+      ]
+    },
+    {
+      "type": "fig",
+      "title": "Figure 4.",
+      "doi": "10.7554/eLife.00288.021",
+      "path": "content/2/e00288/F11",
+      "fragments": [
+        {
+          "type": "supplementary-material",
+          "title": "Figure 4—source data 1.",
+          "doi": "10.7554/eLife.00288.022",
+          "path": "content/2/e00288/F11/DC3"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 4—figure supplement 1.",
+          "doi": "10.7554/eLife.00288.023",
+          "path": "content/2/e00288/F11/F12"
         }
-      },
-      {
-        "type": "table-wrap",
-        "title": "Table 2.",
-        "doi": "10.7554/eLife.00288.024",
-        "path": "content/2/e00288/T2"
-      },
-      {
-        "type": "media",
-        "title": "Video 1.",
-        "doi": "10.7554/eLife.00288.025",
-        "path": "content/2/e00288/media-4"
-      },
-      {
-        "type": "fig",
-        "title": "Figure 5.",
-        "doi": "10.7554/eLife.00288.026",
-        "path": "content/2/e00288/F13"
-      },
-      {
-        "type": "media",
-        "title": "Video 2.",
-        "doi": "10.7554/eLife.00288.027",
-        "path": "content/2/e00288/media-5"
-      },
-      {
-        "type": "media",
-        "title": "Video 3.",
-        "doi": "10.7554/eLife.00288.028",
-        "path": "content/2/e00288/media-6"
-      },
-      {
-        "type": "media",
-        "title": "Video 4.",
-        "doi": "10.7554/eLife.00288.029",
-        "path": "content/2/e00288/media-7"
-      },
-      {
-        "type": "media",
-        "title": "Video 5.",
-        "doi": "10.7554/eLife.00288.030",
-        "path": "content/2/e00288/media-8"
-      },
-      {
-        "type": "table-wrap",
-        "title": "Table 3.",
-        "doi": "10.7554/eLife.00288.031",
-        "path": "content/2/e00288/T3"
-      },
-      {
-        "type": "media",
-        "title": "Video 6.",
-        "doi": "10.7554/eLife.00288.032",
-        "path": "content/2/e00288/media-9"
-      },
-      {
-        "type": "media",
-        "title": "Video 7.",
-        "doi": "10.7554/eLife.00288.033",
-        "path": "content/2/e00288/media-10"
-      },
-      {
-        "type": "media",
-        "title": "Video 8.",
-        "doi": "10.7554/eLife.00288.034",
-        "path": "content/2/e00288/media-11"
-      },
-      {
-        "type": "media",
-        "title": "Video 9.",
-        "doi": "10.7554/eLife.00288.035",
-        "path": "content/2/e00288/media-12"
-      },
-      {
-        "type": "fig",
-        "title": "Figure 6.",
-        "doi": "10.7554/eLife.00288.036",
-        "path": "content/2/e00288/F14",
-        "children": {
-          "fragment": [
-            {
-              "type": "fig",
-              "title": "Figure 6—figure supplement 1.",
-              "doi": "10.7554/eLife.00288.037",
-              "path": "content/2/e00288/F14/F15"
-            },
-            {
-              "type": "fig",
-              "title": "Figure 6—figure supplement 2.",
-              "doi": "10.7554/eLife.00288.038",
-              "path": "content/2/e00288/F14/F16"
-            }
-          ]
+      ]
+    },
+    {
+      "type": "table-wrap",
+      "title": "Table 2.",
+      "doi": "10.7554/eLife.00288.024",
+      "path": "content/2/e00288/T2"
+    },
+    {
+      "type": "media",
+      "title": "Video 1.",
+      "doi": "10.7554/eLife.00288.025",
+      "path": "content/2/e00288/media-4"
+    },
+    {
+      "type": "fig",
+      "title": "Figure 5.",
+      "doi": "10.7554/eLife.00288.026",
+      "path": "content/2/e00288/F13"
+    },
+    {
+      "type": "media",
+      "title": "Video 2.",
+      "doi": "10.7554/eLife.00288.027",
+      "path": "content/2/e00288/media-5"
+    },
+    {
+      "type": "media",
+      "title": "Video 3.",
+      "doi": "10.7554/eLife.00288.028",
+      "path": "content/2/e00288/media-6"
+    },
+    {
+      "type": "media",
+      "title": "Video 4.",
+      "doi": "10.7554/eLife.00288.029",
+      "path": "content/2/e00288/media-7"
+    },
+    {
+      "type": "media",
+      "title": "Video 5.",
+      "doi": "10.7554/eLife.00288.030",
+      "path": "content/2/e00288/media-8"
+    },
+    {
+      "type": "table-wrap",
+      "title": "Table 3.",
+      "doi": "10.7554/eLife.00288.031",
+      "path": "content/2/e00288/T3"
+    },
+    {
+      "type": "media",
+      "title": "Video 6.",
+      "doi": "10.7554/eLife.00288.032",
+      "path": "content/2/e00288/media-9"
+    },
+    {
+      "type": "media",
+      "title": "Video 7.",
+      "doi": "10.7554/eLife.00288.033",
+      "path": "content/2/e00288/media-10"
+    },
+    {
+      "type": "media",
+      "title": "Video 8.",
+      "doi": "10.7554/eLife.00288.034",
+      "path": "content/2/e00288/media-11"
+    },
+    {
+      "type": "media",
+      "title": "Video 9.",
+      "doi": "10.7554/eLife.00288.035",
+      "path": "content/2/e00288/media-12"
+    },
+    {
+      "type": "fig",
+      "title": "Figure 6.",
+      "doi": "10.7554/eLife.00288.036",
+      "path": "content/2/e00288/F14",
+      "fragments": [
+        {
+          "type": "fig",
+          "title": "Figure 6—figure supplement 1.",
+          "doi": "10.7554/eLife.00288.037",
+          "path": "content/2/e00288/F14/F15"
+        },
+        {
+          "type": "fig",
+          "title": "Figure 6—figure supplement 2.",
+          "doi": "10.7554/eLife.00288.038",
+          "path": "content/2/e00288/F14/F16"
         }
-      },
-      {
-        "type": "table-wrap",
-        "title": "Table 4.",
-        "doi": "10.7554/eLife.00288.039",
-        "path": "content/2/e00288/T4"
-      },
-      {
-        "type": "table-wrap",
-        "title": "Table 5.",
-        "doi": "10.7554/eLife.00288.040",
-        "path": "content/2/e00288/T5"
-      },
-      {
-        "type": "table-wrap",
-        "title": "Table 6.",
-        "doi": "10.7554/eLife.00288.041",
-        "path": "content/2/e00288/T6"
-      },
-      {
-        "type": "sub-article",
-        "title": "Decision letter",
-        "doi": "10.7554/eLife.00288.042",
-        "path": "content/2/e00288/1",
-        "contributors": [
-          {
-            "type": "editor",
-            "surname": "Sgaier",
-            "given-names": "Sema",
-            "role": "Reviewing editor",
-            "affiliation": {
+      ]
+    },
+    {
+      "type": "table-wrap",
+      "title": "Table 4.",
+      "doi": "10.7554/eLife.00288.039",
+      "path": "content/2/e00288/T4"
+    },
+    {
+      "type": "table-wrap",
+      "title": "Table 5.",
+      "doi": "10.7554/eLife.00288.040",
+      "path": "content/2/e00288/T5"
+    },
+    {
+      "type": "table-wrap",
+      "title": "Table 6.",
+      "doi": "10.7554/eLife.00288.041",
+      "path": "content/2/e00288/T6"
+    },
+    {
+      "type": "sub-article",
+      "title": "Decision letter",
+      "doi": "10.7554/eLife.00288.042",
+      "path": "content/2/e00288/1",
+      "contributors": [
+        {
+          "type": "editor",
+          "surname": "Sgaier",
+          "given-names": "Sema",
+          "role": "Reviewing editor",
+          "affiliations": [
+            {
               "institution": "Bill & Melinda Gates Foundation",
               "country": "India"
             }
-          }
-        ]
-      },
-      {
-        "type": "sub-article",
-        "title": "Author response",
-        "doi": "10.7554/eLife.00288.043",
-        "path": "content/2/e00288/2"
-      }
-    ]
-  },
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sub-article",
+      "title": "Author response",
+      "doi": "10.7554/eLife.00288.043",
+      "path": "content/2/e00288/2"
+    }
+  ],
   "citations": {
     "bib1": {
       "title": "Agent-based modeling of host-pathogen systems: the successes and challenges",
@@ -705,6 +697,7 @@
           "name": "AS Perelson"
         }
       ],
+      "source": "Inf Sci (Ny)",
       "doi": "http://dx.doi.org/10.1016/j.ins.2008.11.012",
       "year": "2009"
     },
@@ -728,6 +721,7 @@
           "name": "AS Perelson"
         }
       ],
+      "source": "J Theor Biol",
       "doi": "http://dx.doi.org/10.1016/j.jtbi.2007.02.017",
       "year": "2007"
     },
@@ -743,6 +737,7 @@
           "name": "DC Johnson"
         }
       ],
+      "source": "J Virol",
       "doi": "http://dx.doi.org/10.1128/JVI.77.4.2686-2695.2003",
       "year": "2003"
     },
@@ -766,6 +761,7 @@
           "name": "KK Holmes"
         }
       ],
+      "source": "Ann Intern Med",
       "year": "1983"
     },
     "bib5": {
@@ -792,6 +788,7 @@
           "name": "S Blower"
         }
       ],
+      "source": "Sex Transm Infect",
       "doi": "http://dx.doi.org/10.1136/sti.2006.022020",
       "year": "2007"
     },
@@ -819,6 +816,7 @@
           "name": "TC Merigan"
         }
       ],
+      "source": "J Clin Invest",
       "doi": "http://dx.doi.org/10.1172/JCI111678",
       "year": "1985"
     },
@@ -838,6 +836,7 @@
           "name": "AS Perelson"
         }
       ],
+      "source": "J Immunol",
       "year": "2003"
     },
     "bib8": {
@@ -860,6 +859,7 @@
           "name": "GL Smith"
         }
       ],
+      "source": "Science",
       "doi": "http://dx.doi.org/10.1126/science.1183173",
       "year": "2010"
     },
@@ -875,6 +875,7 @@
           "name": "DC Johnson"
         }
       ],
+      "source": "J Virol",
       "doi": "http://dx.doi.org/10.1128/JVI.80.7.3167-3179.2006",
       "year": "2006"
     },
@@ -898,6 +899,7 @@
           "name": "NM Ferguson"
         }
       ],
+      "source": "Proc Natl Acad Sci USA",
       "doi": "http://dx.doi.org/10.1073/pnas.0307506101",
       "year": "2004"
     },
@@ -929,6 +931,7 @@
           "name": "FR Carbone"
         }
       ],
+      "source": "Nat Immunol",
       "doi": "http://dx.doi.org/10.1038/ni.1718",
       "year": "2009"
     },
@@ -948,6 +951,7 @@
           "name": "AA King"
         }
       ],
+      "source": "Proc Natl Acad Sci USA",
       "doi": "http://dx.doi.org/10.1073/pnas.0603181103",
       "year": "2006"
     },
@@ -975,6 +979,7 @@
           "name": "L Corey"
         }
       ],
+      "source": "J Clin Microbiol",
       "doi": "http://dx.doi.org/10.1128/JCM.40.7.2609-2611.2002",
       "year": "2002"
     },
@@ -1002,6 +1007,7 @@
           "name": "CB Hwang"
         }
       ],
+      "source": "J Virol",
       "doi": "http://dx.doi.org/10.1128/JVI.02359-06",
       "year": "2007a"
     },
@@ -1029,6 +1035,7 @@
           "name": "DM Coen"
         }
       ],
+      "source": "J Virol",
       "doi": "http://dx.doi.org/10.1128/JVI.01133-07",
       "year": "2007b"
     },
@@ -1056,6 +1063,7 @@
           "name": "L Corey"
         }
       ],
+      "source": "J Clin Microbiol",
       "doi": "http://dx.doi.org/10.1128/JCM.01405-06",
       "year": "2007"
     },
@@ -1079,6 +1087,7 @@
           "name": "DE Kirschner"
         }
       ],
+      "source": "J Theor Biol",
       "doi": "http://dx.doi.org/10.1016/j.jtbi.2008.04.011",
       "year": "2008"
     },
@@ -1110,6 +1119,7 @@
           "name": "ML Huang"
         }
       ],
+      "source": "J Infect Dis",
       "doi": "http://dx.doi.org/10.1086/591913",
       "year": "2008"
     },
@@ -1141,6 +1151,7 @@
           "name": "A Fahnlander"
         }
       ],
+      "source": "Sex Transm Dis",
       "doi": "http://dx.doi.org/10.1097/00007435-198501000-00007",
       "year": "1985"
     },
@@ -1172,6 +1183,7 @@
           "name": "C Winter"
         }
       ],
+      "source": "J Infect Dis",
       "doi": "http://dx.doi.org/10.1093/infdis/157.6.1169",
       "year": "1988"
     },
@@ -1199,6 +1211,7 @@
           "name": "D Ho"
         }
       ],
+      "source": "Science",
       "doi": "http://dx.doi.org/10.1126/science.271.5255.1582",
       "year": "1996"
     },
@@ -1230,6 +1243,7 @@
           "name": "AS Perelson"
         }
       ],
+      "source": "J Virol",
       "doi": "http://dx.doi.org/10.1128/JVI.00127-10",
       "year": "2010"
     },
@@ -1265,6 +1279,7 @@
           "name": "SE Straus"
         }
       ],
+      "source": "Fields Virology",
       "year": "2007"
     },
     "bib24": {
@@ -1279,6 +1294,7 @@
           "name": "PA Schaffer"
         }
       ],
+      "source": "J Virol",
       "year": "1987"
     },
     "bib25": {
@@ -1309,6 +1325,7 @@
           "name": "A Magaret"
         }
       ],
+      "source": "Sci Transl Med",
       "doi": "http://dx.doi.org/10.1126/scitranslmed.3000193",
       "year": "2009"
     },
@@ -1340,6 +1357,7 @@
           "name": "DM Koelle"
         }
       ],
+      "source": "Proc Natl Acad Sci USA",
       "doi": "http://dx.doi.org/10.1073/pnas.1006614107",
       "year": "2010"
     },
@@ -1367,6 +1385,7 @@
           "name": "A Wald"
         }
       ],
+      "source": "J Antimicrob Chemother",
       "doi": "http://dx.doi.org/10.1093/jac/dkr346",
       "year": "2011a"
     },
@@ -1394,6 +1413,7 @@
           "name": "A Magaret"
         }
       ],
+      "source": "J Infect Dis",
       "doi": "http://dx.doi.org/10.1093/infdis/jir314",
       "year": "2011b"
     },
@@ -1409,6 +1429,7 @@
           "name": "A Iwasaki"
         }
       ],
+      "source": "Nature",
       "doi": "http://dx.doi.org/10.1038/nature11522",
       "year": "2012"
     },
@@ -1440,6 +1461,7 @@
           "name": "W Miller"
         }
       ],
+      "source": "N Engl J Med",
       "doi": "http://dx.doi.org/10.1056/NEJM197707142970201",
       "year": "1977"
     },
@@ -1471,6 +1493,7 @@
           "name": "JC Overall, Jr"
         }
       ],
+      "source": "Infect Immun",
       "year": "1982"
     },
     "bib32": {
@@ -1501,6 +1524,7 @@
           "name": "F Ruchti"
         }
       ],
+      "source": "J Exp Med",
       "doi": "http://dx.doi.org/10.1084/jem.20050882",
       "year": "2005"
     },
@@ -1532,6 +1556,7 @@
           "name": "L Corey"
         }
       ],
+      "source": "J Infect Dis",
       "doi": "http://dx.doi.org/10.1086/650302",
       "year": "2010"
     },
@@ -1555,6 +1580,7 @@
           "name": "JO Hendley"
         }
       ],
+      "source": "Pediatrics",
       "year": "1982"
     },
     "bib35": {
@@ -1585,6 +1611,7 @@
           "name": "JD Laman"
         }
       ],
+      "source": "Proc Natl Acad Sci USA",
       "doi": "http://dx.doi.org/10.1073/pnas.0610847104",
       "year": "2007"
     },
@@ -1612,6 +1639,7 @@
           "name": "L Corey"
         }
       ],
+      "source": "N Engl J Med",
       "doi": "http://dx.doi.org/10.1056/NEJM199509213331205",
       "year": "1995"
     },
@@ -1643,6 +1671,7 @@
           "name": "J Zeh"
         }
       ],
+      "source": "J Clin Invest",
       "doi": "http://dx.doi.org/10.1172/JCI119237",
       "year": "1997"
     },
@@ -1674,6 +1703,7 @@
           "name": "R Ashley"
         }
       ],
+      "source": "N Engl J Med",
       "doi": "http://dx.doi.org/10.1056/NEJM200003233421203",
       "year": "2000"
     },
@@ -1701,6 +1731,7 @@
           "name": "S Straus"
         }
       ],
+      "source": "J Virol",
       "doi": "http://dx.doi.org/10.1128/JVI.79.22.14079-14087.2005",
       "year": "2005"
     },
@@ -1732,6 +1763,7 @@
           "name": "F Hladik"
         }
       ],
+      "source": "J Exp Med",
       "doi": "http://dx.doi.org/10.1084/jem.20061792",
       "year": "2007"
     },
@@ -1763,6 +1795,7 @@
           "name": "C Johnston"
         }
       ],
+      "source": "Nat Med",
       "doi": "http://dx.doi.org/10.1038/nm.2006",
       "year": "2009"
     }
