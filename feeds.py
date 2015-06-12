@@ -204,6 +204,9 @@ def component_fragment(component, volume):
     elif fragment['type'] != 'sub-article' and component.get('full_label'):
         fragment['title'] = component.get('full_label')
 
+    if fragment['type'] == 'sub-article' and component.get('contributors'):
+        fragment['contributors'] = component.get('contributors')
+
     parent_properties = ['parent_type', 'parent_ordinal',
                          'parent_parent_type', 'parent_parent_ordinal']
     for property in parent_properties:
