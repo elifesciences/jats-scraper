@@ -237,18 +237,17 @@ def populate_children(fragment, fragments):
         return
 
     if parent_fragment:
-        if not parent_fragment.get('children'):
-            parent_fragment['children'] = {}
-            parent_fragment['children']['fragment'] = []
+        if not parent_fragment.get('fragments'):
+            parent_fragment['fragments'] = []
 
-        parent_fragment['children']['fragment'].append(fragment)
+        parent_fragment['fragments'].append(fragment)
 
 
 def clean_fragments(fragments):
     # Recursive fragment cleaner
     for fragment in fragments:
-        if 'children' in fragment:
-            clean_fragments(fragment['children']['fragment'])
+        if 'fragments' in fragment:
+            clean_fragments(fragment['fragments'])
         clean_fragment(fragment)
         
 def clean_fragment(fragment):
@@ -264,8 +263,7 @@ def clean_fragment(fragment):
 
 
 @fattrs('this as article')
-def children(article):
-    children = {}
+def fragments(article):
     fragments = []
     components = article.__getattr__('components')
     if components is not None:
@@ -290,7 +288,7 @@ def children(article):
             level = "parent"
             for level1_fragment in fragments:
                 try:
-                    level2_fragments = level1_fragment['children']['fragment']
+                    level2_fragments = level1_fragment['fragments']
                 except:
                     level2_fragments = None
 
@@ -301,9 +299,9 @@ def children(article):
         # Remove tags by cleaning fragments recursively
         clean_fragments(fragments)
         
-        children['fragment'] = fragments
+        #children['fragment'] = fragments
 
-    return children
+    return fragments
 
 DESCRIPTION = [
     ('article', {
@@ -325,7 +323,7 @@ DESCRIPTION = [
             'categories': 'this.full_subject_area',
             'keywords': 'this.full_keyword_groups',
             'contributors': 'this.contributors',
-            'children': 'children',
+            'fragments': 'fragments',
             # 'citations': 'this.refs', # TODO 2
             #'related-articles': 'unsupported', # TODO but leave for now
 
