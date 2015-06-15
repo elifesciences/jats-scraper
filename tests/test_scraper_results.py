@@ -1,4 +1,5 @@
 import unittest
+import feeds
 from os import listdir
 from os.path import isfile, join
 import scraper
@@ -18,9 +19,10 @@ class TestScraperResults(unittest.TestCase):
                 reference_file_name = f.replace('.xml', '.json')
                 with open(source_directory + f, "r") as source_file:
                     source_string = source_file.read()
-                    res = scraper.scrape(self.mod, doc=source_string)
                     # a bit odd this but seems worthwhile round tripping to match actual results expected
-                    self.results[reference_file_name] = json.loads(json.dumps(res[0]['article'][0], indent=4))
+                    res = feeds.scrape(source_string, lambda x: x[0]['article'][0])
+                    self.results[reference_file_name] = json.loads(res)
+
                 with open(reference_directory + reference_file_name, "r") as reference_file:
                     self.references[reference_file_name] = json.loads(reference_file.read())
 
