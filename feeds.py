@@ -50,7 +50,8 @@ def citations(article):
     refs = article.refs
     for ref in refs:
         citation = {}
-        copy_attribute(ref, 'article_title', citation, destination_key='title')
+
+        copy_attribute(ref, 'article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
         if 'authors' in ref and len(ref['authors']) > 0 and 'author_types' in ref and len(ref['author_types']) > 0:
             citation['authors'] = map(lambda name_type: {'name': name_type[0], 'group-type': name_type[1]},
@@ -65,12 +66,15 @@ def tidy_whitespace(string):
     string = re.sub(' +', ' ', string)
     return string
 
-def copy_attribute(source, source_key, destination, destination_key=None):
+def copy_attribute(source, source_key, destination, destination_key=None, process=None):
     if destination_key is None:
         destination_key = source_key
     if source is not None:
         if source is not None and destination is not None and source_key in source:
-            destination[destination_key] = source[source_key]
+            value = source[source_key]
+            if process is not None:
+                value = process(value)
+            destination[destination_key] = value
 
 
 def footnote_text(raw_footnote_text):
@@ -145,7 +149,7 @@ def competing_interests(article):
     conflicts = article.__getattr__('competing_interests', fntype_filter='conflict')
     if conflicts is not None:
         for conflict in conflicts:
-            interests[conflict['id']] = footnote_text(conflict['text'])
+            interests[conflict['id']] = tidy_whitespace(footnote_text(conflict['text']))
     return interests
 
 @fattrs('this as article')
@@ -154,7 +158,7 @@ def contribution(article):
     contributions = article.__getattr__('author_contributions', fntype_filter='con')
     if contributions is not None:
         for con in contributions:
-            cons[con['id']] = footnote_text(con['text'])
+            cons[con['id']] = tidy_whitespace(footnote_text(con['text']))
     return cons
 
 def fragment_path_token(fragment_type, ordinal):
@@ -361,6 +365,10 @@ def scrape(docs_dir, process=None):
         res = scraper.scrape(mod, doc=docs_dir)
         if process:
             res = process(res)
+        if 'referenced' in res:
+            for referenced in res['referenced']:
+                if len(res['referenced'][referenced]) == 0:
+                    del res['referenced'][referenced]
         import json
         res = json.dumps(res, indent=4, ensure_ascii = False)
         return res
