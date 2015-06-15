@@ -44,19 +44,33 @@ def article_wrapper(path):
     # return a wrapper around the parser module that injects the soup when a function is called
     return ParserWrapper(soup)
 
-
-def unsupported():
-    return '* not implemented *'
-
-
-def unknown():
-    return '* source not known *'
-
+@fattrs('this as article')
+def citations(article):
+    citation_list = {}
+    refs = article.refs
+    for ref in refs:
+        citation = {}
+        copy_attribute(ref, 'article_title', citation, destination_key='title')
+        copy_attribute(ref, 'reference_id', citation, destination_key='doi')
+        if 'authors' in ref and len(ref['authors']) > 0 and 'author_types' in ref and len(ref['author_types']) > 0:
+            citation['authors'] = map(lambda name_type: {'name': name_type[0], 'group-type': name_type[1]},
+                                      zip(ref['authors'], ref['author_types']))
+        copy_attribute(ref, 'year', citation)
+        copy_attribute(ref, 'source', citation)
+        citation_list[ref['id']] = citation
+    return citation_list
 
 def tidy_whitespace(string):
     string = re.sub('\n', ' ', string)
     string = re.sub(' +', ' ', string)
     return string
+
+def copy_attribute(source, source_key, destination, destination_key=None):
+    if destination_key is None:
+        destination_key = source_key
+    if source is not None:
+        if source is not None and destination is not None and source_key in source:
+            destination[destination_key] = source[source_key]
 
 
 def footnote_text(raw_footnote_text):
@@ -134,15 +148,14 @@ def competing_interests(article):
             interests[conflict['id']] = footnote_text(conflict['text'])
     return interests
 
-
 @fattrs('this as article')
-def contributors(article):
-    return ['* not implemented *']  # TODO implement
-
-
-@fattrs('this as article')
-def affiliations(article):
-    return ['* not implemented *']  # TODO implement
+def contribution(article):
+    cons = {}
+    contributions = article.__getattr__('author_contributions', fntype_filter='con')
+    if contributions is not None:
+        for con in contributions:
+            cons[con['id']] = footnote_text(con['text'])
+    return cons
 
 def fragment_path_token(fragment_type, ordinal):
     if fragment_type == 'abstract':
@@ -249,7 +262,7 @@ def clean_fragments(fragments):
         if 'fragments' in fragment:
             clean_fragments(fragment['fragments'])
         clean_fragment(fragment)
-        
+
 def clean_fragment(fragment):
     # Remove some values
     remove_properties = ['parent_type', 'parent_ordinal',
@@ -298,7 +311,7 @@ def fragments(article):
 
         # Remove tags by cleaning fragments recursively
         clean_fragments(fragments)
-        
+
         #children['fragment'] = fragments
 
     return fragments
@@ -324,7 +337,7 @@ DESCRIPTION = [
             'keywords': 'this.full_keyword_groups',
             'contributors': 'this.contributors',
             'fragments': 'fragments',
-            # 'citations': 'this.refs', # TODO 2
+            'citations': 'citations',
             #'related-articles': 'unsupported', # TODO but leave for now
 
             'referenced': {
@@ -333,7 +346,7 @@ DESCRIPTION = [
                 'email': "this.full_correspondence",
                 'funding': 'this.full_award_groups',
                 'competing-interest': 'competing_interests',
-                #'contribution': 'unsupported',  # TODO 1
+                'contribution': 'contribution',
                 'affiliation': 'this.full_affiliation',
                 'related-object': 'this.related_object_ids',
             }  # referenced
