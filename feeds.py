@@ -53,9 +53,7 @@ def citations(article):
 
         copy_attribute(ref, 'article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
-        if 'authors' in ref and len(ref['authors']) > 0 and 'author_types' in ref and len(ref['author_types']) > 0:
-            citation['authors'] = map(lambda name_type: {'name': name_type[0], 'group-type': name_type[1]},
-                                      zip(ref['authors'], ref['author_types']))
+        copy_attribute(ref, 'authors', citation)
         copy_attribute(ref, 'year', citation)
         copy_attribute(ref, 'source', citation)
         citation_list[ref['id']] = citation
