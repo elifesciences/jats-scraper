@@ -64,6 +64,7 @@ def citations(article):
 def tidy_whitespace(string):
     string = re.sub('\n', ' ', string)
     string = re.sub(' +', ' ', string)
+    string = string.strip()
     return string
 
 def copy_attribute(source, source_key, destination, destination_key=None, process=None):
@@ -206,30 +207,30 @@ def component_fragment(component, volume):
 
     fragment = {}
 
-    #fragment_id = component.get('type') + "-" + str(component.get('ordinal'))
-
-    fragment['type'] = component.get('type')
-    if component.get('doi'):
-        fragment['doi'] = tidy_whitespace(component.get('doi'))
-    fragment['ordinal'] = component.get('ordinal')
-
     # Quick test for eLife component DOI only
-    if 'doi' in fragment and not fragment['doi'].startswith('10.7554/'):
+    if 'doi' in component and not component['doi'].startswith('10.7554/'):
         return None
 
+    copy_attribute(component, 'type', fragment)
+    copy_attribute(component, 'doi', fragment, destination_key='doi', process=tidy_whitespace)
+    copy_attribute(component, 'ordinal', fragment)
+
     if fragment['type'] in ['sub-article','abstract'] and component.get('full_title'):
-        fragment['title'] = component.get('full_title')
+        copy_attribute(component, 'full_title', fragment,
+                       destination_key='title', process=tidy_whitespace)
+        
     elif fragment['type'] not in ['sub-article','abstract'] and component.get('full_label'):
-        fragment['title'] = component.get('full_label')
+        copy_attribute(component, 'full_label', fragment,
+                       destination_key='title', process=tidy_whitespace)
 
     if fragment['type'] == 'sub-article' and component.get('contributors'):
-        fragment['contributors'] = component.get('contributors')
+        copy_attribute(component, 'contributors', fragment)
+        #fragment['contributors'] = component.get('contributors')
 
     parent_properties = ['parent_type', 'parent_ordinal',
                          'parent_parent_type', 'parent_parent_ordinal']
     for property in parent_properties:
-        if component.get(property):
-            fragment[property] = component.get(property)
+        copy_attribute(component, property, fragment)
 
     manuscript_id = component.get('article_doi').split('.')[-1]
     fragment['path'] = fragment_path(fragment, volume, manuscript_id)
@@ -315,8 +316,6 @@ def fragments(article):
 
         # Remove tags by cleaning fragments recursively
         clean_fragments(fragments)
-
-        #children['fragment'] = fragments
 
     return fragments
 
