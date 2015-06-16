@@ -34,6 +34,12 @@
       "Other"
     ]
   },
+  "related-articles": [
+    {
+      "type": "commentary",
+      "href": "10.7554/eLife.00013"
+    }
+  ],
   "contributors": [
     {
       "type": "author",
@@ -156,6 +162,9 @@
         ],
         "competing-interest": [
           "conf2"
+        ],
+        "present-address": [
+          "pa3"
         ]
       }
     },
@@ -418,12 +427,6 @@
       "dataro3": {}
     }
   },
-  "related-articles": [
-    {
-      "type": "commentary",
-      "href": "10.7554/eLife.00013"
-    }
-  ],
   "fragments": [
     {
       "type": "abstract",
@@ -460,7 +463,7 @@
       "type": "media",
       "title": "Video 1.",
       "doi": "10.7554/eLife.00013.006",
-      "path": "content/3/e00013/media-1"
+      "path": "content/3/e00013/media-2"
     },
     {
       "type": "table-wrap",
