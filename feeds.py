@@ -273,10 +273,8 @@ def clean_fragment(fragment):
                          'parent_parent_type', 'parent_parent_ordinal',
                          'article_doi', 'ordinal']
     for property in remove_properties:
-        try:
+        if property in fragment:
             del(fragment[property])
-        except KeyError:
-            pass
 
 
 @fattrs('this as article')
