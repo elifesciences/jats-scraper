@@ -225,7 +225,6 @@ def component_fragment(component, volume):
 
     if fragment['type'] == 'sub-article' and component.get('contributors'):
         copy_attribute(component, 'contributors', fragment)
-        #fragment['contributors'] = component.get('contributors')
 
     parent_properties = ['parent_type', 'parent_ordinal',
                          'parent_parent_type', 'parent_parent_ordinal']
@@ -295,24 +294,17 @@ def fragments(article):
 
         # Populate fragments whose parents are already populated
         for component in components:
-            fragment = component_fragment(component, article.volume)
-
-            if fragment and fragment.get('parent_type'):
+            if 'parent_type' in component:
+                fragment = component_fragment(component, article.volume)
                 populate_children(fragment, fragments)
 
-        # Populate fragments of fragements
+        # Populate fragments of fragments
         for component in components:
-            fragment = component_fragment(component, article.volume)
-            level = "parent"
-            for level1_fragment in fragments:
-                try:
-                    level2_fragments = level1_fragment['fragments']
-                except:
-                    level2_fragments = None
-
-                if level2_fragments:
-                    if fragment and fragment.get('parent_type'):
-                        populate_children(fragment, level2_fragments)
+            if 'parent_type' in component:
+                fragment = component_fragment(component, article.volume)
+                for parent_fragment in fragments:
+                    if 'fragments' in parent_fragment:
+                        populate_children(fragment, parent_fragment['fragments'])
 
         # Remove tags by cleaning fragments recursively
         clean_fragments(fragments)
