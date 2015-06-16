@@ -298,6 +298,7 @@
       "type": "editor",
       "surname": "Sgaier",
       "given-names": "Sema",
+      "role": "Reviewing editor",
       "affiliations": [
         {
           "institution": "Bill & Melinda Gates Foundation",
@@ -1442,7 +1443,7 @@
         },
         {
           "group-type": "author",
-          "name": "JC Overall, Jnr"
+          "name": "JC Overall Jnr"
         },
         {
           "group-type": "author",
