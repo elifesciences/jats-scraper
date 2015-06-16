@@ -687,15 +687,18 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "AL Bauer"
+          "surname": "Bauer",
+          "given-names": "AL"
         },
         {
           "group-type": "author",
-          "name": "CA Beauchemin"
+          "surname": "Beauchemin",
+          "given-names": "CA"
         },
         {
           "group-type": "author",
-          "name": "AS Perelson"
+          "surname": "Perelson",
+          "given-names": "AS"
         }
       ],
       "source": "Inf Sci (Ny)",
@@ -707,19 +710,23 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "SM Ciupe"
+          "surname": "Ciupe",
+          "given-names": "SM"
         },
         {
           "group-type": "author",
-          "name": "RM Ribeiro"
+          "surname": "Ribeiro",
+          "given-names": "RM"
         },
         {
           "group-type": "author",
-          "name": "PW Nelson"
+          "surname": "Nelson",
+          "given-names": "PW"
         },
         {
           "group-type": "author",
-          "name": "AS Perelson"
+          "surname": "Perelson",
+          "given-names": "AS"
         }
       ],
       "source": "J Theor Biol",
@@ -731,11 +738,13 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "WJ Collins"
+          "surname": "Collins",
+          "given-names": "WJ"
         },
         {
           "group-type": "author",
-          "name": "DC Johnson"
+          "surname": "Johnson",
+          "given-names": "DC"
         }
       ],
       "source": "J Virol",
@@ -747,19 +756,23 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "HG Adams"
+          "surname": "Adams",
+          "given-names": "HG"
         },
         {
           "group-type": "author",
-          "name": "ZA Brown"
+          "surname": "Brown",
+          "given-names": "ZA"
         },
         {
           "group-type": "author",
-          "name": "KK Holmes"
+          "surname": "Holmes",
+          "given-names": "KK"
         }
       ],
       "source": "Ann Intern Med",
@@ -770,23 +783,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "C Crespi"
+          "surname": "Crespi",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "W Cumberland"
+          "surname": "Cumberland",
+          "given-names": "W"
         },
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "S Blower"
+          "surname": "Blower",
+          "given-names": "S"
         }
       ],
       "source": "Sex Transm Infect",
@@ -798,23 +816,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "AL Cunningham"
+          "surname": "Cunningham",
+          "given-names": "AL"
         },
         {
           "group-type": "author",
-          "name": "RR Turner"
+          "surname": "Turner",
+          "given-names": "RR"
         },
         {
           "group-type": "author",
-          "name": "AC Miller"
+          "surname": "Miller",
+          "given-names": "AC"
         },
         {
           "group-type": "author",
-          "name": "MF Para"
+          "surname": "Para",
+          "given-names": "MF"
         },
         {
           "group-type": "author",
-          "name": "TC Merigan"
+          "surname": "Merigan",
+          "given-names": "TC"
         }
       ],
       "source": "J Clin Invest",
@@ -826,15 +849,18 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "RJ De Boer"
+          "surname": "De Boer",
+          "given-names": "RJ"
         },
         {
           "group-type": "author",
-          "name": "D Homann"
+          "surname": "Homann",
+          "given-names": "D"
         },
         {
           "group-type": "author",
-          "name": "AS Perelson"
+          "surname": "Perelson",
+          "given-names": "AS"
         }
       ],
       "source": "J Immunol",
@@ -845,19 +871,23 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "V Doceul"
+          "surname": "Doceul",
+          "given-names": "V"
         },
         {
           "group-type": "author",
-          "name": "M Hollinshead"
+          "surname": "Hollinshead",
+          "given-names": "M"
         },
         {
           "group-type": "author",
-          "name": "L van der Linden"
+          "surname": "van der Linden",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "GL Smith"
+          "surname": "Smith",
+          "given-names": "GL"
         }
       ],
       "source": "Science",
@@ -869,11 +899,13 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "A Farnsworth"
+          "surname": "Farnsworth",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "DC Johnson"
+          "surname": "Johnson",
+          "given-names": "DC"
         }
       ],
       "source": "J Virol",
@@ -885,19 +917,23 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "C Fraser"
+          "surname": "Fraser",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "S Riley"
+          "surname": "Riley",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "RM Anderson"
+          "surname": "Anderson",
+          "given-names": "RM"
         },
         {
           "group-type": "author",
-          "name": "NM Ferguson"
+          "surname": "Ferguson",
+          "given-names": "NM"
         }
       ],
       "source": "Proc Natl Acad Sci USA",
@@ -909,27 +945,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "T Gebhardt"
+          "surname": "Gebhardt",
+          "given-names": "T"
         },
         {
           "group-type": "author",
-          "name": "LM Wakim"
+          "surname": "Wakim",
+          "given-names": "LM"
         },
         {
           "group-type": "author",
-          "name": "L Eidsmo"
+          "surname": "Eidsmo",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "PC Reading"
+          "surname": "Reading",
+          "given-names": "PC"
         },
         {
           "group-type": "author",
-          "name": "WR Heath"
+          "surname": "Heath",
+          "given-names": "WR"
         },
         {
           "group-type": "author",
-          "name": "FR Carbone"
+          "surname": "Carbone",
+          "given-names": "FR"
         }
       ],
       "source": "Nat Immunol",
@@ -941,15 +983,18 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "EL Ionides"
+          "surname": "Ionides",
+          "given-names": "EL"
         },
         {
           "group-type": "author",
-          "name": "C Breto"
+          "surname": "Breto",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "AA King"
+          "surname": "King",
+          "given-names": "AA"
         }
       ],
       "source": "Proc Natl Acad Sci USA",
@@ -961,23 +1006,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "KR Jerome"
+          "surname": "Jerome",
+          "given-names": "KR"
         },
         {
           "group-type": "author",
-          "name": "ML Huang"
+          "surname": "Huang",
+          "given-names": "ML"
         },
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         }
       ],
       "source": "J Clin Microbiol",
@@ -989,23 +1039,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "C Jiang"
+          "surname": "Jiang",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "YT Hwang"
+          "surname": "Hwang",
+          "given-names": "YT"
         },
         {
           "group-type": "author",
-          "name": "JC Randell"
+          "surname": "Randell",
+          "given-names": "JC"
         },
         {
           "group-type": "author",
-          "name": "DM Coen"
+          "surname": "Coen",
+          "given-names": "DM"
         },
         {
           "group-type": "author",
-          "name": "CB Hwang"
+          "surname": "Hwang",
+          "given-names": "CB"
         }
       ],
       "source": "J Virol",
@@ -1017,23 +1072,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "C Jiang"
+          "surname": "Jiang",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "YT Hwang"
+          "surname": "Hwang",
+          "given-names": "YT"
         },
         {
           "group-type": "author",
-          "name": "G Wang"
+          "surname": "Wang",
+          "given-names": "G"
         },
         {
           "group-type": "author",
-          "name": "JC Randell"
+          "surname": "Randell",
+          "given-names": "JC"
         },
         {
           "group-type": "author",
-          "name": "DM Coen"
+          "surname": "Coen",
+          "given-names": "DM"
         }
       ],
       "source": "J Virol",
@@ -1045,23 +1105,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "A Magaret"
+          "surname": "Magaret",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "M Huang"
+          "surname": "Huang",
+          "given-names": "M"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         }
       ],
       "source": "J Clin Microbiol",
@@ -1073,19 +1138,23 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "S Marino"
+          "surname": "Marino",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "IB Hogue"
+          "surname": "Hogue",
+          "given-names": "IB"
         },
         {
           "group-type": "author",
-          "name": "CJ Ray"
+          "surname": "Ray",
+          "given-names": "CJ"
         },
         {
           "group-type": "author",
-          "name": "DE Kirschner"
+          "surname": "Kirschner",
+          "given-names": "DE"
         }
       ],
       "source": "J Theor Biol",
@@ -1097,27 +1166,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "KE Mark"
+          "surname": "Mark",
+          "given-names": "KE"
         },
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "AS Magaret"
+          "surname": "Magaret",
+          "given-names": "AS"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "L Olin"
+          "surname": "Olin",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "ML Huang"
+          "surname": "Huang",
+          "given-names": "ML"
         }
       ],
       "source": "J Infect Dis",
@@ -1129,27 +1204,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "GJ Mertz"
+          "surname": "Mertz",
+          "given-names": "GJ"
         },
         {
           "group-type": "author",
-          "name": "O Schmidt"
+          "surname": "Schmidt",
+          "given-names": "O"
         },
         {
           "group-type": "author",
-          "name": "JL Jourden"
+          "surname": "Jourden",
+          "given-names": "JL"
         },
         {
           "group-type": "author",
-          "name": "ME Guinan"
+          "surname": "Guinan",
+          "given-names": "ME"
         },
         {
           "group-type": "author",
-          "name": "ML Remington"
+          "surname": "Remington",
+          "given-names": "ML"
         },
         {
           "group-type": "author",
-          "name": "A Fahnlander"
+          "surname": "Fahnlander",
+          "given-names": "A"
         }
       ],
       "source": "Sex Transm Dis",
@@ -1161,27 +1242,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "GJ Mertz"
+          "surname": "Mertz",
+          "given-names": "GJ"
         },
         {
           "group-type": "author",
-          "name": "RW Coombs"
+          "surname": "Coombs",
+          "given-names": "RW"
         },
         {
           "group-type": "author",
-          "name": "R Ashley"
+          "surname": "Ashley",
+          "given-names": "R"
         },
         {
           "group-type": "author",
-          "name": "J Jourden"
+          "surname": "Jourden",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "M Remington"
+          "surname": "Remington",
+          "given-names": "M"
         },
         {
           "group-type": "author",
-          "name": "C Winter"
+          "surname": "Winter",
+          "given-names": "C"
         }
       ],
       "source": "J Infect Dis",
@@ -1193,23 +1280,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "A Perelson"
+          "surname": "Perelson",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "A Neumann"
+          "surname": "Neumann",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "M Markowitz"
+          "surname": "Markowitz",
+          "given-names": "M"
         },
         {
           "group-type": "author",
-          "name": "J Leonard"
+          "surname": "Leonard",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "D Ho"
+          "surname": "Ho",
+          "given-names": "D"
         }
       ],
       "source": "Science",
@@ -1221,27 +1313,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "RM Ribeiro"
+          "surname": "Ribeiro",
+          "given-names": "RM"
         },
         {
           "group-type": "author",
-          "name": "L Qin"
+          "surname": "Qin",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "LL Chavez"
+          "surname": "Chavez",
+          "given-names": "LL"
         },
         {
           "group-type": "author",
-          "name": "D Li"
+          "surname": "Li",
+          "given-names": "D"
         },
         {
           "group-type": "author",
-          "name": "SG Self"
+          "surname": "Self",
+          "given-names": "SG"
         },
         {
           "group-type": "author",
-          "name": "AS Perelson"
+          "surname": "Perelson",
+          "given-names": "AS"
         }
       ],
       "source": "J Virol",
@@ -1253,31 +1351,38 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "BKD Roizman"
+          "surname": "Roizman",
+          "given-names": "BKD"
         },
         {
           "group-type": "editor",
-          "name": "DM Knipe"
+          "surname": "Knipe",
+          "given-names": "DM"
         },
         {
           "group-type": "editor",
-          "name": "PM Howley"
+          "surname": "Howley",
+          "given-names": "PM"
         },
         {
           "group-type": "editor",
-          "name": "DE Griffin"
+          "surname": "Griffin",
+          "given-names": "DE"
         },
         {
           "group-type": "editor",
-          "name": "MA Martin"
+          "surname": "Martin",
+          "given-names": "MA"
         },
         {
           "group-type": "editor",
-          "name": "RA Lamb"
+          "surname": "Lamb",
+          "given-names": "RA"
         },
         {
           "group-type": "editor",
-          "name": "SE Straus"
+          "surname": "Straus",
+          "given-names": "SE"
         }
       ],
       "source": "Fields Virology",
@@ -1288,11 +1393,13 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "WR Sacks"
+          "surname": "Sacks",
+          "given-names": "WR"
         },
         {
           "group-type": "author",
-          "name": "PA Schaffer"
+          "surname": "Schaffer",
+          "given-names": "PA"
         }
       ],
       "source": "J Virol",
@@ -1303,27 +1410,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "JT Schiffer"
+          "surname": "Schiffer",
+          "given-names": "JT"
         },
         {
           "group-type": "author",
-          "name": "L Abu-Raddad"
+          "surname": "Abu-Raddad",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "K Mark"
+          "surname": "Mark",
+          "given-names": "K"
         },
         {
           "group-type": "author",
-          "name": "J Zhu"
+          "surname": "Zhu",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "A Magaret"
+          "surname": "Magaret",
+          "given-names": "A"
         }
       ],
       "source": "Sci Transl Med",
@@ -1335,27 +1448,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "JT Schiffer"
+          "surname": "Schiffer",
+          "given-names": "JT"
         },
         {
           "group-type": "author",
-          "name": "L Abu-Raddad"
+          "surname": "Abu-Raddad",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "KE Mark"
+          "surname": "Mark",
+          "given-names": "KE"
         },
         {
           "group-type": "author",
-          "name": "J Zhu"
+          "surname": "Zhu",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "DM Koelle"
+          "surname": "Koelle",
+          "given-names": "DM"
         }
       ],
       "source": "Proc Natl Acad Sci USA",
@@ -1367,23 +1486,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "JT Schiffer"
+          "surname": "Schiffer",
+          "given-names": "JT"
         },
         {
           "group-type": "author",
-          "name": "A Magaret"
+          "surname": "Magaret",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         }
       ],
       "source": "J Antimicrob Chemother",
@@ -1395,23 +1519,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "JT Schiffer"
+          "surname": "Schiffer",
+          "given-names": "JT"
         },
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "A Magaret"
+          "surname": "Magaret",
+          "given-names": "A"
         }
       ],
       "source": "J Infect Dis",
@@ -1423,11 +1552,13 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "H Shin"
+          "surname": "Shin",
+          "given-names": "H"
         },
         {
           "group-type": "author",
-          "name": "A Iwasaki"
+          "surname": "Iwasaki",
+          "given-names": "A"
         }
       ],
       "source": "Nature",
@@ -1439,27 +1570,34 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "SL Spruance"
+          "surname": "Spruance",
+          "given-names": "SL"
         },
         {
           "group-type": "author",
-          "name": "JC Overall Jnr"
+          "surname": "Overall",
+          "given-names": "JC",
+          "suffix": "Jnr"
         },
         {
           "group-type": "author",
-          "name": "ER Kern"
+          "surname": "Kern",
+          "given-names": "ER"
         },
         {
           "group-type": "author",
-          "name": "GG Krueger"
+          "surname": "Krueger",
+          "given-names": "GG"
         },
         {
           "group-type": "author",
-          "name": "V Pliam"
+          "surname": "Pliam",
+          "given-names": "V"
         },
         {
           "group-type": "author",
-          "name": "W Miller"
+          "surname": "Miller",
+          "given-names": "W"
         }
       ],
       "source": "N Engl J Med",
@@ -1471,27 +1609,34 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "SL Spruance"
+          "surname": "Spruance",
+          "given-names": "SL"
         },
         {
           "group-type": "author",
-          "name": "JA Green"
+          "surname": "Green",
+          "given-names": "JA"
         },
         {
           "group-type": "author",
-          "name": "G Chiu"
+          "surname": "Chiu",
+          "given-names": "G"
         },
         {
           "group-type": "author",
-          "name": "TJ Yeh"
+          "surname": "Yeh",
+          "given-names": "TJ"
         },
         {
           "group-type": "author",
-          "name": "G Wenerstrom"
+          "surname": "Wenerstrom",
+          "given-names": "G"
         },
         {
           "group-type": "author",
-          "name": "JC Overall, Jr"
+          "surname": "Overall",
+          "given-names": "JC",
+          "suffix": "Jr"
         }
       ],
       "source": "Infect Immun",
@@ -1502,27 +1647,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "AW Sylwester"
+          "surname": "Sylwester",
+          "given-names": "AW"
         },
         {
           "group-type": "author",
-          "name": "BL Mitchell"
+          "surname": "Mitchell",
+          "given-names": "BL"
         },
         {
           "group-type": "author",
-          "name": "JB Edgar"
+          "surname": "Edgar",
+          "given-names": "JB"
         },
         {
           "group-type": "author",
-          "name": "C Taormina"
+          "surname": "Taormina",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "C Pelte"
+          "surname": "Pelte",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "F Ruchti"
+          "surname": "Ruchti",
+          "given-names": "F"
         }
       ],
       "source": "J Exp Med",
@@ -1534,27 +1685,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "S Tata"
+          "surname": "Tata",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "C Johnston"
+          "surname": "Johnston",
+          "given-names": "C"
         },
         {
           "group-type": "author",
-          "name": "ML Huang"
+          "surname": "Huang",
+          "given-names": "ML"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "A Magaret"
+          "surname": "Magaret",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         }
       ],
       "source": "J Infect Dis",
@@ -1566,19 +1723,23 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "R Turner"
+          "surname": "Turner",
+          "given-names": "R"
         },
         {
           "group-type": "author",
-          "name": "Z Shehab"
+          "surname": "Shehab",
+          "given-names": "Z"
         },
         {
           "group-type": "author",
-          "name": "K Osborne"
+          "surname": "Osborne",
+          "given-names": "K"
         },
         {
           "group-type": "author",
-          "name": "JO Hendley"
+          "surname": "Hendley",
+          "given-names": "JO"
         }
       ],
       "source": "Pediatrics",
@@ -1589,27 +1750,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "GM Verjans"
+          "surname": "Verjans",
+          "given-names": "GM"
         },
         {
           "group-type": "author",
-          "name": "RQ Hintzen"
+          "surname": "Hintzen",
+          "given-names": "RQ"
         },
         {
           "group-type": "author",
-          "name": "JM van Dun"
+          "surname": "van Dun",
+          "given-names": "JM"
         },
         {
           "group-type": "author",
-          "name": "A Poot"
+          "surname": "Poot",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "JC Milikan"
+          "surname": "Milikan",
+          "given-names": "JC"
         },
         {
           "group-type": "author",
-          "name": "JD Laman"
+          "surname": "Laman",
+          "given-names": "JD"
         }
       ],
       "source": "Proc Natl Acad Sci USA",
@@ -1621,23 +1788,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "J Zeh"
+          "surname": "Zeh",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "RL Ashley"
+          "surname": "Ashley",
+          "given-names": "RL"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         }
       ],
       "source": "N Engl J Med",
@@ -1649,27 +1821,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "L Corey"
+          "surname": "Corey",
+          "given-names": "L"
         },
         {
           "group-type": "author",
-          "name": "R Cone"
+          "surname": "Cone",
+          "given-names": "R"
         },
         {
           "group-type": "author",
-          "name": "A Hobson"
+          "surname": "Hobson",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "G Davis"
+          "surname": "Davis",
+          "given-names": "G"
         },
         {
           "group-type": "author",
-          "name": "J Zeh"
+          "surname": "Zeh",
+          "given-names": "J"
         }
       ],
       "source": "J Clin Invest",
@@ -1681,27 +1859,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "A Wald"
+          "surname": "Wald",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "J Zeh"
+          "surname": "Zeh",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "S Selke"
+          "surname": "Selke",
+          "given-names": "S"
         },
         {
           "group-type": "author",
-          "name": "T Warren"
+          "surname": "Warren",
+          "given-names": "T"
         },
         {
           "group-type": "author",
-          "name": "A Ryncarz"
+          "surname": "Ryncarz",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "R Ashley"
+          "surname": "Ashley",
+          "given-names": "R"
         }
       ],
       "source": "N Engl J Med",
@@ -1713,23 +1897,28 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "K Wang"
+          "surname": "Wang",
+          "given-names": "K"
         },
         {
           "group-type": "author",
-          "name": "T Lau"
+          "surname": "Lau",
+          "given-names": "T"
         },
         {
           "group-type": "author",
-          "name": "M Morales"
+          "surname": "Morales",
+          "given-names": "M"
         },
         {
           "group-type": "author",
-          "name": "E Mont"
+          "surname": "Mont",
+          "given-names": "E"
         },
         {
           "group-type": "author",
-          "name": "S Straus"
+          "surname": "Straus",
+          "given-names": "S"
         }
       ],
       "source": "J Virol",
@@ -1741,27 +1930,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "J Zhu"
+          "surname": "Zhu",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "D Koelle"
+          "surname": "Koelle",
+          "given-names": "D"
         },
         {
           "group-type": "author",
-          "name": "J Cao"
+          "surname": "Cao",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "J Vazquez"
+          "surname": "Vazquez",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "M Huang"
+          "surname": "Huang",
+          "given-names": "M"
         },
         {
           "group-type": "author",
-          "name": "F Hladik"
+          "surname": "Hladik",
+          "given-names": "F"
         }
       ],
       "source": "J Exp Med",
@@ -1773,27 +1968,33 @@
       "authors": [
         {
           "group-type": "author",
-          "name": "J Zhu"
+          "surname": "Zhu",
+          "given-names": "J"
         },
         {
           "group-type": "author",
-          "name": "F Hladik"
+          "surname": "Hladik",
+          "given-names": "F"
         },
         {
           "group-type": "author",
-          "name": "A Woodward"
+          "surname": "Woodward",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "A Klock"
+          "surname": "Klock",
+          "given-names": "A"
         },
         {
           "group-type": "author",
-          "name": "T Peng"
+          "surname": "Peng",
+          "given-names": "T"
         },
         {
           "group-type": "author",
-          "name": "C Johnston"
+          "surname": "Johnston",
+          "given-names": "C"
         }
       ],
       "source": "Nat Med",
