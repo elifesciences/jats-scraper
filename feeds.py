@@ -51,11 +51,11 @@ def citations(article):
     for ref in refs:
         citation = {}
 
-        copy_attribute(ref, 'article_title', citation, destination_key='title', process=tidy_whitespace)
+        copy_attribute(ref, 'full_article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
         copy_attribute(ref, 'authors', citation)
         copy_attribute(ref, 'year', citation)
-        copy_attribute(ref, 'source', citation)
+        copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
         citation_list[ref['id']] = citation
     return citation_list
 
