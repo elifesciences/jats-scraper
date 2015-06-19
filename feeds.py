@@ -56,6 +56,7 @@ def citations(article):
         copy_attribute(ref, 'authors', citation)
         copy_attribute(ref, 'year', citation)
         copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
+        copy_attribute(ref, 'comment', citation)
         citation_list[ref['id']] = citation
     return citation_list
 
