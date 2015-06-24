@@ -211,7 +211,7 @@ def component_fragment(component, volume):
         return None
 
     copy_attribute(component, 'type', fragment)
-    copy_attribute(component, 'doi', fragment, destination_key='doi', process=tidy_whitespace)
+    copy_attribute(component, 'doi', fragment, destination_key='doi')
     copy_attribute(component, 'ordinal', fragment)
 
     if fragment['type'] in ['sub-article','abstract'] and component.get('full_title'):
