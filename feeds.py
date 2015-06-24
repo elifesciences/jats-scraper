@@ -277,7 +277,7 @@ def clean_fragment(fragment):
 
 @fattrs('this as article')
 def email(article):
-    cor = article.full_correspondence()
+    cor = article.__getattr__('full_correspondence')
     if cor is not None:
         return cor
     else:
