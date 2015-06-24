@@ -343,36 +343,36 @@
     },
     "funding": {
       "par-1": {
-        "id": "dx.doi.org/10.13039/100000011",
+        "id": "10.13039/100000011",
         "id-type": "FundRef",
         "institution": "Howard Hughes Medical Institute"
       },
       "par-2": {
-        "id": "dx.doi.org/10.13039/100000002",
+        "id": "10.13039/100000002",
         "id-type": "FundRef",
         "institution": "National Institutes of Health",
         "award-id": "F32 GM086054"
       },
       "par-3": {
-        "id": "dx.doi.org/10.13039/100000002",
+        "id": "10.13039/100000002",
         "id-type": "FundRef",
         "institution": "National Institutes of Health",
         "award-id": "F32 GM089018"
       },
       "par-4": {
-        "id": "dx.doi.org/10.13039/100000002",
+        "id": "10.13039/100000002",
         "id-type": "FundRef",
         "institution": "National Institutes of Health",
         "award-id": "R01 GM086258"
       },
       "par-5": {
-        "id": "dx.doi.org/10.13039/100000002",
+        "id": "10.13039/100000002",
         "id-type": "FundRef",
         "institution": "National Institutes of Health",
         "award-id": "R01 GM099533"
       },
       "par-6": {
-        "id": "dx.doi.org/10.13039/100000002",
+        "id": "10.13039/100000002",
         "id-type": "FundRef",
         "institution": "National Institutes of Health",
         "award-id": "T32 HG00047"

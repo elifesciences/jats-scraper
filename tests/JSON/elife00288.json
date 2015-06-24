@@ -702,7 +702,7 @@
         }
       ],
       "source": "Inf Sci (Ny)",
-      "doi": "http://dx.doi.org/10.1016/j.ins.2008.11.012",
+      "doi": "10.1016/j.ins.2008.11.012",
       "year": "2009"
     },
     "bib2": {
@@ -730,7 +730,7 @@
         }
       ],
       "source": "J Theor Biol",
-      "doi": "http://dx.doi.org/10.1016/j.jtbi.2007.02.017",
+      "doi": "10.1016/j.jtbi.2007.02.017",
       "year": "2007"
     },
     "bib3": {
@@ -748,7 +748,7 @@
         }
       ],
       "source": "J Virol",
-      "doi": "http://dx.doi.org/10.1128/JVI.77.4.2686-2695.2003",
+      "doi": "10.1128/JVI.77.4.2686-2695.2003",
       "year": "2003"
     },
     "bib4": {
@@ -808,7 +808,7 @@
         }
       ],
       "source": "Sex Transm Infect",
-      "doi": "http://dx.doi.org/10.1136/sti.2006.022020",
+      "doi": "10.1136/sti.2006.022020",
       "year": "2007"
     },
     "bib6": {
@@ -841,7 +841,7 @@
         }
       ],
       "source": "J Clin Invest",
-      "doi": "http://dx.doi.org/10.1172/JCI111678",
+      "doi": "10.1172/JCI111678",
       "year": "1985"
     },
     "bib7": {
@@ -891,7 +891,7 @@
         }
       ],
       "source": "Science",
-      "doi": "http://dx.doi.org/10.1126/science.1183173",
+      "doi": "10.1126/science.1183173",
       "year": "2010"
     },
     "bib9": {
@@ -909,7 +909,7 @@
         }
       ],
       "source": "J Virol",
-      "doi": "http://dx.doi.org/10.1128/JVI.80.7.3167-3179.2006",
+      "doi": "10.1128/JVI.80.7.3167-3179.2006",
       "year": "2006"
     },
     "bib10": {
@@ -937,7 +937,7 @@
         }
       ],
       "source": "Proc Natl Acad Sci USA",
-      "doi": "http://dx.doi.org/10.1073/pnas.0307506101",
+      "doi": "10.1073/pnas.0307506101",
       "year": "2004"
     },
     "bib11": {
@@ -975,7 +975,7 @@
         }
       ],
       "source": "Nat Immunol",
-      "doi": "http://dx.doi.org/10.1038/ni.1718",
+      "doi": "10.1038/ni.1718",
       "year": "2009"
     },
     "bib12": {
@@ -998,7 +998,7 @@
         }
       ],
       "source": "Proc Natl Acad Sci USA",
-      "doi": "http://dx.doi.org/10.1073/pnas.0603181103",
+      "doi": "10.1073/pnas.0603181103",
       "year": "2006"
     },
     "bib13": {
@@ -1031,7 +1031,7 @@
         }
       ],
       "source": "J Clin Microbiol",
-      "doi": "http://dx.doi.org/10.1128/JCM.40.7.2609-2611.2002",
+      "doi": "10.1128/JCM.40.7.2609-2611.2002",
       "year": "2002"
     },
     "bib14": {
@@ -1064,7 +1064,7 @@
         }
       ],
       "source": "J Virol",
-      "doi": "http://dx.doi.org/10.1128/JVI.02359-06",
+      "doi": "10.1128/JVI.02359-06",
       "year": "2007a"
     },
     "bib15": {
@@ -1097,7 +1097,7 @@
         }
       ],
       "source": "J Virol",
-      "doi": "http://dx.doi.org/10.1128/JVI.01133-07",
+      "doi": "10.1128/JVI.01133-07",
       "year": "2007b"
     },
     "bib16": {
@@ -1130,7 +1130,7 @@
         }
       ],
       "source": "J Clin Microbiol",
-      "doi": "http://dx.doi.org/10.1128/JCM.01405-06",
+      "doi": "10.1128/JCM.01405-06",
       "year": "2007"
     },
     "bib17": {
@@ -1158,7 +1158,7 @@
         }
       ],
       "source": "J Theor Biol",
-      "doi": "http://dx.doi.org/10.1016/j.jtbi.2008.04.011",
+      "doi": "10.1016/j.jtbi.2008.04.011",
       "year": "2008"
     },
     "bib18": {
@@ -1196,7 +1196,7 @@
         }
       ],
       "source": "J Infect Dis",
-      "doi": "http://dx.doi.org/10.1086/591913",
+      "doi": "10.1086/591913",
       "year": "2008"
     },
     "bib19": {
@@ -1234,7 +1234,7 @@
         }
       ],
       "source": "Sex Transm Dis",
-      "doi": "http://dx.doi.org/10.1097/00007435-198501000-00007",
+      "doi": "10.1097/00007435-198501000-00007",
       "year": "1985"
     },
     "bib20": {
@@ -1272,7 +1272,7 @@
         }
       ],
       "source": "J Infect Dis",
-      "doi": "http://dx.doi.org/10.1093/infdis/157.6.1169",
+      "doi": "10.1093/infdis/157.6.1169",
       "year": "1988"
     },
     "bib21": {
@@ -1305,7 +1305,7 @@
         }
       ],
       "source": "Science",
-      "doi": "http://dx.doi.org/10.1126/science.271.5255.1582",
+      "doi": "10.1126/science.271.5255.1582",
       "year": "1996"
     },
     "bib22": {
@@ -1343,7 +1343,7 @@
         }
       ],
       "source": "J Virol",
-      "doi": "http://dx.doi.org/10.1128/JVI.00127-10",
+      "doi": "10.1128/JVI.00127-10",
       "year": "2010"
     },
     "bib23": {
@@ -1440,7 +1440,7 @@
         }
       ],
       "source": "Sci Transl Med",
-      "doi": "http://dx.doi.org/10.1126/scitranslmed.3000193",
+      "doi": "10.1126/scitranslmed.3000193",
       "year": "2009"
     },
     "bib26": {
@@ -1478,7 +1478,7 @@
         }
       ],
       "source": "Proc Natl Acad Sci USA",
-      "doi": "http://dx.doi.org/10.1073/pnas.1006614107",
+      "doi": "10.1073/pnas.1006614107",
       "year": "2010"
     },
     "bib27": {
@@ -1511,7 +1511,7 @@
         }
       ],
       "source": "J Antimicrob Chemother",
-      "doi": "http://dx.doi.org/10.1093/jac/dkr346",
+      "doi": "10.1093/jac/dkr346",
       "year": "2011a"
     },
     "bib28": {
@@ -1544,7 +1544,7 @@
         }
       ],
       "source": "J Infect Dis",
-      "doi": "http://dx.doi.org/10.1093/infdis/jir314",
+      "doi": "10.1093/infdis/jir314",
       "year": "2011b"
     },
     "bib29": {
@@ -1562,7 +1562,7 @@
         }
       ],
       "source": "Nature",
-      "doi": "http://dx.doi.org/10.1038/nature11522",
+      "doi": "10.1038/nature11522",
       "year": "2012"
     },
     "bib30": {
@@ -1601,7 +1601,7 @@
         }
       ],
       "source": "N Engl J Med",
-      "doi": "http://dx.doi.org/10.1056/NEJM197707142970201",
+      "doi": "10.1056/NEJM197707142970201",
       "year": "1977"
     },
     "bib31": {
@@ -1677,7 +1677,7 @@
         }
       ],
       "source": "J Exp Med",
-      "doi": "http://dx.doi.org/10.1084/jem.20050882",
+      "doi": "10.1084/jem.20050882",
       "year": "2005"
     },
     "bib33": {
@@ -1715,7 +1715,7 @@
         }
       ],
       "source": "J Infect Dis",
-      "doi": "http://dx.doi.org/10.1086/650302",
+      "doi": "10.1086/650302",
       "year": "2010"
     },
     "bib34": {
@@ -1780,7 +1780,7 @@
         }
       ],
       "source": "Proc Natl Acad Sci USA",
-      "doi": "http://dx.doi.org/10.1073/pnas.0610847104",
+      "doi": "10.1073/pnas.0610847104",
       "year": "2007"
     },
     "bib36": {
@@ -1813,7 +1813,7 @@
         }
       ],
       "source": "N Engl J Med",
-      "doi": "http://dx.doi.org/10.1056/NEJM199509213331205",
+      "doi": "10.1056/NEJM199509213331205",
       "year": "1995"
     },
     "bib37": {
@@ -1851,7 +1851,7 @@
         }
       ],
       "source": "J Clin Invest",
-      "doi": "http://dx.doi.org/10.1172/JCI119237",
+      "doi": "10.1172/JCI119237",
       "year": "1997"
     },
     "bib38": {
@@ -1889,7 +1889,7 @@
         }
       ],
       "source": "N Engl J Med",
-      "doi": "http://dx.doi.org/10.1056/NEJM200003233421203",
+      "doi": "10.1056/NEJM200003233421203",
       "year": "2000"
     },
     "bib39": {
@@ -1922,7 +1922,7 @@
         }
       ],
       "source": "J Virol",
-      "doi": "http://dx.doi.org/10.1128/JVI.79.22.14079-14087.2005",
+      "doi": "10.1128/JVI.79.22.14079-14087.2005",
       "year": "2005"
     },
     "bib40": {
@@ -1960,7 +1960,7 @@
         }
       ],
       "source": "J Exp Med",
-      "doi": "http://dx.doi.org/10.1084/jem.20061792",
+      "doi": "10.1084/jem.20061792",
       "year": "2007"
     },
     "bib41": {
@@ -1998,7 +1998,7 @@
         }
       ],
       "source": "Nat Med",
-      "doi": "http://dx.doi.org/10.1038/nm.2006",
+      "doi": "10.1038/nm.2006",
       "year": "2009"
     }
   }

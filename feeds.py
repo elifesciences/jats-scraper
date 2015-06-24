@@ -51,7 +51,7 @@ def citations(article):
     for ref in refs:
         citation = {}
 
-        copy_attribute(ref, 'full_article_title', citation, destination_key='title', process=tidy_whitespace)
+        copy_attribute(ref, 'article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
         copy_attribute(ref, 'authors', citation)
         copy_attribute(ref, 'year', citation)
@@ -275,6 +275,15 @@ def clean_fragment(fragment):
         if property in fragment:
             del(fragment[property])
 
+@fattrs('this as article')
+def email(article):
+    cor = article.full_correspondence()
+    if cor is not None:
+        return cor
+    else:
+        return {}
+
+
 
 @fattrs('this as article')
 def fragments(article):
@@ -335,7 +344,7 @@ DESCRIPTION = [
             'referenced': {
                 'present-address': 'present_address',
                 'equal-contrib': 'equal_contrib',
-                'email': "this.full_correspondence",
+                'email': "email",
                 'funding': 'this.full_award_groups',
                 'competing-interest': 'competing_interests',
                 'contribution': 'contribution',
