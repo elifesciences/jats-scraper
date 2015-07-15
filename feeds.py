@@ -330,7 +330,9 @@ DESCRIPTION = [
             'volume': ('this.volume', "0", str),
             'article-id': 'this.doi',
             'article-version-id': 'article_full_version',
-            'pub-date': ('this.pub_date', None, lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%d")),
+            'pub-date': ('this.pub_date', None, \
+                         lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%d") \
+                         if t is not None else None),
             'path': 'article_path',
             'article-type': 'this.article_type',
             'status': 'article_status',
