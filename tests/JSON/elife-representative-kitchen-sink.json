@@ -165,6 +165,9 @@
         ],
         "present-address": [
           "pa3"
+        ],
+        "foot-note": [
+          "fn1"
         ]
       }
     },
@@ -425,6 +428,12 @@
       "dataro1": {},
       "dataro2": {},
       "dataro3": {}
+    },
+    "foot-note": {
+      "fn1": {
+        "type": "deceased",
+        "value": "Deceased"
+      }
     }
   },
   "fragments": [

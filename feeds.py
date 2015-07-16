@@ -134,6 +134,19 @@ def equal_contrib(article):
     return equal_contribs
 
 @fattrs('this as article')
+def foot_notes(article):
+    foot_notes = {}
+    notes = article.__getattr__('full_author_notes')
+    if notes is not None:
+        for note in notes:
+            if 'id' in note and note['id'].startswith('fn'):
+                foot_notes[note['id']] = {
+                    'type': note['fn-type'],
+                    'value': footnote_text(note['text'])
+                }
+    return foot_notes
+
+@fattrs('this as article')
 def present_address(article):
     addresses = {}
     notes = article.__getattr__('full_author_notes', fntype_filter='present-address')
@@ -364,6 +377,7 @@ DESCRIPTION = [
                 'contribution': 'contribution',
                 'affiliation': 'this.full_affiliation',
                 'related-object': 'this.related_object_ids',
+                'foot-note': 'foot_notes'
             }  # referenced
         }
     })  # ends article block
