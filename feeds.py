@@ -94,13 +94,17 @@ def article_list(doc):
     elif doc.startswith("<?xml"):
         return [ParserWrapper(parser.parse_xml(doc))]
 
+@fattrs('this as article')
+def volume(article):
+    volume = article.volume
+    if not volume:
+        # No volume on unpublished PoA articles, calculate based on current year
+        volume = time.gmtime()[0] - 2011
+    return volume
 
 @fattrs('this as article')
 def article_path(article):
-    if article.is_poa is True:
-        return 'content/early/e' + article.publisher_id
-    else:
-        return 'content/' + article.volume + '/e' + article.publisher_id
+    return 'content/' + str(volume(article)) + '/e' + article.publisher_id
 
 
 @fattrs('this as article')
@@ -309,7 +313,7 @@ def fragments(article):
 
         # First populate with fragments having no parent
         for component in components:
-            fragment = component_fragment(component, article.volume)
+            fragment = component_fragment(component, volume(article))
 
             if fragment and not fragment.get('parent_type'):
                 fragments.append(fragment)
@@ -317,13 +321,13 @@ def fragments(article):
         # Populate fragments whose parents are already populated
         for component in components:
             if 'parent_type' in component:
-                fragment = component_fragment(component, article.volume)
+                fragment = component_fragment(component, volume(article))
                 populate_children(fragment, fragments)
 
         # Populate fragments of fragments
         for component in components:
             if 'parent_type' in component:
-                fragment = component_fragment(component, article.volume)
+                fragment = component_fragment(component, volume(article))
                 for parent_fragment in fragments:
                     if 'fragments' in parent_fragment:
                         populate_children(fragment, parent_fragment['fragments'])
@@ -358,7 +362,7 @@ DESCRIPTION = [
             'doi': 'this.doi',
             'publish': ('"1"', "1", str),  # 1 or 0 means publish immediately or don't publish immediately
             'force': ('"1"', "1", str),  # overwrite if present
-            'volume': ('this.volume', "0", str),
+            'volume': ('volume', "0", str),
             'article-id': 'this.doi',
             'article-version-id': 'article_full_version',
             'pub-date': ('this.pub_date', None, \
