@@ -97,7 +97,10 @@ def article_list(doc):
 
 @fattrs('this as article')
 def article_path(article):
-    return 'content/' + article.volume + '/e' + article.publisher_id
+    if article.is_poa is True:
+        return 'content/early/e' + article.publisher_id
+    else:
+        return 'content/' + article.volume + '/e' + article.publisher_id
 
 
 @fattrs('this as article')
