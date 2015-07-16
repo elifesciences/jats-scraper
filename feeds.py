@@ -317,6 +317,21 @@ def fragments(article):
 
     return fragments
 
+@fattrs('this as article')
+def related_article(article):
+    relateds = []
+    related_articles = article.__getattr__('related_article')
+    if related_articles is not None:
+
+        for related_article in related_articles:
+            data = {
+                'type': related_article['related_article_type'],
+                'href': related_article['xlink_href']
+            }
+            relateds.append(data)
+
+    return relateds
+
 DESCRIPTION = [
     ('article', {
         'iterable': article_list,
@@ -339,8 +354,7 @@ DESCRIPTION = [
             'contributors': 'this.contributors',
             'fragments': 'fragments',
             'citations': 'citations',
-            #'related-articles': 'unsupported', # TODO but leave for now
-
+            'related-articles': 'related_article',
             'referenced': {
                 'present-address': 'present_address',
                 'equal-contrib': 'equal_contrib',
