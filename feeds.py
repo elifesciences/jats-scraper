@@ -363,6 +363,7 @@ DESCRIPTION = [
             'publish': ('"1"', "1", str),  # 1 or 0 means publish immediately or don't publish immediately
             'force': ('"1"', "1", str),  # overwrite if present
             'volume': ('volume', "0", str),
+            'elocation-id': 'this.elocation_id',
             'article-id': 'this.doi',
             'article-version-id': 'article_full_version',
             'pub-date': ('this.pub_date', None, \
