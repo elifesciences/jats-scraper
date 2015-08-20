@@ -28,7 +28,7 @@ logger.addHandler(h)
 
 
 class ParserWrapper(object):
-    def __init__(self, soup,path):
+    def __init__(self, soup, path = None):
         self.soup = soup
         self.path = path
 
@@ -119,17 +119,23 @@ def article_full_version(article):
 
 def version_from_path(file_path):
     """ E.g. file name elife-04996-v1.xml is version 1 """
+    if file_path is None:
+        return None
+    
     bit = file_path.split('-')[-1]
     bit = bit.split('.')[0]
     if bit.find('v') > -1:
         return bit.split('v')[-1]
     else:
-        return _VERSION
+        return None
     
 
 @fattrs('this as article')
 def version(article):
-    return version_from_path(article.path)
+    if version_from_path(article.path):
+        return version_from_path(article.path)
+    else:
+        return _VERSION
 
 @fattrs('this as article')
 def issn_electronic(article):
