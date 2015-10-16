@@ -52,7 +52,7 @@ def citations(article):
     for ref in refs:
         citation = {}
 
-        copy_attribute(ref, 'article_title', citation, destination_key='title', process=tidy_whitespace)
+        copy_attribute(ref, 'full_article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
         copy_attribute(ref, 'authors', citation)
         copy_attribute(ref, 'year', citation)
@@ -372,7 +372,7 @@ DESCRIPTION = [
     ('article', {
         'iterable': article_list,
         'attrs': {
-            'title': ('this.title', None, tidy_whitespace),
+            'title': ('this.full_title', None, tidy_whitespace),
             'impact-statement': 'this.impact_statement',
             'version': 'version',
             'doi': 'this.doi',
