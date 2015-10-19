@@ -12,6 +12,10 @@ the purposes of pretty-printing.
     $ mkvirtualenv jats-scraper
     $ workon jats-scraper
     $ pip install -r requirements.txt
+    
+For installing on OSX it may be necessary to do the following before running requirements.yxy
+    
+    $ sudo STATIC_DEPS=true pip install lxml==3.4.1 
 
 ## usage
 
