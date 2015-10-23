@@ -28,9 +28,10 @@ logger.addHandler(h)
 
 
 class ParserWrapper(object):
-    def __init__(self, soup, path = None):
+    def __init__(self, soup, path = None, version = None):
         self.soup = soup
         self.path = path
+        self.version = version
 
     def __getattr__(self, attr, *args, **kwargs):
         def awooga(*args, **kwargs):
@@ -40,10 +41,10 @@ class ParserWrapper(object):
         return getattr(parser, attr, awooga)(self.soup, *args, **kwargs)
 
 
-def article_wrapper(path):
+def article_wrapper(path,version=None):
     soup = parser.parse_document(path)
     # return a wrapper around the parser module that injects the soup when a function is called
-    return ParserWrapper(soup,path)
+    return ParserWrapper(soup,path,version)
 
 @fattrs('this as article')
 def citations(article):
@@ -86,14 +87,15 @@ def footnote_text(raw_footnote_text):
     return text
 
 
-@fattrs('doc')
-def article_list(doc):
+@fattrs('doc', 'article_version as article_version')
+def article_list(doc, article_version):
     if os.path.isfile(doc):
-        return [article_wrapper(doc)]
+        return [article_wrapper(doc, article_version)]
     elif os.path.isdir(doc):
+        # Note: Converting an entire directory does not use article_version value
         return map(article_wrapper, glob.glob(doc + "*.xml"))
     elif doc.startswith("<?xml"):
-        return [ParserWrapper(parser.parse_xml(doc))]
+        return [ParserWrapper(parser.parse_xml(doc), version=article_version)]
 
 @fattrs('this as article')
 def volume(article):
@@ -132,7 +134,9 @@ def version_from_path(file_path):
 
 @fattrs('this as article')
 def version(article):
-    if version_from_path(article.path):
+    if article.version is not None:
+        return article.version
+    elif version_from_path(article.path):
         return version_from_path(article.path)
     else:
         return _VERSION
@@ -409,11 +413,11 @@ DESCRIPTION = [
     })  # ends article block
 ]
 
-def scrape(docs_dir, process=None):
+def scrape(docs_dir, process=None, article_version=None):
     if docs_dir is not None:
         import scraper
         mod = __import__(__name__)
-        res = scraper.scrape(mod, doc=docs_dir)
+        res = scraper.scrape(mod, doc=docs_dir, article_version=article_version)
         if process:
             res = process(res)
         if 'referenced' in res:
