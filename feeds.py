@@ -87,7 +87,7 @@ def footnote_text(raw_footnote_text):
     return text
 
 
-@fattrs('doc', 'article_version as article_version')
+@fattrs('doc', 'article_version')
 def article_list(doc, article_version):
     if os.path.isfile(doc):
         return [article_wrapper(doc, article_version)]
