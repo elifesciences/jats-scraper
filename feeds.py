@@ -107,7 +107,8 @@ def volume(article):
 
 @fattrs('this as article')
 def article_path(article):
-    return 'content/' + str(volume(article)) + '/e' + article.publisher_id
+    return ('content/' + str(volume(article)) + '/e' + article.publisher_id
+            + 'v' + str(version(article)))
 
 
 @fattrs('this as article')
@@ -201,48 +202,140 @@ def contribution(article):
             cons[con['id']] = tidy_whitespace(footnote_text(con['text']))
     return cons
 
-def fragment_path_token(fragment_type, ordinal):
+def fragment_path_token(fragment_type, ordinal, asset):
     if fragment_type == 'abstract':
-        return 'abstract-' + str(ordinal)
+        if int(ordinal) == 1:
+            return 'abstract'
+        else:
+            return 'abstract' + str(ordinal)
 
     if fragment_type == 'fig':
-        return 'F' + str(ordinal)
+        if asset and asset == 'figsupp':
+            return 'figure-supp' + str(ordinal)
+        else:
+            return 'figure' + str(ordinal)
 
     if fragment_type == 'supplementary-material':
-        return 'DC' + str(ordinal)
+        return 'supp-material' + str(ordinal)
 
     if fragment_type == 'sub-article':
-        return str(ordinal)
+        if int(ordinal) == 1:
+            return 'decision'
+        elif int(ordinal) == 2:
+            return 'response'
+        else:
+            return 'sub-article' + str(ordinal)
+
+    if fragment_type == 'app':
+        return 'appendix' + str(ordinal)
 
     if fragment_type == 'table-wrap':
-        return 'T' + str(ordinal)
+        return 'table' + str(ordinal)
 
     if fragment_type == 'boxed-text':
-        return 'B' + str(ordinal)
+        return 'box' + str(ordinal)
 
     if fragment_type == 'media':
-        return 'media-' + str(ordinal)
+        return 'media' + str(ordinal)
 
     if fragment_type == 'chem-struct-wrap':
         return 'C' + str(ordinal)
 
-def fragment_path(fragment, volume, manuscript_id):
-    path = "content/" + str(volume) + '/e' + manuscript_id
+def fragment_path(fragment, volume, manuscript_id, version):
+    path = "content/" + str(volume) + '/e' + manuscript_id + 'v' + str(version)
 
     if fragment.get('parent_parent_type'):
-        path += "/" + fragment_path_token(fragment.get('parent_parent_type'),
-                                 fragment.get('parent_parent_ordinal'))
+        path += "/" + fragment_path_token(fragment_type = fragment.get('parent_parent_type'),
+                                          ordinal = fragment.get('parent_parent_path_ordinal'),
+                                          asset = fragment.get('parent_parent_asset'))
 
     if fragment.get('parent_type'):
-        path += "/" + fragment_path_token(fragment.get('parent_type'),
-                                 fragment.get('parent_ordinal'))
+        path += "/" + fragment_path_token(fragment_type = fragment.get('parent_type'),
+                                          ordinal = fragment.get('parent_path_ordinal'),
+                                          asset = fragment.get('parent_asset'))
 
-    path += "/" + fragment_path_token(fragment.get('type'),
-                       fragment.get('ordinal'))
+    path += "/" + fragment_path_token(fragment_type = fragment.get('type'),
+                                      ordinal = fragment.get('path_ordinal'),
+                                      asset = fragment.get('asset'))
 
     return path
 
-def component_fragment(component, volume):
+def sibling_components(components, matching_component):
+    """
+    Given a list of components and a particular component
+    compile a list of its siblings
+    """
+    sibling_components = []
+    
+    if matching_component.get('parent_type') is not None:
+        for comp in components:
+            if (comp.get('parent_type') == matching_component.get('parent_type')
+                and comp.get('parent_ordinal') == matching_component.get('parent_ordinal')):
+                    sibling_components.append(comp)
+    else:
+        # Look for components with no parent
+        for comp in components:
+            if (comp.get('parent_type') is None
+                and comp.get('parent_ordinal') is None):
+                    sibling_components.append(comp)
+ 
+    return sibling_components
+
+def fragment_sibling_ordinal(components, type, ordinal):
+    """
+    Given a fragment and components, return the numeric index of the fragment
+    for fragments of the same type in all of its sibling components
+    """
+    matching_component = None
+    for comp in components:
+        if comp.get('type') == type and comp.get('ordinal') == ordinal:
+            matching_component = comp
+    
+    siblings = sibling_components(components, matching_component)
+
+    #print str(type) + '-' + str(ordinal) + '-' + str(len(siblings))
+
+    ordinal = 1
+    for sib in siblings:
+        if sib.get('type') == matching_component.get('type'):
+            if sib.get('ordinal') == matching_component.get('ordinal'):
+                # This is the fragment we are searching for, we are done
+                break
+            ordinal = ordinal + 1
+            
+    return ordinal
+    
+
+def fragment_path_ordinal(components, fragment):
+    """
+    Look at the fragment and its parentage to set the ordinal to be used in url paths
+    """
+    
+    if fragment.get('parent_parent_type'):
+        # Third level element
+        fragment['parent_parent_path_ordinal'] = fragment_sibling_ordinal(components,
+                                                                          fragment.get('parent_parent_type'),
+                                                                          fragment.get('parent_parent_ordinal'))
+
+    if fragment.get('parent_type'):
+        raw_path_ordinal = fragment_sibling_ordinal(components, fragment.get('parent_type'),
+                                                    fragment.get('parent_ordinal'))
+        
+        if fragment.get('parent_asset') == 'figsupp':
+            fragment['parent_path_ordinal'] = raw_path_ordinal - 1
+        else:
+            fragment['parent_path_ordinal'] = raw_path_ordinal
+    
+    
+    # First level element
+    fragment['path_ordinal'] = fragment_sibling_ordinal(components, fragment.get('type'),
+                                                        fragment.get('ordinal'))
+    
+    return fragment
+
+
+
+def component_fragment(components, component, volume, version):
 
     fragment = {}
 
@@ -253,7 +346,8 @@ def component_fragment(component, volume):
     copy_attribute(component, 'type', fragment)
     copy_attribute(component, 'doi', fragment, destination_key='doi')
     copy_attribute(component, 'ordinal', fragment)
-
+    copy_attribute(component, 'asset', fragment)
+    
     if fragment['type'] in ['sub-article','abstract'] and component.get('full_title'):
         copy_attribute(component, 'full_title', fragment,
                        destination_key='title', process=tidy_whitespace)
@@ -265,13 +359,18 @@ def component_fragment(component, volume):
     if fragment['type'] == 'sub-article' and component.get('contributors'):
         copy_attribute(component, 'contributors', fragment)
 
-    parent_properties = ['parent_type', 'parent_ordinal',
-                         'parent_parent_type', 'parent_parent_ordinal']
+    parent_properties = ['parent_type', 'parent_ordinal', 'parent_asset',
+                         'parent_parent_type', 'parent_parent_ordinal',
+                         'parent_parent_asset']
     for property in parent_properties:
         copy_attribute(component, property, fragment)
 
+    # Set the path_ordinal values, which is different than the ordinal or sibling ordinal
+    #   depending on where the tag is found
+    fragment = fragment_path_ordinal(components, fragment)
+
     manuscript_id = component.get('article_doi').split('.')[-1]
-    fragment['path'] = fragment_path(fragment, volume, manuscript_id)
+    fragment['path'] = fragment_path(fragment, volume, manuscript_id, version)
 
     return fragment
 
@@ -308,9 +407,10 @@ def clean_fragments(fragments):
 
 def clean_fragment(fragment):
     # Remove some values
-    remove_properties = ['parent_type', 'parent_ordinal',
+    remove_properties = ['parent_type', 'parent_ordinal', 'parent_asset', 'parent_path_ordinal',
                          'parent_parent_type', 'parent_parent_ordinal',
-                         'article_doi', 'ordinal']
+                         'parent_parent_asset', 'parent_parent_path_ordinal',
+                         'article_doi', 'ordinal', 'asset', 'path_ordinal']
     for property in remove_properties:
         if property in fragment:
             del(fragment[property])
@@ -333,7 +433,7 @@ def fragments(article):
 
         # First populate with fragments having no parent
         for component in components:
-            fragment = component_fragment(component, volume(article))
+            fragment = component_fragment(components, component, volume(article), version(article))
 
             if fragment and not fragment.get('parent_type'):
                 fragments.append(fragment)
@@ -341,13 +441,13 @@ def fragments(article):
         # Populate fragments whose parents are already populated
         for component in components:
             if 'parent_type' in component:
-                fragment = component_fragment(component, volume(article))
+                fragment = component_fragment(components, component, volume(article), version(article))
                 populate_children(fragment, fragments)
 
         # Populate fragments of fragments
         for component in components:
             if 'parent_type' in component:
-                fragment = component_fragment(component, volume(article))
+                fragment = component_fragment(components, component, volume(article), version(article))
                 for parent_fragment in fragments:
                     if 'fragments' in parent_fragment:
                         populate_children(fragment, parent_fragment['fragments'])
