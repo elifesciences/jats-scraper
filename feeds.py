@@ -488,7 +488,7 @@ DESCRIPTION = [
             'publish': ('"1"', "1", str),  # 1 or 0 means publish immediately or don't publish immediately
             'volume': ('volume', "0", str),
             'elocation-id': 'this.elocation_id',
-            'article-id': 'this.doi',
+            'article-id': 'this.publisher_id',
             'article-version-id': 'article_full_version',
             'pub-date': ('this.pub_date', None, \
                          lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%d") \
