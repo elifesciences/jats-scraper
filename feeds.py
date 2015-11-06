@@ -48,7 +48,7 @@ def article_wrapper(path,version=None):
 
 @fattrs('this as article')
 def citations(article):
-    citation_list = {}
+    citation_list = []
     refs = article.refs
     for ref in refs:
         citation = {}
@@ -59,7 +59,12 @@ def citations(article):
         copy_attribute(ref, 'year', citation)
         copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
         copy_attribute(ref, 'comment', citation)
-        citation_list[ref['id']] = citation
+        
+        citation_by_id = {}
+        citation_by_id[ref['id']] = citation
+        
+        citation_list.append(citation_by_id)
+        
     return citation_list
 
 def tidy_whitespace(string):
