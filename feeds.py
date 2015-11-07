@@ -530,14 +530,14 @@ def scrape(docs_dir, process=None, article_version=None):
                     del res['referenced'][referenced]
         import json
         res = json.dumps(res, indent=4, ensure_ascii = False)
-        return res
+        return res.encode('utf8')
 
 def main(args):
     if not len(args) == 1:
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir).encode('utf8')
+    print scrape(docs_dir)
 
 
 if __name__ == '__main__':
