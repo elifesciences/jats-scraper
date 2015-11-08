@@ -11,6 +11,7 @@ import os
 from elifetools import parseJATS as parser
 from scraper.utils import fattrs
 import re
+from collections import OrderedDict
 
 _VERSION = "1"  # TODO change all uses of this to get article version information from ?
 
@@ -65,7 +66,7 @@ def citations(article):
         
         citation_list.append(citation_by_id)
         
-    return citation_list
+    return list_to_ordered_dict(citation_list)
 
 def tidy_whitespace(string):
     string = re.sub('\n', ' ', string)
@@ -83,6 +84,16 @@ def copy_attribute(source, source_key, destination, destination_key=None, proces
                 value = process(value)
             destination[destination_key] = value
 
+def list_to_ordered_dict(list):
+    """
+    Given a list of dicts, convert to an ordered dict that retains the
+    original order they were in the list
+    """
+    ordered_dict = OrderedDict()
+    for list_item in list:
+        for key in list_item.keys():
+            ordered_dict[key] = list_item[key]
+    return ordered_dict
 
 def footnote_text(raw_footnote_text):
     match = re.search('.*?<p>(.*?)</p>', raw_footnote_text, re.DOTALL)
