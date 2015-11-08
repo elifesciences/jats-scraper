@@ -439,6 +439,10 @@ def email(article):
     else:
         return {}
 
+@fattrs('this as article')
+def award_groups(article):
+    award_groups = article.__getattr__('full_award_groups')
+    return list_to_ordered_dict(award_groups)
 
 
 @fattrs('this as article')
@@ -517,7 +521,7 @@ DESCRIPTION = [
                 'present-address': 'present_address',
                 'equal-contrib': 'equal_contrib',
                 'email': "email",
-                'funding': 'this.full_award_groups',
+                'funding': 'award_groups',
                 'competing-interest': 'competing_interests',
                 'contribution': 'contribution',
                 'affiliation': 'this.full_affiliation',
