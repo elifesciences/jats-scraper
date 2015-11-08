@@ -444,6 +444,10 @@ def award_groups(article):
     award_groups = article.__getattr__('full_award_groups')
     return list_to_ordered_dict(award_groups)
 
+@fattrs('this as article')
+def affiliation(article):
+    affiliations = article.__getattr__('full_affiliation')
+    return list_to_ordered_dict(affiliations)
 
 @fattrs('this as article')
 def fragments(article):
@@ -524,7 +528,7 @@ DESCRIPTION = [
                 'funding': 'award_groups',
                 'competing-interest': 'competing_interests',
                 'contribution': 'contribution',
-                'affiliation': 'this.full_affiliation',
+                'affiliation': 'affiliation',
                 'related-object': 'this.related_object_ids',
                 'foot-note': 'foot_notes'
             }  # referenced
