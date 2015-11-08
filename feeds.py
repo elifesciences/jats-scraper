@@ -56,7 +56,7 @@ def citations(article):
 
         copy_attribute(ref, 'full_article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
-        copy_attribute(ref, 'authors', citation)
+        copy_attribute(ref, 'authors', citation, destination_key='authors', process=tidy_citation_authors)
         copy_attribute(ref, 'year', citation, destination_key='year', process=tidy_numeric)
         copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
         copy_attribute(ref, 'comment', citation)
@@ -67,6 +67,14 @@ def citations(article):
         citation_list.append(citation_by_id)
         
     return list_to_ordered_dict(citation_list)
+
+def tidy_citation_authors(authors):
+    tidy_authors = []
+    # Only keep authors that have a group-type
+    for author in authors:
+        if 'group-type' in author:
+            tidy_authors.append(author)
+    return tidy_authors
 
 def tidy_numeric(string):
     """ Remove all non-numeric characters """
