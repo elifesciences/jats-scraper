@@ -103,9 +103,10 @@ def list_to_ordered_dict(list):
     original order they were in the list
     """
     ordered_dict = OrderedDict()
-    for list_item in list:
-        for key in list_item.keys():
-            ordered_dict[key] = list_item[key]
+    if list:
+        for list_item in list:
+            for key in list_item.keys():
+                ordered_dict[key] = list_item[key]
     return ordered_dict
 
 def footnote_text(raw_footnote_text):
