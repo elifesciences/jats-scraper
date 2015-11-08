@@ -57,7 +57,7 @@ def citations(article):
         copy_attribute(ref, 'full_article_title', citation, destination_key='title', process=tidy_whitespace)
         copy_attribute(ref, 'reference_id', citation, destination_key='doi')
         copy_attribute(ref, 'authors', citation)
-        copy_attribute(ref, 'year', citation)
+        copy_attribute(ref, 'year', citation, destination_key='year', process=tidy_numeric)
         copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
         copy_attribute(ref, 'comment', citation)
         
@@ -67,6 +67,11 @@ def citations(article):
         citation_list.append(citation_by_id)
         
     return list_to_ordered_dict(citation_list)
+
+def tidy_numeric(string):
+    """ Remove all non-numeric characters """
+    string = re.sub('\D', '', string)
+    return string
 
 def tidy_whitespace(string):
     string = re.sub('\n', ' ', string)
