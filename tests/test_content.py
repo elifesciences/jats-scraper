@@ -6,8 +6,8 @@ import feeds
 import scraper
 import logging
 
-logging.basicConfig()
 LOG = logging.getLogger(__name__)
+LOG.setLevel(logging.ERROR)
 
 class TestSnippets(base.BaseCase):
     def setUp(self):
@@ -30,7 +30,7 @@ class TestSnippets(base.BaseCase):
         pass
 
     def test_eif(self):
-        "for each xml file, look for matching expected EIF"
+        "each XML file in the JATS dir with a matching *complete* output in the EIF directory are equal"
 
         def xml_fname_to_eif(xml_fname, xml_path):
             return join(self.source_eif_dir, os.path.splitext(xml_fname)[0] + ".json")
@@ -41,8 +41,7 @@ class TestSnippets(base.BaseCase):
             if not os.path.exists(eif_file):
                 LOG.info('skipping %s, path `%s` not found', xml_file, eif_file)
                 continue
-                
-            #generated_eif = json.loads(feeds.scrape(xml_path))
+            
             generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
             expected_eif = json.load(open(eif_file))
             
@@ -53,10 +52,10 @@ class TestSnippets(base.BaseCase):
                 self.assertEqual(dict(generated_eif), expected_eif)
             except AssertionError:
                 print 'failed to compare xml %s to eif %s' % (xml_file, eif_file)
-                raise
+                raise 
 
     def test_eif_partials(self):
-        "for each xml file, look for partial matching EIF"
+        "each XML file in the JATS dir with a matching *partial* output in the EIF/partial directory are present and equal"
 
         def xml_fname_to_eif_partial(xml_fname, xml_path):
             return join(self.source_partial_dir, os.path.splitext(xml_fname)[0] + "-match.json")
@@ -80,4 +79,5 @@ class TestSnippets(base.BaseCase):
                     generated_partial_eif = generated_eif[element]
                     self.assertEqual(dict(generated_partial_eif), expected_partial_eif)
                 except AssertionError:
-                    raise AssertionError('failed to compare xml %s to partial eif element %r' % (xml_path, element))
+                    print 'failed to compare xml %s to partial eif element %r' % (xml_path, element)
+                    raise
