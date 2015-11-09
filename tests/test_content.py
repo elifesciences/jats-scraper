@@ -50,7 +50,7 @@ class TestContent(base.BaseCase):
                 # comparing OrderedDict with Dict works in 3.1+
                 #self.assertEqual(generated_eif, expected_eif)
                 LOG.info("testing %s", xml_path)
-                self.assertEqual(dict(generated_eif), expected_eif)
+                self.assertEqual(self.byteify(dict(generated_eif)), self.byteify(expected_eif))
             except AssertionError:
                 print 'failed to compare xml %s to eif %s' % (xml_file, eif_file)
                 raise 
@@ -89,7 +89,17 @@ class TestContent(base.BaseCase):
 
                     try:
                         generated_partial_eif = generated_eif[element]
-                        self.assertEqual(dict(generated_partial_eif), expected_partial_eif)
+                        self.assertEqual(self.byteify(dict(generated_partial_eif)), self.byteify(expected_partial_eif))
                     except AssertionError:
                         print 'failed to compare xml %s to partial eif element %r' % (xml_path, element)
                         raise
+
+    def byteify(self, input):
+        if isinstance(input, dict):
+            return {self.byteify(key):self.byteify(value) for key,value in input.iteritems()}
+        elif isinstance(input, list):
+            return [self.byteify(element) for element in input]
+        elif isinstance(input, unicode):
+            return input.encode('utf-8')
+        else:
+            return input
