@@ -7,3 +7,6 @@ media/**
 collected-static/**
 elife-articles
 venv
+build
+dist
+*.egg-info
