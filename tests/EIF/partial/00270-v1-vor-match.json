@@ -1,0 +1,54 @@
+[
+  {
+    "description": "Contributor can have email as top level value",
+    "data": {
+      "contributors": [
+        {
+          "type": "author",
+          "surname": "Schekman",
+          "given-names": "Randy",
+          "id": "author-1032",
+          "role": "Editor-in-Chief",
+          "corresp": "yes",
+          "email": "editorial@elifesciences.org",
+          "references": {
+            "competing-interest": [
+              "conf1"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Patterson",
+          "given-names": "Mark",
+          "id": "author-1002",
+          "role": "Managing Executive Editor"
+        },
+        {
+          "type": "author",
+          "surname": "Watt",
+          "given-names": "Fiona",
+          "id": "author-1031",
+          "role": "Deputy Editor",
+          "references": {
+            "competing-interest": [
+              "conf2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Weigel",
+          "given-names": "Detlef",
+          "id": "author-1030",
+          "role": "Deputy Editor",
+          "references": {
+            "competing-interest": [
+              "conf3"
+            ]
+          }
+        }
+      ]
+    }
+  }
+]
