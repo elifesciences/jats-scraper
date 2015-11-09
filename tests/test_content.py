@@ -68,16 +68,25 @@ class TestSnippets(base.BaseCase):
                 continue
 
             generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
-            expected_eif = json.load(open(eif_path))[0]
+            # a list of maps with keys 'description' and 'data'
+            eif_partial_tests = json.load(open(eif_path))
 
-            for element, expected_partial_eif in expected_eif.items():
-                try:
-                    self.assertTrue(generated_eif.has_key(element))
-                except AssertionError:
-                    raise AssertionError("EIF generated from %r doesn't contain expected element %r (in partial file %r)" % (xml_path, element, eif_path))
-                    
-                    generated_partial_eif = generated_eif[element]
-                    self.assertEqual(dict(generated_partial_eif), expected_partial_eif)
-                except AssertionError:
-                    print 'failed to compare xml %s to partial eif element %r' % (xml_path, element)
-                    raise
+            for test in eif_partial_tests:
+                if not test.has_key('description') or not test.has_key('data'):
+                    LOG.debug('description or data elements not found in file %r, skipping', eif_path)
+                    continue
+
+                desc, expected_eif = test['description'], test['data']
+                for element, expected_partial_eif in expected_eif.items():
+                    try:
+                        self.assertTrue(generated_eif.has_key(element))
+                    except AssertionError:
+                        msg = "EIF generated from %r doesn't contain expected element %r (in partial file %r)"
+                        raise AssertionError(msg % (xml_path, element, eif_path))
+
+                    try:
+                        generated_partial_eif = generated_eif[element]
+                        self.assertEqual(dict(generated_partial_eif), expected_partial_eif)
+                    except AssertionError:
+                        print 'failed to compare xml %s to partial eif element %r' % (xml_path, element)
+                        raise
