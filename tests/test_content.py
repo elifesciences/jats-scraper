@@ -9,7 +9,7 @@ import logging
 LOG = logging.getLogger(__name__)
 LOG.setLevel(logging.ERROR)
 
-class TestSnippets(base.BaseCase):
+class TestContent(base.BaseCase):
     def setUp(self):
         source_xml_dir = join(self.this_dir, 'JATS')
         self.source_eif_dir = join(self.this_dir, 'EIF')
@@ -30,7 +30,8 @@ class TestSnippets(base.BaseCase):
         pass
 
     def test_eif(self):
-        "each XML file in the JATS dir with a matching *complete* output in the EIF directory are equal"
+        """each XML file in the JATS dir with a matching *complete* output
+        in the EIF directory are equal"""
 
         def xml_fname_to_eif(xml_fname, xml_path):
             return join(self.source_eif_dir, os.path.splitext(xml_fname)[0] + ".json")
@@ -54,8 +55,10 @@ class TestSnippets(base.BaseCase):
                 print 'failed to compare xml %s to eif %s' % (xml_file, eif_file)
                 raise 
 
+
     def test_eif_partials(self):
-        "each XML file in the JATS dir with a matching *partial* output in the EIF/partial directory are present and equal"
+        """each XML file in the JATS dir with a matching *partial*
+        output in the EIF/partial directory are present and equal"""
 
         def xml_fname_to_eif_partial(xml_fname, xml_path):
             return join(self.source_partial_dir, os.path.splitext(xml_fname)[0] + "-match.json")
