@@ -1,3 +1,4 @@
+import base
 import unittest
 import feeds
 from os import listdir
@@ -5,14 +6,17 @@ from os.path import isfile, join
 import scraper
 import json
 
+class CompareError(Exception):
+    def __init__(self, message):
+        self.message = message
 
-class TestScraperResults(unittest.TestCase):
+class TestScraperResults(base.BaseCase):
     def setUp(self):
         self.results = {}
         self.references = {}
         self.mod = __import__("feeds")
-        source_directory = 'JATS/'
-        reference_directory = 'JSON/'
+        source_directory = join(self.this_dir, 'JATS/')
+        reference_directory = join(self.this_dir, 'JSON/')
 
         for f in listdir(source_directory):
             if isfile(join(source_directory, f)):
@@ -84,7 +88,3 @@ class TestScraperResults(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-
-class CompareError(Exception):
-    def __init__(self, message):
-        self.message = message
