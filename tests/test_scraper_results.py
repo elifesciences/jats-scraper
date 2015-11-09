@@ -22,7 +22,7 @@ class TestScraperResults(base.BaseCase):
             if isfile(join(source_directory, f)):
                 reference_file_name = f.replace('.xml', '.json')
                 if not os.path.exists(reference_file_name):
-                    print 'skipping',reference_file_name
+                    #print 'skipping',reference_file_name
                     continue
                 with open(source_directory + f, "r") as source_file:
                     source_string = source_file.read()
