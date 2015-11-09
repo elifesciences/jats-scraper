@@ -550,6 +550,29 @@ DESCRIPTION = [
     })  # ends article block
 ]
 
+def delete_key_if_empty(key, obj):
+    if key in obj:
+        if len(obj[key]) == 0:
+            del(obj[key])
+
+def remove_empty_lists(res):
+    for item in res:
+        if 'article' not in item:
+            continue
+        for article in item['article']:
+            # Delete empty referenced lists or dicts
+            if 'referenced' in article:
+                for referenced in article['referenced']:
+                    delete_key_if_empty(referenced, article['referenced'])
+            # Delete empty related-articles lists
+            delete_key_if_empty('related-articles', article)
+            # Delete empty fragments list
+            delete_key_if_empty('fragments', article)
+            # Delete empty citations list
+            delete_key_if_empty('citations', article)
+
+    return res
+
 def scrape(docs_dir, process=None, article_version=None):
     if docs_dir is not None:
         import scraper
@@ -557,10 +580,7 @@ def scrape(docs_dir, process=None, article_version=None):
         res = scraper.scrape(mod, doc=docs_dir, article_version=article_version)
         if process:
             res = process(res)
-        if 'referenced' in res:
-            for referenced in res['referenced']:
-                if len(res['referenced'][referenced]) == 0:
-                    del res['referenced'][referenced]
+
         import json
         res = json.dumps(res, indent=4, ensure_ascii = False)
         return res.encode('utf8')
@@ -570,7 +590,7 @@ def main(args):
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir)
+    print scrape(docs_dir, process=remove_empty_lists)
 
 
 if __name__ == '__main__':
