@@ -19,14 +19,16 @@ For installing on OSX it may be necessary to do the following before running req
 
 ## testing
 
-Tests can be run with the `./run-tests.sh` script.
-
-Tests can be run individually with:
-
+Tests can be run with the `./run-tests.sh` script or run individually as:
+   
     python -m unittest path.to.module.suite.test
     
+*Note:* you must activate the virtualenv if you run tests individually.
+
 For example:
 
+    source venv/bin/activate # activate virtualenv
+    
     python -m unittest tests.test_content
     
 would run all tests in `tests/test_content.py` and:
