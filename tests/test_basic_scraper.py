@@ -6,9 +6,7 @@ import json
 import feeds
 from base import BaseCase
 
-
 class TestBasicScraper(BaseCase):
-
     def setUp(self):
         self.sources = {}
         source_dir = join(self.this_dir, 'JATS/')
