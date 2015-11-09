@@ -1,7 +1,7 @@
 import base
 import unittest
 import feeds
-from os import listdir
+import os
 from os.path import isfile, join
 import scraper
 import json
@@ -15,12 +15,15 @@ class TestScraperResults(base.BaseCase):
         self.results = {}
         self.references = {}
         self.mod = __import__("feeds")
-        source_directory = join(self.this_dir, 'JATS/')
-        reference_directory = join(self.this_dir, 'JSON/')
+        source_directory = join(self.this_dir, 'JATS')
+        reference_directory = join(self.this_dir, 'JSON')
 
-        for f in listdir(source_directory):
+        for f in os.listdir(source_directory):
             if isfile(join(source_directory, f)):
                 reference_file_name = f.replace('.xml', '.json')
+                if not os.path.exists(reference_file_name):
+                    print 'skipping',reference_file_name
+                    continue
                 with open(source_directory + f, "r") as source_file:
                     source_string = source_file.read()
                     # a bit odd this but seems worthwhile round tripping to match actual results expected
