@@ -3,6 +3,8 @@ __copyright__ = 'eLife Sciences'
 __licence__ = 'GNU General Public License (GPL)'
 __version__ = 0.1
 
+import json
+import scraper
 import glob
 import logging
 from datetime import datetime
@@ -573,24 +575,27 @@ def remove_empty_lists(res):
 
     return res
 
-def scrape(docs_dir, process=None, article_version=None):
-    if docs_dir is not None:
-        import scraper
-        mod = __import__(__name__)
-        res = scraper.scrape(mod, doc=docs_dir, article_version=article_version)
-        if process:
-            res = process(res)
+def scrape(docs_dir, article_version=None, jsonify=True):
+    if not docs_dir:
+        exit(1)
+    mod = __import__(__name__)
+    res = scraper.scrape(mod, doc=docs_dir, article_version=article_version)
 
-        import json
+    # post-processing
+    res = remove_empty_lists(res)
+
+    if jsonify:
         res = json.dumps(res, indent=4, ensure_ascii = False)
         return res.encode('utf8')
+    
+    return res
 
 def main(args):
     if not len(args) == 1:
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir, process=remove_empty_lists)
+    print scrape(docs_dir)
 
 
 if __name__ == '__main__':

@@ -50,7 +50,8 @@ class TestContent(base.BaseCase):
                 LOG.info('skipping %s, path `%s` not found', xml_file, eif_file)
                 continue
             
-            generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
+            #generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
+            generated_eif = feeds.scrape(xml_path, jsonify=False)[0]['article'][0]
             expected_eif = json.load(open(eif_file))
 
             LOG.info("testing %s", xml_path)
@@ -83,7 +84,8 @@ class TestContent(base.BaseCase):
                 LOG.info('skipping %s, path `%s` not found', xml_file, eif_path)
                 continue
 
-            generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
+            #generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
+            generated_eif = feeds.scrape(xml_path, jsonify=False)[0]['article'][0]
             # a list of maps with keys 'description' and 'data'
             eif_partial_tests = json.load(open(eif_path))
 
