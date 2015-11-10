@@ -5,6 +5,11 @@ from os.path import join
 import feeds
 import scraper
 import logging
+import pprint
+import deepdiff
+
+from deepdiff import DeepDiff
+from pprint import pprint
 
 LOG = logging.getLogger(__name__)
 LOG.setLevel(logging.ERROR)
@@ -35,6 +40,8 @@ class TestContent(base.BaseCase):
 
         def xml_fname_to_eif(xml_fname, xml_path):
             return join(self.source_eif_dir, os.path.splitext(xml_fname)[0] + ".json")
+
+        ddiffs = {}
         
         for xml_file, xml_path in self.xml_path_list.items():
             eif_file = xml_fname_to_eif(xml_file, xml_path)
@@ -45,15 +52,19 @@ class TestContent(base.BaseCase):
             
             generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
             expected_eif = json.load(open(eif_file))
-            
-            try:
-                # comparing OrderedDict with Dict works in 3.1+
-                #self.assertEqual(generated_eif, expected_eif)
-                LOG.info("testing %s", xml_path)
-                self.assertEqual(self.byteify(dict(generated_eif)), self.byteify(expected_eif))
-            except AssertionError:
-                print 'failed to compare xml %s to eif %s' % (xml_file, eif_file)
-                raise 
+
+            LOG.info("testing %s", xml_path)
+            ddiff = DeepDiff(self.byteify(expected_eif), self.byteify(generated_eif))
+
+            if ddiff:
+                ddiffs[eif_file] = ddiff
+
+        if len(ddiffs):
+            for attr, value in ddiffs.items():
+                print attr
+                pprint(value)
+                print "\n"
+            self.assertTrue(False)
 
 
     def test_eif_partials(self):
@@ -62,6 +73,8 @@ class TestContent(base.BaseCase):
 
         def xml_fname_to_eif_partial(xml_fname, xml_path):
             return join(self.source_partial_dir, os.path.splitext(xml_fname)[0] + "-match.json")
+
+        ddiffs = {}
         
         for xml_file, xml_path in self.xml_path_list.items():
             eif_path = xml_fname_to_eif_partial(xml_file, xml_path)
@@ -81,18 +94,30 @@ class TestContent(base.BaseCase):
 
                 desc, expected_eif = test['description'], test['data']
                 for element, expected_partial_eif in expected_eif.items():
-                    try:
-                        self.assertTrue(generated_eif.has_key(element))
-                    except AssertionError:
-                        msg = "EIF generated from %r doesn't contain expected element %r (in partial file %r)"
-                        raise AssertionError(msg % (xml_path, element, eif_path))
+                    has_key = generated_eif.has_key(element)
 
-                    try:
-                        generated_partial_eif = generated_eif[element]
-                        self.assertEqual(self.byteify(dict(generated_partial_eif)), self.byteify(expected_partial_eif))
-                    except AssertionError:
-                        print 'failed to compare xml %s to partial eif element %r' % (xml_path, element)
-                        raise
+                    if not has_key:
+                        ddiff = "EIF generated from %r doesn't contain expected element %r (in partial file %r)"
+                        ddiff = ddiff % (xml_path, element, eif_path)
+
+                    if has_key:
+                        ddiff = DeepDiff(self.byteify(expected_partial_eif), self.byteify(generated_eif[element]))
+
+                    if ddiff:
+                        if not ddiffs.has_key(eif_path):
+                            ddiffs[eif_path] = {}
+
+                        ddiffs[eif_path][desc] = ddiff
+
+        if len(ddiffs):
+            for attr, values in ddiffs.items():
+                print attr
+
+                for desc, value in values.items():
+                    print desc.encode('utf-8')
+                    pprint(value)
+                    print "\n"
+            self.assertTrue(False)
 
     def byteify(self, input):
         if isinstance(input, dict):
