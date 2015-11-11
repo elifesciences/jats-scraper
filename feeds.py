@@ -570,6 +570,8 @@ def remove_empty_lists(res):
             delete_key_if_empty('fragments', article)
             # Delete empty citations list
             delete_key_if_empty('citations', article)
+            # Delete empty impact-statement list
+            delete_key_if_empty('impact-statement', article)
 
     return res
 
@@ -578,6 +580,7 @@ def scrape(docs_dir, process=None, article_version=None):
         import scraper
         mod = __import__(__name__)
         res = scraper.scrape(mod, doc=docs_dir, article_version=article_version)
+        res = remove_empty_lists(res)
         if process:
             res = process(res)
 
@@ -590,7 +593,7 @@ def main(args):
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir, process=remove_empty_lists)
+    print scrape(docs_dir)
 
 
 if __name__ == '__main__':
