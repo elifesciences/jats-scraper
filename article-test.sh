@@ -1,18 +1,11 @@
 #!/bin/bash
 
-pip="pip"
-python="python"
-if [ -f /usr/bin/python2 ]; then
-    # dirty to check to see if this is Arch
-    python="python2"
-    pip="pip2"
-fi
-
-
 install_virtualenv() {
-    virtualenv venv --python=/usr/bin/$python && \
-    source venv/bin/activate && \
-    $pip install -r requirements.txt
+    if [ ! -d venv ]; then
+        virtualenv venv --python=`which python2`
+    fi
+    source venv/bin/activate
+    pip install -r requirements.txt
 }
 
 install_update_articles() {
@@ -25,6 +18,21 @@ install_update_articles() {
     fi
 }
 
+install_validator() {
+    if [ ! -d elife-eif-schema ]; then
+        git clone ssh://git@github.com/elifesciences/elife-eif-schema
+    fi
+    cd elife-eif-schema    
+    git reset --hard
+    git fetch
+    npm install
+    cd ..
+}
+
+wipe_old_results() {
+    rm -f *.invalid
+}
+
 control_c() {
     echo "interrupt caught, exiting ..."
     exit $?
@@ -32,22 +40,49 @@ control_c() {
 
 main() {
     passes=0
+    fails=0
+    invalids=0
     for file in elife-articles/*.xml; do
-        echo "processing $file ..."
-        eval "$python feeds.py ./$file" > /dev/null
+        fname=`basename $file`
+        passes=$(( $passes + 1 ))
+        
+        printf "processing $fname ..."
+        python feeds.py ./$file > tmp.json
         ret=$?
         if [ $ret != 0 ]; then
-            echo "failed to process article $file. exiting with code $ret after $passes successful article scrapes."
-            exit $ret
+            #echo "failed to process article $file. exiting with code $ret after $passes successful article scrapes."
+            printf "FAILED\n"
+            mv tmp.json $fname.error
+            fails=$(( $fails + 1 ))
+            continue
         else
-            passes=$(( $passes + 1 ))
+            printf " generated!"
         fi
+
+        jp.py -f tmp.json "[0].article[0]" | node elife-eif-schema/validator.js > err.out
+        ret=$?
+        if [ $ret != 0 ]; then
+            mv err.out $fname.invalid
+            printf " FAILED\n"
+            invalids=$(( $invalids + 1 ))
+            #echo "failed to validate article $file. Errors written to $file.invalid"
+            #exit $ret
+            continue
+        else
+            printf " validated!"
+        fi
+        
+        printf "\n"
+        rm -f tmp.json err.out
     done
-    echo "all done. successfully scraped $passes articles"
+    
+    echo "all done. ${passes} articles, ${fails} fails, ${invalids} invalid"
 }
 
 trap control_c SIGINT
 
 install_virtualenv
 install_update_articles
+install_validator
+wipe_old_results
 main
