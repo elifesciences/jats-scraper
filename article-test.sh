@@ -12,7 +12,7 @@ install_virtualenv() {
 install_update_articles() {
     if [ -d elife-articles ]; then
         echo "pulling any changes"
-        cd elife-articles && git pull && cd ..
+        cd elife-articles && git reset --hard && git pull && cd ..
     else
         echo "cloning elife-articles repo"
         git clone https://github.com/elifesciences/elife-articles
