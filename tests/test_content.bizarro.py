@@ -1,3 +1,10 @@
+"""an example of generating tests and attaching them to an empty test suite to be detected by the test running.
+in this instance, we're detecting the presence of xml files and partial json files to test in a single monolithic function called `inject_methods` that, when executed, will create unique functions for each test case and attach them to the test suite `TestContent`.
+
+This code has been SUPERCEDED by the `test_content.py` and exists as *example* only.
+
+"""
+
 import base
 import json
 import os
@@ -61,7 +68,7 @@ def inject_methods():
             LOG.info('skipping %s, path `%s` not found', xml_file, eif_file)
             continue
 
-        def fn(xml_path, eif_file):
+        def _fn1(xml_path, eif_file):
             def call(self):
                 generated_eif = scraper.scrape(feeds, doc=xml_path)[0]['article'][0]
                 expected_eif = json.load(open(eif_file))
@@ -69,7 +76,7 @@ def inject_methods():
             return call
 
         slug = xml_file.replace('-', '_').replace(' ', '').replace('/', '_')
-        setattr(TestContent, 'test_eif_%s' % slug, fn(xml_path, eif_file))
+        setattr(TestContent, 'test_eif_%s' % slug, _fn1(xml_path, eif_file))
 
 
     # handle partials
@@ -97,14 +104,14 @@ def inject_methods():
             for element, expected_partial_eif in expected_eif.items():
                 has_key = generated_eif.has_key(element)
 
-                def fn(eif, expected_partial_eif):
+                def _fn2(eif, expected_partial_eif):
                     def call(self):
                         self.assertTrue(has_all_keys(expected_partial_eif, ['description', 'data']))
                         self.assertEqual(byteify(expected_partial_eif), byteify(eif[element]))
                     return call
 
                 slug = eif_path.replace('-', '_').replace(' ', '').replace('/', '_')
-                setattr(TestContent, 'test_partial_%s' % slug, fn(xml_path, eif_file))
+                setattr(TestContent, 'test_partial_%s' % slug, _fn2(xml_path, eif_file))
         
 
-inject_methods()
+#inject_methods()
