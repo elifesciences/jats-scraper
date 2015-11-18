@@ -6,7 +6,9 @@
 media/**
 collected-static/**
 elife-articles
+elife-eif-schema
 venv
 build
 dist
 *.egg-info
+test-results*
