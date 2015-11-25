@@ -61,6 +61,10 @@ def citations(article):
         copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
         copy_attribute(ref, 'comment', citation)
         
+        # Remove year if it is blank, in the case the year value has no numbers at all
+        if citation['year'] == '':
+            del(citation['year'])
+        
         citation_by_id = {}
         citation_by_id[ref['id']] = citation
         
