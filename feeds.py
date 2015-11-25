@@ -62,7 +62,7 @@ def citations(article):
         copy_attribute(ref, 'comment', citation)
         
         # Remove year if it is blank, in the case the year value has no numbers at all
-        if citation['year'] == '':
+        if 'year' in citation and citation['year'] == '':
             del(citation['year'])
         
         citation_by_id = {}
