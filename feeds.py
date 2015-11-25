@@ -385,6 +385,12 @@ def component_fragment(components, component, volume, version):
     elif fragment['type'] not in ['sub-article','abstract'] and component.get('full_label'):
         copy_attribute(component, 'full_label', fragment,
                        destination_key='title', process=tidy_whitespace)
+        
+    # Lastly if there is no title found, default to full_title, irrespective of fragment type
+    if 'title' not in fragment:
+        if component.get('full_title'):
+            copy_attribute(component, 'full_title', fragment,
+                       destination_key='title', process=tidy_whitespace)
 
     if fragment['type'] == 'sub-article' and component.get('contributors'):
         copy_attribute(component, 'contributors', fragment)
