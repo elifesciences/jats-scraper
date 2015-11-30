@@ -10,12 +10,12 @@ install_virtualenv() {
 }
 
 install_update_articles() {
-    if [ -d elife-articles ]; then
+    if [ -d elife-article-xml ]; then
         echo "pulling any changes"
-        cd elife-articles && git reset --hard && git pull && cd ..
+        cd elife-article-xml && git reset --hard && git pull && cd ..
     else
-        echo "cloning elife-articles repo"
-        git clone https://github.com/elifesciences/elife-articles
+        echo "cloning elife-article-xml repo"
+        git clone https://github.com/elifesciences/elife-article-xml
     fi
 }
 
@@ -43,7 +43,7 @@ main() {
     passes=0
     fails=0
     invalids=0
-    for file in elife-articles/*.xml; do
+    for file in elife-article-xml/articles/*.xml; do
         fname=`basename $file`
         passes=$(( $passes + 1 ))
         
