@@ -6,6 +6,7 @@
 media/**
 collected-static/**
 elife-articles
+elife-article-xml
 elife-eif-schema
 venv
 build
