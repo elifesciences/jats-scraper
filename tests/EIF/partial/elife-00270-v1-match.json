@@ -50,5 +50,18 @@
         }
       ]
     }
+  },
+  {
+    "description": "Sub-display channel is output if available",
+    "data": {
+      "categories": {
+        "display-channel": [
+          "Editorial"
+        ],
+        "sub-display-channel": [
+          "Scientific Publishing"
+        ]
+      }
+    }
   }
 ]
