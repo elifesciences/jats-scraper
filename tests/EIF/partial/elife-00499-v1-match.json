@@ -1,6 +1,6 @@
 [
   {
-    "description": "Verfiy that all fragments, except abstract, have a title",
+    "description": "Verify that all fragments, except abstract, have a title",
     "data": {
       "fragments": [
         {

@@ -1,0 +1,5760 @@
+{
+    "article-type": "research-article",
+    "title": "Mushroom body output neurons encode valence and guide memory-based action selection in <italic>Drosophila</italic>",
+    "status": "VOR",
+    "publish": "1",
+    "doi": "10.7554/eLife.04580",
+    "pub-date": "2014-12-23",
+    "volume": "3",
+    "elocation-id": "e04580",
+    "path": "content/3/e04580v1",
+    "article-id": "04580",
+    "impact-statement": "Output neurons in the mushroom body of the fruit fly brain encode the positive or negative survival value of stimuli, enabling insects to choose adaptive approach and avoidance behaviors through associative learning.",
+    "keywords": {
+        "author-keywords": [
+            "mushroom body",
+            "memory",
+            "behavioral valence",
+            "sleep",
+            "population code",
+            "action selection"
+        ],
+        "research-organism": [
+            "<italic>D. melanogaster</italic>"
+        ]
+    },
+    "categories": {
+        "display-channel": [
+            "Research Article"
+        ],
+        "heading": [
+            "Neuroscience"
+        ]
+    },
+    "contributors": [
+        {
+            "type": "author",
+            "surname": "Aso",
+            "given-names": "Yoshinori",
+            "id": "author-2209",
+            "corresp": "yes",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "email": [
+                    "cor1"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-2"
+                ],
+                "contribution": [
+                    "con1"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Sitaraman",
+            "given-names": "Divya",
+            "id": "author-18440",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff2",
+                    "aff6",
+                    "aff7"
+                ],
+                "funding": [
+                    "par-2"
+                ],
+                "contribution": [
+                    "con2"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ],
+                "present-address": [
+                    "pa1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Ichinose",
+            "given-names": "Toshiharu",
+            "id": "author-18441",
+            "references": {
+                "affiliation": [
+                    "aff3",
+                    "aff4"
+                ],
+                "contribution": [
+                    "con3"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Kaun",
+            "given-names": "Karla R",
+            "id": "author-18442",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con4"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ],
+                "present-address": [
+                    "pa2"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Vogt",
+            "given-names": "Katrin",
+            "id": "author-11025",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "funding": [
+                    "par-2"
+                ],
+                "contribution": [
+                    "con5"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Belliart-Guérin",
+            "given-names": "Ghislain",
+            "id": "author-18443",
+            "references": {
+                "affiliation": [
+                    "aff5"
+                ],
+                "funding": [
+                    "par-4"
+                ],
+                "contribution": [
+                    "con7"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Plaçais",
+            "given-names": "Pierre-Yves",
+            "id": "author-18444",
+            "references": {
+                "affiliation": [
+                    "aff5"
+                ],
+                "funding": [
+                    "par-3"
+                ],
+                "contribution": [
+                    "con8"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Robie",
+            "given-names": "Alice A",
+            "id": "author-18445",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con9"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Yamagata",
+            "given-names": "Nobuhiro",
+            "id": "author-18446",
+            "references": {
+                "affiliation": [
+                    "aff3",
+                    "aff4"
+                ],
+                "contribution": [
+                    "con10"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Schnaitmann",
+            "given-names": "Christopher",
+            "id": "author-11026",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "contribution": [
+                    "con6"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ],
+                "present-address": [
+                    "pa3"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Rowell",
+            "given-names": "William J",
+            "id": "author-18517",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con11"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Johnston",
+            "given-names": "Rebecca M",
+            "id": "author-18448",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con12"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Ngo",
+            "given-names": "Teri-T B",
+            "id": "author-18449",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con13"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Chen",
+            "given-names": "Nan",
+            "id": "author-18450",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con14"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Korff",
+            "given-names": "Wyatt",
+            "id": "author-18451",
+            "orcid": "http://orcid.org/0000-0001-8396-1533",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con15"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Nitabach",
+            "given-names": "Michael N",
+            "id": "author-3167",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff2",
+                    "aff6",
+                    "aff7"
+                ],
+                "funding": [
+                    "par-2",
+                    "par-10",
+                    "par-11"
+                ],
+                "contribution": [
+                    "con16"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Heberlein",
+            "given-names": "Ulrike",
+            "id": "author-5087",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con17"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Preat",
+            "given-names": "Thomas",
+            "id": "author-18452",
+            "references": {
+                "affiliation": [
+                    "aff5"
+                ],
+                "funding": [
+                    "par-3"
+                ],
+                "contribution": [
+                    "con18"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Branson",
+            "given-names": "Kristin M",
+            "id": "author-19314",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con19"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Tanimoto",
+            "given-names": "Hiromu",
+            "id": "author-9299",
+            "references": {
+                "affiliation": [
+                    "aff3",
+                    "aff4"
+                ],
+                "funding": [
+                    "par-2",
+                    "par-5",
+                    "par-6",
+                    "par-7",
+                    "par-8",
+                    "par-9"
+                ],
+                "contribution": [
+                    "con20"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Rubin",
+            "given-names": "Gerald M",
+            "id": "author-10190",
+            "corresp": "yes",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "email": [
+                    "cor2"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con21"
+                ],
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        },
+        {
+            "type": "editor",
+            "surname": "Luo",
+            "given-names": "Liqun",
+            "role": "Reviewing editor",
+            "affiliations": [
+                {
+                    "institution": "Howard Hughes Medical Institute, Stanford University",
+                    "country": "United States"
+                }
+            ]
+        }
+    ],
+    "referenced": {
+        "affiliation": {
+            "aff1": {
+                "institution": "Janelia Research Campus, Howard Hughes Medical Institute",
+                "city": "Ashburn",
+                "country": "United States"
+            },
+            "aff2": {
+                "dept": "Department of Cellular and Molecular Physiology",
+                "institution": "Yale School of Medicine",
+                "city": "New Haven",
+                "country": "United States"
+            },
+            "aff3": {
+                "institution": "Max Planck Institute of Neurobiology",
+                "city": "Martinsried",
+                "country": "Germany"
+            },
+            "aff4": {
+                "dept": "Graduate School of Life Sciences",
+                "institution": "Tohoku University",
+                "city": "Sendai",
+                "country": "Japan"
+            },
+            "aff5": {
+                "dept": "Genes and Dynamics of Memory Systems, Brain Plasticity Unit",
+                "institution": "Centre National de la Recherche Scientifique, ESPCI",
+                "city": "Paris",
+                "country": "France"
+            },
+            "aff6": {
+                "dept": "Department of Genetics",
+                "institution": "Yale School of Medicine",
+                "city": "New Haven",
+                "country": "United States"
+            },
+            "aff7": {
+                "dept": "Program in Cellular Neuroscience, Neurodegeneration and Repair",
+                "institution": "Yale School of Medicine",
+                "city": "New Haven",
+                "country": "United States"
+            }
+        },
+        "email": {
+            "cor1": "asoy@janelia.hhmi.org",
+            "cor2": "rubing@janelia.hhmi.org"
+        },
+        "funding": {
+            "par-1": {
+                "id": "http://dx.doi.org/10.13039/100000011",
+                "id-type": "FundRef",
+                "institution": "Howard Hughes Medical Institute"
+            },
+            "par-2": {
+                "id": "http://dx.doi.org/10.13039/100000011",
+                "id-type": "FundRef",
+                "institution": "Howard Hughes Medical Institute",
+                "award-id": "Janelia Visiting Scientist Program"
+            },
+            "par-3": {
+                "id": "http://dx.doi.org/10.13039/501100001665",
+                "id-type": "FundRef",
+                "institution": "Agence Nationale de la Recherche"
+            },
+            "par-4": {
+                "institution": "Labex MemoLife"
+            },
+            "par-5": {
+                "id": "http://dx.doi.org/10.13039/501100002347",
+                "id-type": "FundRef",
+                "institution": "Bundesministerium für Bildung und Forschung",
+                "award-id": "Bernstein Focus Neurobiology of Learning 01GQ0932"
+            },
+            "par-6": {
+                "id": "http://dx.doi.org/10.13039/501100004189",
+                "id-type": "FundRef",
+                "institution": "Max-Planck-Gesellschaft"
+            },
+            "par-7": {
+                "id": "http://dx.doi.org/10.13039/501100001659",
+                "id-type": "FundRef",
+                "institution": "Deutsche Forschungsgemeinschaft",
+                "award-id": "TA 552/5-1"
+            },
+            "par-8": {
+                "id": "http://dx.doi.org/10.13039/501100001691",
+                "id-type": "FundRef",
+                "institution": "Japan Society for the Promotion of Science",
+                "award-id": "MEXT/JSPS KAKENHI 25890003, 26120705, 26119503 and 26250001"
+            },
+            "par-9": {
+                "id": "http://dx.doi.org/10.13039/100007428",
+                "id-type": "FundRef",
+                "institution": "Naito Foundation"
+            },
+            "par-10": {
+                "id": "http://dx.doi.org/10.13039/100000065",
+                "id-type": "FundRef",
+                "institution": "National Institute of Neurological Disorders and Stroke",
+                "award-id": "R01NS055035, R01NS056443, R01NS091070 "
+            },
+            "par-11": {
+                "id": "http://dx.doi.org/10.13039/100000057",
+                "id-type": "FundRef",
+                "institution": "National Institute of General Medical Sciences",
+                "award-id": "R01GM098931"
+            }
+        },
+        "contribution": {
+            "con1": "YA, Conceived and designed the overall study, conducted optogenetics assays, analyzed and interpreted data, wrote the article",
+            "con2": "DS, Conducted, analyzed and interpreted assays of sleep regulation",
+            "con3": "TI, Conducted, analyzed and interpreted assays of short-term olfactory memory",
+            "con4": "KRK, Conducted, analyzed and interpreted assays of ethanol-reward memory",
+            "con5": "KV, Conducted, analyzed and interpreted assays of visual memory",
+            "con6": "CS, Conducted, analyzed and interpreted assays of visual memory",
+            "con7": "GB-G, Conducted, analyzed and interpreted assays of long-term olfactory memory",
+            "con8": "P-YP, Conducted, analyzed and interpreted assays of long-term olfactory memory",
+            "con9": "AAR, Conducted, analyzed and interpreted the Flybowl assay",
+            "con10": "NY, Conducted, analyzed and interpreted the US-substitution experiment for short-term olfactory memory",
+            "con11": "WJR, Conducted, analyzed, and interpreted assays of the optomotor behavior",
+            "con12": "RMJ, Prepared samples and acquired confocal images",
+            "con13": "T-TBN, Conducted optogenetic assays",
+            "con14": "NC, Conducted sleep regulation assays",
+            "con15": "WK, Analyzed and interpreted assays of optomotor behavior",
+            "con16": "MNN, Analyzed and interpreted assays of sleep regulation",
+            "con17": "UH, Analyzed and interpreted assays of ethanol-reward memory",
+            "con18": "TP, Analyzed and interpreted assays of long-term olfactory memory",
+            "con19": "KMB, Analyzed and interpreted the results of the optogenetic and Flybowl assays",
+            "con20": "HT, Conceived and designed the overall study and analyzed and interpreted assays of short-term olfactory and visual memory",
+            "con21": "GMR, Conceived and designed the overall study, interpreted data and wrote the article"
+        },
+        "competing-interest": {
+            "conf1": "The authors declare that no competing interests exist."
+        },
+        "present-address": {
+            "pa1": "Department of Psychological Sciences, University of San Diego, San Diego, United States",
+            "pa2": "Department of Neuroscience, Brown University, Providence, United States",
+            "pa3": "Department of Neurobiologie and Tierphysiologie, Institute of Biology 1, Albert Ludwig University of Freiburg, Freiburg, Germany"
+        }
+    },
+    "related-articles": [
+        {
+            "type": "article-reference",
+            "href": "10.7554/eLife.04577"
+        }
+    ],
+    "fragments": [
+        {
+            "type": "abstract",
+            "doi": "10.7554/eLife.04580.001",
+            "path": "content/3/e04580v1/abstract"
+        },
+        {
+            "type": "abstract",
+            "doi": "10.7554/eLife.04580.002",
+            "title": "eLife digest",
+            "path": "content/3/e04580v1/abstract2"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.003",
+            "title": "Figure 1.",
+            "path": "content/3/e04580v1/figure1"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.04580.004",
+            "title": "Table 1.",
+            "path": "content/3/e04580v1/table1"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.005",
+            "title": "Figure 2.",
+            "path": "content/3/e04580v1/figure2"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.006",
+            "title": "Figure 3.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.007",
+                    "title": "Figure 3—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure3/figure-supp1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.008",
+                    "title": "Figure 3—figure supplement 2.",
+                    "path": "content/3/e04580v1/figure3/figure-supp2"
+                }
+            ],
+            "path": "content/3/e04580v1/figure3"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.009",
+            "title": "Figure 4.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.010",
+                    "title": "Figure 4—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure4/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure4"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.011",
+            "title": "Figure 5.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.012",
+                    "title": "Figure 5—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure5/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure5"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.04580.013",
+            "title": "Video 1.",
+            "path": "content/3/e04580v1/media1"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.04580.014",
+            "title": "Video 2.",
+            "path": "content/3/e04580v1/media2"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.04580.015",
+            "title": "Video 3.",
+            "path": "content/3/e04580v1/media3"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.04580.016",
+            "title": "Video 4.",
+            "path": "content/3/e04580v1/media4"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.04580.017",
+            "title": "Video 5.",
+            "path": "content/3/e04580v1/media5"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.018",
+            "title": "Figure 6.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.019",
+                    "title": "Figure 6—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure6/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure6"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.020",
+            "title": "Figure 7.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.021",
+                    "title": "Figure 7—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure7/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure7"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.022",
+            "title": "Figure 8.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.023",
+                    "title": "Figure 8—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure8/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure8"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.024",
+            "title": "Figure 9.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.025",
+                    "title": "Figure 9—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure9/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure9"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.026",
+            "title": "Figure 10.",
+            "path": "content/3/e04580v1/figure10"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.027",
+            "title": "Figure 11.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.028",
+                    "title": "Figure 11—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure11/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure11"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.029",
+            "title": "Figure 12.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.030",
+                    "title": "Figure 12—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure12/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure12"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.04580.031",
+            "title": "Video 6.",
+            "path": "content/3/e04580v1/media6"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.032",
+            "title": "Figure 13.",
+            "path": "content/3/e04580v1/figure13"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.033",
+            "title": "Figure 14.",
+            "path": "content/3/e04580v1/figure14"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.04580.034",
+            "title": "Figure 15.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.04580.035",
+                    "title": "Figure 15—figure supplement 1.",
+                    "path": "content/3/e04580v1/figure15/figure-supp1"
+                }
+            ],
+            "path": "content/3/e04580v1/figure15"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.04580.036",
+            "title": "Table 2.",
+            "path": "content/3/e04580v1/table2"
+        },
+        {
+            "type": "supplementary-material",
+            "doi": "10.7554/eLife.04580.037",
+            "title": "Supplementary file 1.",
+            "path": "content/3/e04580v1/supp-material1"
+        },
+        {
+            "type": "sub-article",
+            "doi": "10.7554/eLife.04580.038",
+            "title": "Decision letter",
+            "contributors": [
+                {
+                    "type": "editor",
+                    "surname": "Luo",
+                    "given-names": "Liqun",
+                    "role": "Reviewing editor",
+                    "affiliations": [
+                        {
+                            "institution": "Howard Hughes Medical Institute, Stanford University",
+                            "country": "United States"
+                        }
+                    ]
+                }
+            ],
+            "path": "content/3/e04580v1/decision"
+        },
+        {
+            "type": "sub-article",
+            "doi": "10.7554/eLife.04580.039",
+            "title": "Author response",
+            "path": "content/3/e04580v1/response"
+        }
+    ],
+    "citations": {
+        "bib1": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Abel",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rybak",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Menzel",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2001",
+            "title": "Structure and response patterns of olfactory interneurons in the honeybee, <italic>Apis mellifera</italic>",
+            "source": "The Journal of Comparative Neurology",
+            "doi": "10.1002/cne.1289"
+        },
+        "bib2": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Akalal",
+                    "given-names": "DB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yu",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2010",
+            "title": "A late-phase, long-term memory trace forms in the gamma neurons of <italic>Drosophila</italic> mushroom bodies after olfactory classical conditioning",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.1882-10.2010"
+        },
+        "bib3": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Akalal",
+                    "given-names": "DB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yu",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2011",
+            "title": "The long-term memory trace formed in the Drosophila alpha/beta mushroom body neurons is abolished in long-term memory mutants",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.3190-10.2011"
+        },
+        "bib4": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Anderson",
+                    "given-names": "DJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Adolphs",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2014",
+            "title": "A framework for studying emotions across species",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2014.03.003"
+        },
+        "bib5": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ashburner",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Misra",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Roote",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lewis",
+                    "given-names": "SE"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Blazej",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Doyle",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Galle",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "George",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Harris",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hartzell G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Harvey",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hong",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Houston",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hoskins",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Johnson",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Martin",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Moshrefi",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Palazzolo",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Reese",
+                    "given-names": "MG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Spradling",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tsang",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wan",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Whitelaw",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Celniker",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "et al"
+                }
+            ],
+            "year": "1999",
+            "title": "An exploration of the sequence of a 2.9-Mb region of the genome of Drosophila melanogaster: the Adh region",
+            "source": "Genetics"
+        },
+        "bib6": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Grubel",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Busch",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Friedrich",
+                    "given-names": "AB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwanowicz",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2009",
+            "title": "The mushroom body of adult Drosophila characterized by GAL4 drivers",
+            "source": "Journal of Neurogenetics",
+            "doi": "10.1080/01677060802471718"
+        },
+        "bib7": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hattori",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yu",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Johnston",
+                    "given-names": "RM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Iyer",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ngo",
+                    "given-names": "TB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dionne",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Abbott",
+                    "given-names": "LF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Axel",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rubin",
+                    "given-names": "GM"
+                }
+            ],
+            "year": "2014",
+            "title": "The neuronal architecture of the mushroom body provides a logic for associative learning",
+            "source": "eLife",
+            "doi": "10.7554/eLife.04577"
+        },
+        "bib8": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Herb",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ogueta",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwanowicz",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Templier",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Friedrich",
+                    "given-names": "AB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Scholz",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2012",
+            "title": "Three dopamine pathways induce aversive odor memories with different stability",
+            "source": "PLOS Genetics",
+            "doi": "10.1371/journal.pgen.1002768"
+        },
+        "bib9": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwanowicz",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bräcker",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kitamoto",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2010",
+            "title": "Specific dopaminergic neurons for the formation of labile aversive memory",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2010.06.048"
+        },
+        "bib10": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Azanchi",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kaun",
+                    "given-names": "KR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heberlein",
+                    "given-names": "U"
+                }
+            ],
+            "year": "2013",
+            "title": "Competing dopamine neurons drive oviposition choice for ethanol in Drosophila",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.1320208110"
+        },
+        "bib11": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Bang",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hyun",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hong",
+                    "given-names": "ST"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kang",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jeong",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Park",
+                    "given-names": "JJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Choe",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chung",
+                    "given-names": "J"
+                }
+            ],
+            "year": "2011",
+            "title": "Dopamine signalling in mushroom bodies regulates temperature-preference behaviour in <italic>Drosophila</italic>",
+            "source": "PLOS Genetics",
+            "doi": "10.1371/journal.pgen.1001346"
+        },
+        "bib12": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Bath",
+                    "given-names": "DE"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Stowers",
+                    "given-names": "JR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hörmann",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Poehlmann",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dickson",
+                    "given-names": "BJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Straw",
+                    "given-names": "AD"
+                }
+            ],
+            "year": "2014",
+            "title": "FlyMAD: rapid thermogenetic control of neuronal activity in freely walking Drosophila",
+            "source": "Nature Methods",
+            "doi": "10.1038/nmeth.2973"
+        },
+        "bib13": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Benjamini",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hochberg",
+                    "given-names": "Y"
+                }
+            ],
+            "year": "1995",
+            "title": "Controlling the false discovery rate - a Practical and powerful approach to multiple testing",
+            "source": "Journal of the Royal Statistical Society Series B-Methodological"
+        },
+        "bib14": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Benton",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vannice",
+                    "given-names": "KS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Gomez-Diaz",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vosshall",
+                    "given-names": "LB"
+                }
+            ],
+            "year": "2009",
+            "title": "Variant ionotropic glutamate receptors as chemosensory receptors in <italic>Drosophila</italic>",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2008.12.001"
+        },
+        "bib15": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Benzer",
+                    "given-names": "S"
+                }
+            ],
+            "year": "1967",
+            "title": "BEHAVIORAL MUTANTS OF Drosophila ISOLATED BY COUNTERCURRENT DISTRIBUTION",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.58.3.1112"
+        },
+        "bib16": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Berry",
+                    "given-names": "JA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cervantes-Sandoval",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Nicholas",
+                    "given-names": "EP"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2012",
+            "title": "Dopamine is required for learning and forgetting in Drosophila",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2012.04.007"
+        },
+        "bib17": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Bidaye",
+                    "given-names": "SS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Machacek",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wu",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dickson",
+                    "given-names": "BJ"
+                }
+            ],
+            "year": "2014",
+            "title": "Neuronal control of Drosophila walking direction",
+            "source": "Science",
+            "doi": "10.1126/science.1249964"
+        },
+        "bib18": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Blum",
+                    "given-names": "AL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Li",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cressy",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dubnau",
+                    "given-names": "J"
+                }
+            ],
+            "year": "2009",
+            "title": "Short- and long-term memory in Drosophila require cAMP signaling in distinct neuron types",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2009.07.016"
+        },
+        "bib19": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Bracker",
+                    "given-names": "LB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siju",
+                    "given-names": "KP"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Varela",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhang",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hein",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vasconcelos",
+                    "given-names": "ML"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Grunwald Kadow",
+                    "given-names": "IC"
+                }
+            ],
+            "year": "2013",
+            "title": "Essential role of the mushroom body in context-dependent CO(2) avoidance in Drosophila",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2013.05.029"
+        },
+        "bib20": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Branson",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Robie",
+                    "given-names": "AA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bender",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perona",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dickinson",
+                    "given-names": "MH"
+                }
+            ],
+            "year": "2009",
+            "title": "High-throughput ethomics in large groups of <italic>Drosophila</italic>",
+            "source": "Nature Methods",
+            "doi": "10.1038/nmeth.1328"
+        },
+        "bib21": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Brembs",
+                    "given-names": "B"
+                }
+            ],
+            "year": "2009",
+            "title": "Mushroom bodies regulate habit formation in <italic>Drosophila</italic>",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2009.06.014"
+        },
+        "bib22": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Burke",
+                    "given-names": "CJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huetteroth",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Owald",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perisse",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Krashes",
+                    "given-names": "MJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Das",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Gohl",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Silies",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Certel",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2012",
+            "title": "Layered reward signalling through octopamine and dopamine in <italic>Drosophila</italic>",
+            "source": "Nature",
+            "doi": "10.1038/nature11614"
+        },
+        "bib23": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Caron",
+                    "given-names": "SJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ruta",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Abbott",
+                    "given-names": "LF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Axel",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2013",
+            "title": "Random convergence of olfactory inputs in the <italic>Drosophila</italic> mushroom body",
+            "source": "Nature",
+            "doi": "10.1038/nature12063"
+        },
+        "bib24": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Cassenaer",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2007",
+            "title": "Hebbian STDP in mushroom bodies facilitates the synchronous flow of olfactory information in locusts",
+            "source": "Nature",
+            "doi": "10.1038/nature05973"
+        },
+        "bib25": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Cassenaer",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2012",
+            "title": "Conditional modulation of spike-timing-dependent plasticity for olfactory learning",
+            "source": "Nature",
+            "doi": "10.1038/nature10776"
+        },
+        "bib26": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Cervantes-Sandoval",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Martin-Pena",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Berry",
+                    "given-names": "JA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2013",
+            "title": "System-like consolidation of olfactory memories in <italic>Drosophila</italic>",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.0451-13.2013"
+        },
+        "bib27": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Choi",
+                    "given-names": "GB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Stettler",
+                    "given-names": "DD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kallman",
+                    "given-names": "BR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bhaskar",
+                    "given-names": "ST"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fleischmann",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Axel",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2011",
+            "title": "Driving opposing behaviors with ensembles of piriform neurons",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2011.07.041"
+        },
+        "bib28": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Claridge-Chang",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Roorda",
+                    "given-names": "RD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vrontou",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sjulson",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Li",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hirsh",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Miesenböck",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2009",
+            "title": "Writing memories with light-addressable reinforcement circuitry",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2009.08.034"
+        },
+        "bib29": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Comas",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Petit",
+                    "given-names": "F"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2004",
+            "title": "Drosophila long-term memory formation involves regulation of cathepsin activity",
+            "source": "Nature",
+            "doi": "10.1038/nature02726"
+        },
+        "bib30": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Crittenden",
+                    "given-names": "JR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Skoulakis",
+                    "given-names": "EM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Han",
+                    "given-names": "KA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kalderon",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "1998",
+            "title": "Tripartite mushroom body architecture revealed by antigenic markers",
+            "source": "Learning & Memory"
+        },
+        "bib31": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Das",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Klappenbach",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vrontou",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perisse",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Clark",
+                    "given-names": "CM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Burke",
+                    "given-names": "CJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2014",
+            "title": "Drosophila learn opposing components of a compound food stimulus",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2014.05.078"
+        },
+        "bib32": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2005",
+            "title": "Olfactory memory formation in <italic>Drosophila</italic>: from molecular to systems neuroscience",
+            "source": "Annual Review of Neuroscience",
+            "doi": "10.1146/annurev.neuro.28.061604.135651"
+        },
+        "bib33": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "de Belle",
+                    "given-names": "JS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "1994",
+            "title": "Associative odor learning in <italic>Drosophila</italic> abolished by chemical ablation of mushroom bodies",
+            "source": "Science",
+            "doi": "10.1126/science.8303280"
+        },
+        "bib34": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Donelson",
+                    "given-names": "NC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kim",
+                    "given-names": "EZ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Slawson",
+                    "given-names": "JB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vecsey",
+                    "given-names": "CG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huber",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Griffith",
+                    "given-names": "LC"
+                }
+            ],
+            "year": "2012",
+            "title": "High-resolution positional tracking for long-term analysis of Drosophila sleep and locomotion using the “tracker” program",
+            "source": "PLOS ONE",
+            "doi": "10.1371/journal.pone.0037250"
+        },
+        "bib35": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Donlea",
+                    "given-names": "JM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Thimgan",
+                    "given-names": "MS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Suzuki",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Gottschalk",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shaw",
+                    "given-names": "PJ"
+                }
+            ],
+            "year": "2011",
+            "title": "Inducing sleep by remote control facilitates memory consolidation in <italic>Drosophila</italic>",
+            "source": "Science",
+            "doi": "10.1126/science.1202249"
+        },
+        "bib36": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Dubnau",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chiang",
+                    "given-names": "AS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Grady",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Barditch",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Gossweiler",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mcneil",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Smith",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Buldoc",
+                    "given-names": "F"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Scott",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Certa",
+                    "given-names": "U"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Broger",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2003",
+            "title": "The staufen/pumilio pathway is involved in <italic>Drosophila</italic> long-term memory",
+            "source": "Current Biology",
+            "doi": "10.1016/S0960-9822(03)00064-2"
+        },
+        "bib37": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Dubnau",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Grady",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kitamoto",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2001",
+            "title": "Disruption of neurotransmission in <italic>Drosophila</italic> mushroom body blocks retrieval but not acquisition of memory",
+            "source": "Nature",
+            "doi": "10.1038/35078077"
+        },
+        "bib38": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Dudai",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jan",
+                    "given-names": "YN"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Byers",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Quinn",
+                    "given-names": "WG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Benzer",
+                    "given-names": "S"
+                }
+            ],
+            "year": "1976",
+            "title": "dunce, a mutant of <italic>Drosophila</italic> deficient in learning",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.73.5.1684"
+        },
+        "bib39": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Dunipace",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Meister",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "McNealy",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Amrein",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2001",
+            "title": "Spatially restricted expression of candidate taste receptors in the <italic>Drosophila</italic> gustatory system",
+            "source": "Current Biology",
+            "doi": "10.1016/S0960-9822(01)00258-5"
+        },
+        "bib40": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Farris",
+                    "given-names": "SM"
+                }
+            ],
+            "year": "2011",
+            "title": "Are mushroom bodies cerebellum-like structures?",
+            "source": "Arthropod Structure & Development",
+            "doi": "10.1016/j.asd.2011.02.004"
+        },
+        "bib41": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Fishilevich",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vosshall",
+                    "given-names": "LB"
+                }
+            ],
+            "year": "2005",
+            "title": "Genetic and functional subdivision of the <italic>Drosophila</italic> antennal lobe",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2005.07.066"
+        },
+        "bib42": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Fleischmann",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cotton",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Choffat",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Spengler",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kubli",
+                    "given-names": "E"
+                }
+            ],
+            "year": "2001",
+            "title": "Mushroom bodies and post-mating behaviors of <italic>Drosophila</italic> melanogaster females",
+            "source": "Journal of Neurogenetics",
+            "doi": "10.3109/01677060109066198"
+        },
+        "bib43": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Folkers",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Drain",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Quinn",
+                    "given-names": "WG"
+                }
+            ],
+            "year": "1993",
+            "title": "Radish, a Drosophila mutant deficient in consolidated memory",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.90.17.8123"
+        },
+        "bib44": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ganguly-Fitzgerald",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Donlea",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shaw",
+                    "given-names": "PJ"
+                }
+            ],
+            "year": "2006",
+            "title": "Waking experience affects sleep need in Drosophila",
+            "source": "Science",
+            "doi": "10.1126/science.1130408"
+        },
+        "bib45": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Gerber",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "2004",
+            "title": "An engram found? Evaluating the evidence from fruit flies",
+            "source": "Current Opinion in Neurobiology",
+            "doi": "10.1016/j.conb.2004.10.014"
+        },
+        "bib46": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Gervasi",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tchénio",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2010",
+            "title": "PKA dynamics in a Drosophila learning center: coincidence detection by rutabaga adenylyl cyclase and spatial regulation by dunce phosphodiesterase",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2010.01.014"
+        },
+        "bib47": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Griffith",
+                    "given-names": "LC"
+                }
+            ],
+            "year": "2012",
+            "title": "Identifying behavioral circuits in <italic>Drosophila</italic> melanogaster: moving targets in a flying insect",
+            "source": "Current Opinion in Neurobiology",
+            "doi": "10.1016/j.conb.2012.01.002"
+        },
+        "bib48": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Hamada",
+                    "given-names": "FN"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rosenzweig",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kang",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pulver",
+                    "given-names": "SR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ghezzi",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jegla",
+                    "given-names": "TJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Garrity",
+                    "given-names": "PA"
+                }
+            ],
+            "year": "2008",
+            "title": "An internal thermal sensor controlling temperature preference in <italic>Drosophila</italic>",
+            "source": "Nature",
+            "doi": "10.1038/nature07001"
+        },
+        "bib49": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Hanesch",
+                    "given-names": "U"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fischbach",
+                    "given-names": "KF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "1989",
+            "title": "Neuronal architecture of the Central complex in <italic>Drosophila melanogaster</italic>",
+            "source": "Cell and Tissue Research",
+            "doi": "10.1007/BF00261838"
+        },
+        "bib50": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Borst",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wagner",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Byers",
+                    "given-names": "D"
+                }
+            ],
+            "year": "1985",
+            "title": "Drosophila mushroom body mutants are deficient in olfactory learning",
+            "source": "Journal of Neurogenetics",
+            "doi": "10.3109/01677068509100140"
+        },
+        "bib51": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Hendricks",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Finn",
+                    "given-names": "SM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Panckeri",
+                    "given-names": "KA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chavkin",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Williams",
+                    "given-names": "JA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sehgal",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pack",
+                    "given-names": "AI"
+                }
+            ],
+            "year": "2000",
+            "title": "Rest in Drosophila is a sleep-like state",
+            "source": "Neuron",
+            "doi": "10.1016/S0896-6273(00)80877-6"
+        },
+        "bib52": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Hendricks",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sehgal",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2004",
+            "title": "Why a fly? Using Drosophila to understand the genetics of circadian rhythms and sleep",
+            "source": "Sleep"
+        },
+        "bib54": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Hirano",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Saitoe",
+                    "given-names": "M"
+                }
+            ],
+            "year": "2013",
+            "title": "Hunger and memory; CRTC coordinates long-term memory with the physiological state, hunger",
+            "source": "Communicative & Integrative Biology",
+            "doi": "10.4161/cib.25152"
+        },
+        "bib55": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Hong",
+                    "given-names": "ST"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bang",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hyun",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kang",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jeong",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Paik",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chung",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kim",
+                    "given-names": "J"
+                }
+            ],
+            "year": "2008",
+            "title": "cAMP signalling in mushroom bodies modulates temperature preference behaviour in <italic>Drosophila</italic>",
+            "source": "Nature",
+            "doi": "10.1038/nature07090"
+        },
+        "bib56": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Huang",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zheng",
+                    "given-names": "X"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhao",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Li",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Xie",
+                    "given-names": "Z"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhong",
+                    "given-names": "Y"
+                }
+            ],
+            "year": "2012",
+            "title": "A permissive role of mushroom body alpha/beta core neurons in long-term memory consolidation in <italic>Drosophila</italic>",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2012.08.048"
+        },
+        "bib57": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Isabel",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pascual",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2004",
+            "title": "Exclusive consolidated memory phases in <italic>Drosophila</italic>",
+            "source": "Science",
+            "doi": "10.1126/science.1094932"
+        },
+        "bib58": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Masuda",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shinomiya",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Endo",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                }
+            ],
+            "year": "2013",
+            "title": "Systematic analysis of neural projections reveals clonal composition of the Drosophila brain",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2013.03.015"
+        },
+        "bib59": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sakurai",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tongroach",
+                    "given-names": "P"
+                }
+            ],
+            "year": "1982",
+            "title": "Climbing fibre induced depression of both mossy fibre responsiveness and glutamate sensitivity of cerebellar Purkinje cells",
+            "source": "The Journal of Physiology"
+        },
+        "bib60": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Jan",
+                    "given-names": "LY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jan",
+                    "given-names": "YN"
+                }
+            ],
+            "year": "1976",
+            "title": "L-glutamate as an excitatory transmitter at <italic>Drosophila</italic> Larval Neuromuscular-Junction",
+            "source": "Journal of Physiology"
+        },
+        "bib61": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Jefferis",
+                    "given-names": "GS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Potter",
+                    "given-names": "CJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chan",
+                    "given-names": "AM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Marin",
+                    "given-names": "EC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rohlfing",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Maurer",
+                    "given-names": "CR",
+                    "suffix": "Jnr"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Luo",
+                    "given-names": "L"
+                }
+            ],
+            "year": "2007",
+            "title": "Comprehensive maps of Drosophila higher olfactory centers: spatially segregated fruit and pheromone representation",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2007.01.040"
+        },
+        "bib62": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Joiner",
+                    "given-names": "WJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Crocker",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "White",
+                    "given-names": "BH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sehgal",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2006",
+            "title": "Sleep in Drosophila is regulated by adult mushroom bodies",
+            "source": "Nature",
+            "doi": "10.1038/nature04811"
+        },
+        "bib63": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Kabra",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Robie",
+                    "given-names": "AA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rivera-Alba",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Branson",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Branson",
+                    "given-names": "K"
+                }
+            ],
+            "year": "2013",
+            "title": "JAABA: interactive machine learning for automatic annotation of animal behavior",
+            "source": "Nature Methods",
+            "doi": "10.1038/nmeth.2281"
+        },
+        "bib64": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Kaun",
+                    "given-names": "KR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Azanchi",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Maung",
+                    "given-names": "Z"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hirsh",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heberlein",
+                    "given-names": "U"
+                }
+            ],
+            "year": "2011",
+            "title": "A Drosophila model for alcohol reward",
+            "source": "Nature Neuroscience",
+            "doi": "10.1038/nn.2805"
+        },
+        "bib65": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Kepecs",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Uchida",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zariwala",
+                    "given-names": "HA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mainen",
+                    "given-names": "ZF"
+                }
+            ],
+            "year": "2008",
+            "title": "Neural correlates, computation and behavioural impact of decision confidence",
+            "source": "Nature",
+            "doi": "10.1038/nature07200"
+        },
+        "bib66": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Kiani",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shadlen",
+                    "given-names": "MN"
+                }
+            ],
+            "year": "2009",
+            "title": "Representation of confidence associated with a decision by neurons in the parietal cortex",
+            "source": "Science",
+            "doi": "10.1126/science.1169405"
+        },
+        "bib67": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Kim",
+                    "given-names": "YC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lee",
+                    "given-names": "HG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Han",
+                    "given-names": "KA"
+                }
+            ],
+            "year": "2007",
+            "title": "D1 dopamine receptor dDA1 is required in the mushroom body neurons for aversive and appetitive learning in Drosophila",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.1167-07.2007"
+        },
+        "bib68": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Kitamoto",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2001",
+            "title": "Conditional modification of behavior in Drosophila by targeted expression of a temperature-sensitive shibire allele in defined neurons",
+            "source": "Journal of Neurobiology",
+            "doi": "10.1002/neu.1018"
+        },
+        "bib69": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Klapoetke",
+                    "given-names": "NC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Murata",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kim",
+                    "given-names": "SS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pulver",
+                    "given-names": "SR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Birdsey-Benson",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cho",
+                    "given-names": "YK"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Morimoto",
+                    "given-names": "TK"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chuong",
+                    "given-names": "AS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Carpenter",
+                    "given-names": "EJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tian",
+                    "given-names": "ZJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Xie",
+                    "given-names": "YL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yan",
+                    "given-names": "ZX"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhang",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chow",
+                    "given-names": "BY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Surek",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Melkonian",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jayaraman",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Constantine-Paton",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wong",
+                    "given-names": "GK"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Boyden",
+                    "given-names": "ES"
+                }
+            ],
+            "year": "2014",
+            "title": "Independent optical excitation of distinct neural populations",
+            "source": "Nature Methods",
+            "doi": "10.1038/nmeth.2836"
+        },
+        "bib70": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Knapek",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kahsai",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Winther",
+                    "given-names": "AM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Nässel",
+                    "given-names": "DR"
+                }
+            ],
+            "year": "2013",
+            "title": "Short neuropeptide F acts as a functional neuromodulator for olfactory memory in Kenyon cells of Drosophila mushroom bodies",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.2287-12.2013"
+        },
+        "bib71": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Knapek",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sigrist",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2011",
+            "title": "Bruchpilot, a synaptic active zone protein for anesthesia-resistant memory",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.2585-10.2011"
+        },
+        "bib72": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Krashes",
+                    "given-names": "MJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dasgupta",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vreede",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "White",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Armstrong",
+                    "given-names": "JD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2009",
+            "title": "A neural circuit mechanism integrating Motivational state with memory expression in Drosophila",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2009.08.035"
+        },
+        "bib73": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Krashes",
+                    "given-names": "MJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Keene",
+                    "given-names": "AC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Leung",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Armstrong",
+                    "given-names": "JD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2007",
+            "title": "Sequential use of mushroom body neuron subsets during drosophila odor memory processing",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2006.11.021"
+        },
+        "bib74": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Krashes",
+                    "given-names": "MJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2008",
+            "title": "Rapid consolidation to a radish and protein synthesis-dependent long-term memory after single-session appetitive olfactory conditioning in Drosophila",
+            "source": "Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.5333-07.2008"
+        },
+        "bib75": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2002",
+            "title": "Olfactory network dynamics and the coding of multidimensional signals",
+            "source": "Nature Reviews Neuroscience",
+            "doi": "10.1038/nrn964"
+        },
+        "bib76": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Naraghi",
+                    "given-names": "M"
+                }
+            ],
+            "year": "1994",
+            "title": "Odorant-induced oscillations in the mushroom bodies of the locust",
+            "source": "The Journal of Neuroscience"
+        },
+        "bib77": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Levy",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Snell",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Nelson",
+                    "given-names": "AJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rustichini",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Glimcher",
+                    "given-names": "PW"
+                }
+            ],
+            "year": "2010",
+            "title": "Neural representation of subjective value under risk and ambiguity",
+            "source": "Journal of Neurophysiology",
+            "doi": "10.1152/jn.00853.2009"
+        },
+        "bib78": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Lin",
+                    "given-names": "HH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lai",
+                    "given-names": "JS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chin",
+                    "given-names": "AL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chen",
+                    "given-names": "YC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chiang",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2007",
+            "title": "A map of olfactory representation in the Drosophila mushroom body",
+            "source": "Cell",
+            "doi": "10.1016/j.cell.2007.03.006"
+        },
+        "bib79": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Liu",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Placais",
+                    "given-names": "PY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yamagata",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pfeiffer",
+                    "given-names": "BD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Friedrich",
+                    "given-names": "AB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwanowicz",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rubin",
+                    "given-names": "GM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2012",
+            "title": "A subset of dopamine neurons signals reward for odour memory in Drosophila",
+            "source": "Nature",
+            "doi": "10.1038/nature11304"
+        },
+        "bib80": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Liu",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Seiler",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wen",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zars",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wolf",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Liu",
+                    "given-names": "L"
+                }
+            ],
+            "year": "2006",
+            "title": "Distinct memory traces for two visual features in the Drosophila brain",
+            "source": "Nature",
+            "doi": "10.1038/nature04381"
+        },
+        "bib81": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Liu",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wolf",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ernst",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "1999",
+            "title": "Context generalization in Drosophila visual learning requires the mushroom bodies",
+            "source": "Nature",
+            "doi": "10.1038/22919"
+        },
+        "bib82": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Liu",
+                    "given-names": "WW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wilson",
+                    "given-names": "RI"
+                }
+            ],
+            "year": "2013",
+            "title": "Glutamate is an inhibitory neurotransmitter in the Drosophila olfactory system",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.1220560110"
+        },
+        "bib83": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Livingstone",
+                    "given-names": "MS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sziber",
+                    "given-names": "PP"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Quinn",
+                    "given-names": "WG"
+                }
+            ],
+            "year": "1984",
+            "title": "Loss of calcium/calmodulin responsiveness in adenylate cyclase of rutabaga, a Drosophila learning mutant",
+            "source": "Cell",
+            "doi": "10.1016/0092-8674(84)90316-7"
+        },
+        "bib84": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Mao",
+                    "given-names": "Z"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2009",
+            "title": "Eight different types of dopaminergic neurons innervate the Drosophila mushroom body neuropil: anatomical and physiological heterogeneity",
+            "source": "Frontiers in Neural Circuits",
+            "doi": "10.3389/neuro.04.005.2009"
+        },
+        "bib85": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Marin",
+                    "given-names": "EC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jefferis",
+                    "given-names": "GS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Komiyama",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhu",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Luo",
+                    "given-names": "L"
+                }
+            ],
+            "year": "2002",
+            "title": "Representation of the glomerular olfactory map in the Drosophila brain",
+            "source": "Cell",
+            "doi": "10.1016/S0092-8674(02)00700-6"
+        },
+        "bib86": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Martin",
+                    "given-names": "JR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ernst",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "1998",
+            "title": "Mushroom bodies suppress locomotor activity in Drosophila melanogaster",
+            "source": "Learning & Memory"
+        },
+        "bib87": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Masek",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Scott",
+                    "given-names": "K"
+                }
+            ],
+            "year": "2010",
+            "title": "Limited taste discrimination in Drosophila",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.1009318107"
+        },
+        "bib88": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Mcbride",
+                    "given-names": "SM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Giuliani",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Choi",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Krause",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Correale",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Watson",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Baker",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwicki",
+                    "given-names": "KK"
+                }
+            ],
+            "year": "1999",
+            "title": "Mushroom body ablation impairs short-term memory and long-term memory of courtship conditioning in Drosophila melanogaster",
+            "source": "Neuron",
+            "doi": "10.1016/S0896-6273(00)81043-0"
+        },
+        "bib89": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "McGuire",
+                    "given-names": "SE"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Le",
+                    "given-names": "PT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2001",
+            "title": "The role of Drosophila mushroom body signaling in olfactory memory",
+            "source": "Science",
+            "doi": "10.1126/science.1062622"
+        },
+        "bib90": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "McGuire",
+                    "given-names": "SE"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Le",
+                    "given-names": "PT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Osborn",
+                    "given-names": "AJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Matsumoto",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2003",
+            "title": "Spatiotemporal rescue of memory dysfunction in Drosophila",
+            "source": "Science",
+            "doi": "10.1126/science.1089035"
+        },
+        "bib91": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Miyashita",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Oda",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Horiuchi",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yin",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Morimoto",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Saitoe",
+                    "given-names": "M"
+                }
+            ],
+            "year": "2012",
+            "title": "Mg(2+) block of Drosophila NMDA receptors is required for long-term memory formation and CREB-dependent gene expression",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2012.03.039"
+        },
+        "bib92": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Murthy",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fiete",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2008",
+            "title": "Testing odor response stereotypy in the Drosophila mushroom body",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2008.07.040"
+        },
+        "bib93": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Okada",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rybak",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Manz",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Menzel",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2007",
+            "title": "Learning-related plasticity in PE1 and other mushroom body-extrinsic neurons in the honeybee brain",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.2216-07.2007"
+        },
+        "bib94": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Pai",
+                    "given-names": "TP"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chen",
+                    "given-names": "CC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lin",
+                    "given-names": "HH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chin",
+                    "given-names": "AL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lai",
+                    "given-names": "JS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lee",
+                    "given-names": "PT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chiang",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2013",
+            "title": "Drosophila ORB protein in two mushroom body output neurons is necessary for long-term memory formation",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.1216336110"
+        },
+        "bib95": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Parisky",
+                    "given-names": "KM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Agosto",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pulver",
+                    "given-names": "SR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shang",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kuklin",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hodge",
+                    "given-names": "JJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kang",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Liu",
+                    "given-names": "X"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Garrity",
+                    "given-names": "PA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rosbash",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Griffith",
+                    "given-names": "LC"
+                }
+            ],
+            "year": "2008",
+            "title": "PDF cells are a GABA-responsive wake-promoting component of the Drosophila sleep circuit",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2008.10.042"
+        },
+        "bib96": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Pascual",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Préat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2001",
+            "title": "Localization of long-term memory within the Drosophila mushroom body",
+            "source": "Science",
+            "doi": "10.1126/science.1064200"
+        },
+        "bib97": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Perez-Orive",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mazor",
+                    "given-names": "O"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Turner",
+                    "given-names": "GC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cassenaer",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wilson",
+                    "given-names": "RI"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2002",
+            "title": "Oscillations and sparsening of odor representations in the mushroom body",
+            "source": "Science",
+            "doi": "10.1126/science.1070502"
+        },
+        "bib98": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Perisse",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yin",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lin",
+                    "given-names": "AC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lin",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huetteroth",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2013",
+            "title": "Different kenyon cell populations drive learned approach and avoidance in Drosophila",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2013.07.045"
+        },
+        "bib99": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Pfeiffer",
+                    "given-names": "BD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ngo",
+                    "given-names": "TT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hibbard",
+                    "given-names": "KL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Murphy",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jenett",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Truman",
+                    "given-names": "JW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rubin",
+                    "given-names": "GM"
+                }
+            ],
+            "year": "2010",
+            "title": "Refinement of tools for targeted gene expression in Drosophila",
+            "source": "Genetics",
+            "doi": "10.1534/genetics.110.119917"
+        },
+        "bib100": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Pfeiffer",
+                    "given-names": "BD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Truman",
+                    "given-names": "JW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rubin",
+                    "given-names": "GM"
+                }
+            ],
+            "year": "2012",
+            "title": "Using translational enhancers to increase transgene expression in Drosophila",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.1204520109"
+        },
+        "bib101": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Pitman",
+                    "given-names": "JL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huetteroth",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Burke",
+                    "given-names": "CJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Krashes",
+                    "given-names": "MJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lai",
+                    "given-names": "SL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lee",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Waddell",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2011",
+            "title": "A Pair of inhibitory neurons are required to Sustain labile memory in the Drosophila mushroom body",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2011.03.069"
+        },
+        "bib102": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Pitman",
+                    "given-names": "JL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "McGill",
+                    "given-names": "JJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Keegan",
+                    "given-names": "KP"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Allada",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2006",
+            "title": "A dynamic role for the mushroom bodies in promoting sleep in Drosophila",
+            "source": "Nature",
+            "doi": "10.1038/nature04739"
+        },
+        "bib103": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Placais",
+                    "given-names": "PY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2013",
+            "title": "To favor survival under food shortage, the brain disables costly memory",
+            "source": "Science",
+            "doi": "10.1126/science.1226018"
+        },
+        "bib104": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Placais",
+                    "given-names": "PY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Trannoy",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Friedrich",
+                    "given-names": "AB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2013",
+            "title": "Two pairs of mushroom body efferent neurons are required for appetitive long-term memory retrieval in Drosophila",
+            "source": "Cell Reports",
+            "doi": "10.1016/j.celrep.2013.09.032"
+        },
+        "bib105": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Placais",
+                    "given-names": "PY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Trannoy",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Isabel",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwanowicz",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Belliart-Guérin",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vernier",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Birman",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2012",
+            "title": "Slow oscillations in two pairs of dopaminergic neurons gate long-term memory formation in Drosophila",
+            "source": "Nature Neuroscience",
+            "doi": "10.1038/nn.3055"
+        },
+        "bib106": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Qin",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cressy",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Li",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Coravos",
+                    "given-names": "JS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Izzi",
+                    "given-names": "SA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dubnau",
+                    "given-names": "J"
+                }
+            ],
+            "year": "2012",
+            "title": "Gamma neurons mediate dopaminergic input during aversive olfactory memory formation in Drosophila",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2012.02.014"
+        },
+        "bib108": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schindelin",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Arganda-Carreras",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Frise",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kaynig",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Longair",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pietzsch",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preibisch",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rueden",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Saalfeld",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Schmid",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tinevez",
+                    "given-names": "JY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "White",
+                    "given-names": "DJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hartenstein",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Eliceiri",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tomancak",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cardona",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2012",
+            "title": "Fiji: an open-source platform for biological-image analysis",
+            "source": "Nature Methods",
+            "doi": "10.1038/nmeth.2019"
+        },
+        "bib109": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schnaitmann",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Garbers",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wachtler",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2013",
+            "title": "Color discrimination with broadband photoreceptors",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2013.10.037"
+        },
+        "bib110": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schnaitmann",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vogt",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Triphan",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2010",
+            "title": "Appetitive and aversive visual learning in freely moving Drosophila",
+            "source": "Frontiers in Behavioral Neuroscience",
+            "doi": "10.3389/fnbeh.2010.00010"
+        },
+        "bib111": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schroll",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Riemensperger",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bucher",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ehmer",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Völler",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Erbguth",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Gerber",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hendel",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Nagel",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Buchner",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fiala",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2006",
+            "title": "Light-induced activation of distinct modulatory neurons triggers appetitive or aversive learning in Drosophila larvae",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2006.07.023"
+        },
+        "bib112": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schurmann",
+                    "given-names": "FW"
+                }
+            ],
+            "year": "1974",
+            "title": "[On the functional anatomy of the corpora pedunculata in insects (author's transl)]",
+            "source": "Experimental Brain Research",
+            "doi": "10.1007/BF00234464"
+        },
+        "bib113": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schwaerzel",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Monastirioti",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Scholz",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Friggi-Grelin",
+                    "given-names": "F"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Birman",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "2003",
+            "title": "Dopamine and octopamine differentiate between aversive and appetitive olfactory memories in Drosophila",
+            "source": "Journal of Neuroscience"
+        },
+        "bib114": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Séjourné",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Placais",
+                    "given-names": "PY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Siwanowicz",
+                    "given-names": "I"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Trannoy",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Thoma",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tedjakumala",
+                    "given-names": "SR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rubin",
+                    "given-names": "GM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tchénio",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Isabel",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2011",
+            "title": "Mushroom body efferent neurons responsible for aversive olfactory memory retrieval in Drosophila",
+            "source": "Nature Neuroscience",
+            "doi": "10.1038/nn.2846"
+        },
+        "bib115": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Shang",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Donelson",
+                    "given-names": "NC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vecsey",
+                    "given-names": "CG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Guo",
+                    "given-names": "F"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rosbash",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Griffith",
+                    "given-names": "LC"
+                }
+            ],
+            "year": "2013",
+            "title": "Short neuropeptide F is a sleep-promoting inhibitory modulator",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2013.07.029"
+        },
+        "bib116": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Shaw",
+                    "given-names": "PJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cirelli",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Greenspan",
+                    "given-names": "RJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tononi",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2000",
+            "title": "Correlates of sleep and waking in <italic>Drosophila melanogaster</italic>",
+            "source": "Science",
+            "doi": "10.1126/science.287.5459.1834"
+        },
+        "bib117": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Shen",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Flajolet",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Greengard",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Surmeier",
+                    "given-names": "DJ"
+                }
+            ],
+            "year": "2008",
+            "title": "Dichotomous dopaminergic control of striatal synaptic plasticity",
+            "source": "Science",
+            "doi": "10.1126/science.1160575"
+        },
+        "bib118": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Silbering",
+                    "given-names": "AF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rytz",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Grosjean",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Abuin",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ramdya",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jefferis",
+                    "given-names": "GS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Benton",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2011",
+            "title": "Complementary function and integrated wiring of the evolutionarily distinct Drosophila olfactory subsystems",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.2360-11.2011"
+        },
+        "bib119": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Strauss",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2002",
+            "title": "The central complex and the genetic dissection of locomotor behaviour",
+            "source": "Current Opinion in Neurobiology",
+            "doi": "10.1016/S0959-4388(02)00385-9"
+        },
+        "bib120": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Suh",
+                    "given-names": "GS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ben-Tabou de Leon",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fiala",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Benzer",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Anderson",
+                    "given-names": "DJ"
+                }
+            ],
+            "year": "2007",
+            "title": "Light activation of an innate olfactory avoidance response in Drosophila",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2007.04.046"
+        },
+        "bib121": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tanaka",
+                    "given-names": "NK"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Awasaki",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shimada",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                }
+            ],
+            "year": "2004",
+            "title": "Integration of chemosensory pathways in the Drosophila second-order olfactory centers",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2004.03.006"
+        },
+        "bib122": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tanaka",
+                    "given-names": "NK"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Endo",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                }
+            ],
+            "year": "2012",
+            "title": "Organization of antennal lobe-associated neurons in adult Drosophila melanogaster brain",
+            "source": "The Journal of Comparative Neurology",
+            "doi": "10.1002/cne.23142"
+        },
+        "bib123": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tanaka",
+                    "given-names": "NK"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ito",
+                    "given-names": "K"
+                }
+            ],
+            "year": "2008",
+            "title": "Neuronal assemblies of the Drosophila mushroom body",
+            "source": "The Journal of Comparative Neurology",
+            "doi": "10.1002/cne.21692"
+        },
+        "bib124": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tempel",
+                    "given-names": "BL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bonini",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dawson",
+                    "given-names": "DR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Quinn",
+                    "given-names": "WG"
+                }
+            ],
+            "year": "1983",
+            "title": "Reward learning in normal and mutant Drosophila",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.80.5.1482"
+        },
+        "bib125": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Trannoy",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Redt-Clouet",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dura",
+                    "given-names": "JM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2011",
+            "title": "Parallel processing of appetitive short- and long-term memories in Drosophila",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2011.08.032"
+        },
+        "bib126": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Boynton",
+                    "given-names": "SC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Del Vecchio",
+                    "given-names": "M"
+                }
+            ],
+            "year": "1994",
+            "title": "Genetic dissection of consolidated memory in Drosophila",
+            "source": "Cell",
+            "doi": "10.1016/0092-8674(94)90398-0"
+        },
+        "bib127": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Quinn",
+                    "given-names": "WG"
+                }
+            ],
+            "year": "1985",
+            "title": "Classical-conditioning and retention in Normal and mutant Drosophila-Melanogaster",
+            "source": "Journal of Comparative Physiology A-Sensory Neural and Behavioral Physiology",
+            "doi": "10.1007/BF01350033"
+        },
+        "bib128": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Turner",
+                    "given-names": "GC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bazhenov",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Laurent",
+                    "given-names": "G"
+                }
+            ],
+            "year": "2008",
+            "title": "Olfactory representations by Drosophila mushroom body neurons",
+            "source": "Journal of Neurophysiology",
+            "doi": "10.1152/jn.01283.2007"
+        },
+        "bib129": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "van Swinderen",
+                    "given-names": "B"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mccartney",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kauffman",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Flores",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Agrawal",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wagner",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Paulk",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2009",
+            "title": "Shared visual attention and memory systems in the Drosophila brain",
+            "source": "PLOS ONE",
+            "doi": "10.1371/journal.pone.0005989"
+        },
+        "bib130": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Vasmer",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pooryasin",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Riemensperger",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fiala",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2014",
+            "title": "Induction of aversive learning through thermogenetic activation of Kenyon cell ensembles in Drosophila",
+            "source": "Frontiers in Behavioral Neuroscience",
+            "doi": "10.3389/fnbeh.2014.00174"
+        },
+        "bib131": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Venken",
+                    "given-names": "KJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Simpson",
+                    "given-names": "JH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Bellen",
+                    "given-names": "HJ"
+                }
+            ],
+            "year": "2011",
+            "title": "Genetic manipulation of genes and cells in the nervous system of the fruit fly",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2011.09.021"
+        },
+        "bib132": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Vet",
+                    "given-names": "LEM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vanlenteren",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heymans",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Meelis",
+                    "given-names": "E"
+                }
+            ],
+            "year": "1983",
+            "title": "An air-flow olfactometer for measuring olfactory responses of Hymenopterous Parasitoids and other small insects",
+            "source": "Physiological Entomology",
+            "doi": "10.1111/j.1365-3032.1983.tb00338.x"
+        },
+        "bib133": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Vogt",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Schnaitmann",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Dylla",
+                    "given-names": "KV"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Knapek",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "ASO",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "RUBIN",
+                    "given-names": "GM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "year": "2014",
+            "title": "Shared mushroom body circuits underlie visual and olfactory memories in Drosophila",
+            "source": "eLife",
+            "doi": "10.7554/eLife.02395"
+        },
+        "bib134": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Vosshall",
+                    "given-names": "LB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Stocker",
+                    "given-names": "RF"
+                }
+            ],
+            "year": "2007",
+            "title": "Molecular architecture of smell and taste in Drosophila",
+            "source": "Annual Review of Neuroscience",
+            "doi": "10.1146/annurev.neuro.30.051606.094306"
+        },
+        "bib135": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wolf",
+                    "given-names": "FW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rodan",
+                    "given-names": "AR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tsai",
+                    "given-names": "LT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heberlein",
+                    "given-names": "U"
+                }
+            ],
+            "year": "2002",
+            "title": "High-resolution analysis of ethanol-induced locomotor stimulation in Drosophila",
+            "source": "The Journal of Neuroscience"
+        },
+        "bib136": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wong",
+                    "given-names": "AM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "JW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Axel",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2002",
+            "title": "Spatial representation of the glomerular map in the Drosophila protocerebrum",
+            "source": "Cell",
+            "doi": "10.1016/S0092-8674(02)00707-9"
+        },
+        "bib137": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wu",
+                    "given-names": "CL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Xia",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fu",
+                    "given-names": "TF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chen",
+                    "given-names": "YH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Leong",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chiang",
+                    "given-names": "AS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2007",
+            "title": "Specific requirement of NMDA receptors for long-term memory consolidation in Drosophila ellipsoid body",
+            "source": "Nature Neuroscience",
+            "doi": "10.1038/nn2005"
+        },
+        "bib138": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Xia",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Miyashita",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fu",
+                    "given-names": "TF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lin",
+                    "given-names": "WY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wu",
+                    "given-names": "CL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pyzocha",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lin",
+                    "given-names": "IR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Saitoe",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chiang",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2005",
+            "title": "NMDA receptors mediate olfactory learning and memory in Drosophila",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2005.02.059"
+        },
+        "bib139": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Yamagata",
+                    "given-names": "N"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ichinose",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Aso",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Plaçais",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Friedrich",
+                    "given-names": "AB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Sima",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Preat",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Rubin",
+                    "given-names": "GM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tanimoto",
+                    "given-names": "H"
+                }
+            ],
+            "title": "Distinct dopamine neurons mediate reward signals for short- and long-term memories",
+            "source": "Proceedings of the National Academy of Sciences of USA",
+            "doi": "10.1073/pnas.1421930112"
+        },
+        "bib140": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Yanike",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ferrera",
+                    "given-names": "VP"
+                }
+            ],
+            "year": "2014",
+            "title": "Representation of outcome risk and action in the anterior caudate nucleus",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.3818-13.2014"
+        },
+        "bib141": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Yin",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wallach",
+                    "given-names": "JS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Del Vecchio",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wilder",
+                    "given-names": "EL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhou",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Quinn",
+                    "given-names": "WG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Tully",
+                    "given-names": "T"
+                }
+            ],
+            "year": "1994",
+            "title": "Induction of a dominant negative CREB transgene specifically blocks long-term memory in Drosophila",
+            "source": "Cell",
+            "doi": "10.1016/0092-8674(94)90399-9"
+        },
+        "bib142": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Young",
+                    "given-names": "JM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Armstrong",
+                    "given-names": "JD"
+                }
+            ],
+            "year": "2010",
+            "title": "Building the central complex in Drosophila: the generation and development of distinct neural subsets",
+            "source": "The Journal of Comparative Neurology",
+            "doi": "10.1002/cne.22285"
+        },
+        "bib143": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Young",
+                    "given-names": "JM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Armstrong",
+                    "given-names": "JD"
+                }
+            ],
+            "year": "2010",
+            "title": "Structure of the adult central complex in Drosophila: organization of distinct neuronal subsets",
+            "source": "The Journal of Comparative Neurology",
+            "doi": "10.1002/cne.22284"
+        },
+        "bib144": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Yu",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Akalal",
+                    "given-names": "DB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "RL"
+                }
+            ],
+            "year": "2006",
+            "title": "Drosophila alpha/beta mushroom body neurons form a branch-specific, long-term cellular memory trace after spaced olfactory conditioning",
+            "source": "Neuron",
+            "doi": "10.1016/j.neuron.2006.10.030"
+        },
+        "bib145": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Yu",
+                    "given-names": "HH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Awasaki",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Schroeder",
+                    "given-names": "MD"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Long",
+                    "given-names": "FH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yang",
+                    "given-names": "JS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "He",
+                    "given-names": "YS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ding",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kao",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wu",
+                    "given-names": "GYY"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Peng",
+                    "given-names": "HC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Myers",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lee",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2013",
+            "title": "Clonal development and organization of the adult Drosophila central brain",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2013.02.057"
+        },
+        "bib146": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Yu",
+                    "given-names": "HH"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kao",
+                    "given-names": "CF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "He",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ding",
+                    "given-names": "P"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kao",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lee",
+                    "given-names": "T"
+                }
+            ],
+            "year": "2010",
+            "title": "A complete developmental sequence of a Drosophila neuronal lineage as revealed by twin-spot MARCM",
+            "source": "PLOS Biology",
+            "doi": "10.1371/journal.pbio.1000461"
+        },
+        "bib147": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Zars",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fischer",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Schulz",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heisenberg",
+                    "given-names": "M"
+                }
+            ],
+            "year": "2000",
+            "title": "Localization of a short-term memory in Drosophila",
+            "source": "Science",
+            "doi": "10.1126/science.288.5466.672"
+        },
+        "bib148": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Zhang",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Guo",
+                    "given-names": "JZ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Peng",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Xi",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Guo",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2007",
+            "title": "Dopamine-mushroom body circuit regulates saliency-based decision-making in Drosophila",
+            "source": "Science",
+            "doi": "10.1126/science.1137357"
+        },
+        "bib149": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Zhang",
+                    "given-names": "X"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ren",
+                    "given-names": "Q"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Guo",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2013",
+            "title": "Parallel pathways for cross-modal memory retrieval in Drosophila",
+            "source": "The Journal of Neuroscience",
+            "doi": "10.1523/JNEUROSCI.4631-12.2013"
+        },
+        "bib150": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Zhu",
+                    "given-names": "Y"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Nern",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zipursky",
+                    "given-names": "SL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Frye",
+                    "given-names": "MA"
+                }
+            ],
+            "year": "2009",
+            "title": "Peripheral visual circuits functionally segregate motion and phototaxis behaviors in the fly",
+            "source": "Current Biology",
+            "doi": "10.1016/j.cub.2009.02.053"
+        }
+    },
+    "version": "1",
+    "article-version-id": "04580.1"
+}
