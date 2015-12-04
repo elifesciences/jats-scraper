@@ -582,6 +582,8 @@ def remove_empty_lists(res):
             delete_key_if_empty('citations', article)
             # Delete empty impact-statement list
             delete_key_if_empty('impact-statement', article)
+            # Delete empty keywords list
+            delete_key_if_empty('keywords', article)
 
     return res
 
