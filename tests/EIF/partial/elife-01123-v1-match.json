@@ -1,0 +1,701 @@
+[
+  {
+    "description": "Expect on-behalf-of contributor",
+    "data": {
+      "contributors": [
+        {
+          "type": "author",
+          "surname": "Bartha",
+          "given-names": "István",
+          "id": "author-6354",
+          "references": {
+            "affiliation": [
+              "aff1",
+              "aff2",
+              "aff3",
+              "aff4"
+            ],
+            "funding": [
+              "par-6"
+            ],
+            "contribution": [
+              "con1"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Carlson",
+          "given-names": "Jonathan M",
+          "id": "author-6355",
+          "equal-contrib": "yes",
+          "references": {
+            "affiliation": [
+              "aff5"
+            ],
+            "equal-contrib": [
+              "equal-contrib"
+            ],
+            "contribution": [
+              "con2"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Brumme",
+          "given-names": "Chanson J",
+          "id": "author-6356",
+          "equal-contrib": "yes",
+          "references": {
+            "affiliation": [
+              "aff6"
+            ],
+            "equal-contrib": [
+              "equal-contrib"
+            ],
+            "contribution": [
+              "con3"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "McLaren",
+          "given-names": "Paul J",
+          "id": "author-6357",
+          "equal-contrib": "yes",
+          "references": {
+            "affiliation": [
+              "aff1",
+              "aff2",
+              "aff4"
+            ],
+            "equal-contrib": [
+              "equal-contrib"
+            ],
+            "contribution": [
+              "con10"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Brumme",
+          "given-names": "Zabrina L",
+          "id": "author-6358",
+          "references": {
+            "affiliation": [
+              "aff6",
+              "aff7"
+            ],
+            "funding": [
+              "par-4",
+              "par-5"
+            ],
+            "contribution": [
+              "con13"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "John",
+          "given-names": "Mina",
+          "id": "author-6359",
+          "references": {
+            "affiliation": [
+              "aff8"
+            ],
+            "contribution": [
+              "con14"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Haas",
+          "given-names": "David W",
+          "id": "author-6360",
+          "references": {
+            "affiliation": [
+              "aff9"
+            ],
+            "contribution": [
+              "con15"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Martinez-Picado",
+          "given-names": "Javier",
+          "id": "author-6361",
+          "references": {
+            "affiliation": [
+              "aff10",
+              "aff11"
+            ],
+            "contribution": [
+              "con16"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Dalmau",
+          "given-names": "Judith",
+          "id": "author-6362",
+          "references": {
+            "affiliation": [
+              "aff10"
+            ],
+            "contribution": [
+              "con17"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "López-Galíndez",
+          "given-names": "Cecilio",
+          "id": "author-6382",
+          "references": {
+            "affiliation": [
+              "aff12"
+            ],
+            "funding": [
+              "par-7",
+              "par-8",
+              "par-9"
+            ],
+            "contribution": [
+              "con18"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Casado",
+          "given-names": "Concepción",
+          "id": "author-6364",
+          "references": {
+            "affiliation": [
+              "aff12"
+            ],
+            "funding": [
+              "par-7",
+              "par-8",
+              "par-9"
+            ],
+            "contribution": [
+              "con19"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Rauch",
+          "given-names": "Andri",
+          "id": "author-6365",
+          "references": {
+            "affiliation": [
+              "aff13"
+            ],
+            "contribution": [
+              "con20"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Günthard",
+          "given-names": "Huldrych F",
+          "id": "author-6366",
+          "references": {
+            "affiliation": [
+              "aff14"
+            ],
+            "contribution": [
+              "con21"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Bernasconi",
+          "given-names": "Enos",
+          "id": "author-6367",
+          "references": {
+            "affiliation": [
+              "aff15"
+            ],
+            "contribution": [
+              "con22"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Vernazza",
+          "given-names": "Pietro",
+          "id": "author-6368",
+          "references": {
+            "affiliation": [
+              "aff16"
+            ],
+            "contribution": [
+              "con23"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Klimkait",
+          "given-names": "Thomas",
+          "id": "author-6369",
+          "references": {
+            "affiliation": [
+              "aff17"
+            ],
+            "contribution": [
+              "con24"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Yerly",
+          "given-names": "Sabine",
+          "id": "author-6370",
+          "references": {
+            "affiliation": [
+              "aff18"
+            ],
+            "contribution": [
+              "con25"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "O’Brien",
+          "given-names": "Stephen J",
+          "id": "author-6371",
+          "references": {
+            "affiliation": [
+              "aff19"
+            ],
+            "contribution": [
+              "con26"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Listgarten",
+          "given-names": "Jennifer",
+          "id": "author-6372",
+          "references": {
+            "affiliation": [
+              "aff5"
+            ],
+            "contribution": [
+              "con4"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Pfeifer",
+          "given-names": "Nico",
+          "id": "author-6373",
+          "references": {
+            "affiliation": [
+              "aff5"
+            ],
+            "contribution": [
+              "con5"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "present-address": [
+              "pa1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Lippert",
+          "given-names": "Christoph",
+          "id": "author-1881",
+          "references": {
+            "affiliation": [
+              "aff5"
+            ],
+            "contribution": [
+              "con6"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Fusi",
+          "given-names": "Nicolo",
+          "id": "author-6375",
+          "references": {
+            "affiliation": [
+              "aff5"
+            ],
+            "contribution": [
+              "con7"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Kutalik",
+          "given-names": "Zoltán",
+          "id": "author-6376",
+          "references": {
+            "affiliation": [
+              "aff4",
+              "aff20"
+            ],
+            "contribution": [
+              "con8"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Allen",
+          "given-names": "Todd M",
+          "id": "author-6377",
+          "references": {
+            "affiliation": [
+              "aff21"
+            ],
+            "funding": [
+              "par-10",
+              "par-11"
+            ],
+            "contribution": [
+              "con28"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Müller",
+          "given-names": "Viktor",
+          "id": "author-6378",
+          "references": {
+            "affiliation": [
+              "aff3"
+            ],
+            "funding": [
+              "par-3"
+            ],
+            "contribution": [
+              "con9"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Harrigan",
+          "given-names": "P Richard",
+          "id": "author-6379",
+          "references": {
+            "affiliation": [
+              "aff6",
+              "aff22"
+            ],
+            "contribution": [
+              "con27"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Heckerman",
+          "given-names": "David",
+          "id": "author-6380",
+          "references": {
+            "affiliation": [
+              "aff5"
+            ],
+            "contribution": [
+              "con29"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Telenti",
+          "given-names": "Amalio",
+          "id": "author-6383",
+          "corresp": "yes",
+          "references": {
+            "affiliation": [
+              "aff2"
+            ],
+            "email": [
+              "cor1"
+            ],
+            "funding": [
+              "par-1",
+              "par-2"
+            ],
+            "contribution": [
+              "con11"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "author",
+          "surname": "Fellay",
+          "given-names": "Jacques",
+          "id": "author-4798",
+          "corresp": "yes",
+          "references": {
+            "affiliation": [
+              "aff1",
+              "aff2",
+              "aff4"
+            ],
+            "email": [
+              "cor2"
+            ],
+            "funding": [
+              "par-1",
+              "par-2",
+              "par-12"
+            ],
+            "contribution": [
+              "con12"
+            ],
+            "competing-interest": [
+              "conf1"
+            ],
+            "related-object": [
+              "dataro1",
+              "dataro2"
+            ]
+          }
+        },
+        {
+          "type": "on-behalf-of",
+          "on-behalf-of": "for the HIV Genome-to-Genome Study and the Swiss HIV Cohort Study"
+        },
+        {
+          "type": "editor",
+          "surname": "McVean",
+          "given-names": "Gil",
+          "role": "Reviewing editor",
+          "affiliations": [
+            {
+              "institution": "Oxford University",
+              "country": "United Kingdom"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

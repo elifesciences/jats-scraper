@@ -61,6 +61,10 @@ def citations(article):
         copy_attribute(ref, 'source', citation, destination_key='source', process=tidy_whitespace)
         copy_attribute(ref, 'comment', citation)
         
+        # Remove year if it is blank, in the case the year value has no numbers at all
+        if 'year' in citation and citation['year'] == '':
+            del(citation['year'])
+        
         citation_by_id = {}
         citation_by_id[ref['id']] = citation
         
@@ -385,6 +389,12 @@ def component_fragment(components, component, volume, version):
     elif fragment['type'] not in ['sub-article','abstract'] and component.get('full_label'):
         copy_attribute(component, 'full_label', fragment,
                        destination_key='title', process=tidy_whitespace)
+        
+    # Lastly if there is no title found, default to full_title, irrespective of fragment type
+    if 'title' not in fragment:
+        if component.get('full_title'):
+            copy_attribute(component, 'full_title', fragment,
+                       destination_key='title', process=tidy_whitespace)
 
     if fragment['type'] == 'sub-article' and component.get('contributors'):
         copy_attribute(component, 'contributors', fragment)
@@ -570,6 +580,10 @@ def remove_empty_lists(res):
             delete_key_if_empty('fragments', article)
             # Delete empty citations list
             delete_key_if_empty('citations', article)
+            # Delete empty impact-statement list
+            delete_key_if_empty('impact-statement', article)
+            # Delete empty keywords list
+            delete_key_if_empty('keywords', article)
 
     return res
 
@@ -578,6 +592,7 @@ def scrape(docs_dir, process=None, article_version=None):
         import scraper
         mod = __import__(__name__)
         res = scraper.scrape(mod, doc=docs_dir, article_version=article_version)
+        res = remove_empty_lists(res)
         if process:
             res = process(res)
 
@@ -590,7 +605,7 @@ def main(args):
         print 'Usage: python feeds.py <xml [dir|file]>'
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir, process=remove_empty_lists)
+    print scrape(docs_dir)
 
 
 if __name__ == '__main__':

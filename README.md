@@ -17,6 +17,27 @@ For installing on OSX it may be necessary to do the following before running req
     
     $ sudo STATIC_DEPS=true pip install lxml==3.4.1 
 
+## testing
+
+Tests can be run with the `./run-tests.sh` script or run individually as:
+   
+    python -m unittest path.to.module.suite.test
+    
+*Note:* you must activate the virtualenv if you run tests individually.
+
+For example:
+
+    source venv/bin/activate # activate virtualenv
+    
+    python -m unittest tests.test_content
+    
+would run all tests in `tests/test_content.py` and:
+
+    python -m unittest tests.test_content.TestContent.test_eif
+    
+would run the `test_eif` test in the `TestContent` test suite in the 
+`test_content.py` module.
+
 ## usage
 
     $ python feeds.py /path/to/xml/dir/
@@ -28,7 +49,7 @@ or
 For example:
 
     $ python feeds.py .../elife-tools/elifetools/sample-xml/elife-kitchen-sink.xml
-        
+
 Will yield something like:
 
     [

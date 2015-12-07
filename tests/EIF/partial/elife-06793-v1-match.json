@@ -1,0 +1,44 @@
+[
+  {
+    "description": "Affiliation should only contain the value of the first institution element",
+    "data": {
+      "referenced": {
+        "affiliation": {
+          "aff1": {
+            "dept": "Division of Biological Sciences",
+            "institution": "University of California at San Diego",
+            "city": "La Jolla",
+            "country": "United States"
+          }
+        },
+        "email": {
+          "cor1": "tmarkow@ucsd.edu"
+        },
+        "funding": {
+          "par-1": {
+            "id": "http://dx.doi.org/10.13039/100000001",
+            "id-type": "FundRef",
+            "institution": "National Science Foundation (NSF)",
+            "award-id": "DBI-1351502"
+          },
+          "par-2": {
+            "id": "http://dx.doi.org/10.13039/501100003141",
+            "id-type": "FundRef",
+            "institution": "Consejo Nacional de Ciencia y Tecnología (National Council of Science and Technology, Mexico)"
+          },
+          "par-3": {
+            "id": "http://dx.doi.org/10.13039/100005909",
+            "id-type": "FundRef",
+            "institution": "University of California Institute for Mexico and the United States (UC MEXUS)"
+          }
+        },
+        "contribution": {
+          "con1": "TAM, Drafting or revising the article"
+        },
+        "competing-interest": {
+          "conf1": "The author declares that no competing interests exist."
+        }
+      }
+    }
+  }
+]

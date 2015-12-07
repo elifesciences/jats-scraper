@@ -1,0 +1,70 @@
+{
+    "article-type": "correction",
+    "title": "Correction: A novel GTP-binding protein–adaptor protein complex responsible for export of Vangl2 from the <italic>trans</italic> Golgi network",
+    "status": "VOR",
+    "publish": "1",
+    "doi": "10.7554/eLife.01328",
+    "pub-date": "2013-08-28",
+    "volume": "2",
+    "elocation-id": "e01328",
+    "path": "content/2/e01328v1",
+    "article-id": "01328",
+    "categories": {
+        "display-channel": [
+            "Correction"
+        ],
+        "heading": [
+            "Biochemistry",
+            "Cell Biology"
+        ]
+    },
+    "contributors": [
+        {
+            "type": "author",
+            "surname": "Guo",
+            "given-names": "Yusong",
+            "id": "author-1916",
+            "references": {
+                "competing-interest": [
+                    "conf2"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Zanetti",
+            "given-names": "Giulia",
+            "id": "author-2244",
+            "references": {
+                "competing-interest": [
+                    "conf2"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Schekman",
+            "given-names": "Randy",
+            "id": "author-1032",
+            "references": {
+                "competing-interest": [
+                    "conf1"
+                ]
+            }
+        }
+    ],
+    "referenced": {
+        "competing-interest": {
+            "conf1": "RS: Editor-in-Chief, <italic>eLife</italic>.",
+            "conf2": "The other authors have declared that no competing interests exist."
+        }
+    },
+    "related-articles": [
+        {
+            "type": "corrected-article",
+            "href": "10.7554/eLife.00160"
+        }
+    ],
+    "version": "1",
+    "article-version-id": "01328.1"
+}

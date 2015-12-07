@@ -1,0 +1,2005 @@
+{
+    "article-type": "research-article",
+    "title": "Rapid localized spread and immunologic containment define Herpes simplex virus-2 reactivation in the human genital tract",
+    "status": "VOR",
+    "publish": "1",
+    "doi": "10.7554/eLife.00288",
+    "pub-date": "2013-04-16",
+    "volume": "2",
+    "elocation-id": "e00288",
+    "path": "content/2/e00288v1",
+    "article-id": "00288",
+    "impact-statement": "A combination of detailed sampling and mathematical modeling suggests that the response of immune cells to reactivation of herpes simplex virus 2 is extremely rapid and effective within microscopic areas of genital skin.",
+    "keywords": {
+        "author-keywords": [
+            "Herpes simplex",
+            "Mucosal immunity",
+            "Mathematical modeling"
+        ],
+        "research-organism": [
+            "Human",
+            "Virus",
+            "Other"
+        ]
+    },
+    "categories": {
+        "display-channel": [
+            "Research Article"
+        ],
+        "heading": [
+            "Immunology",
+            "Microbiology and Infectious Disease"
+        ]
+    },
+    "contributors": [
+        {
+            "type": "author",
+            "surname": "Schiffer",
+            "given-names": "Joshua T",
+            "id": "author-1921",
+            "corresp": "yes",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff2"
+                ],
+                "email": [
+                    "cor1"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-4",
+                    "par-7"
+                ],
+                "contribution": [
+                    "con1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Swan",
+            "given-names": "David",
+            "id": "author-2466",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "contribution": [
+                    "con2"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Al Sallaq",
+            "given-names": "Ramzi",
+            "id": "author-2467",
+            "references": {
+                "affiliation": [
+                    "aff1"
+                ],
+                "contribution": [
+                    "con3"
+                ],
+                "present-address": [
+                    "pa1"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Magaret",
+            "given-names": "Amalia",
+            "id": "author-2468",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff3"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con4"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Johnston",
+            "given-names": "Christine",
+            "id": "author-2469",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff4"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-5"
+                ],
+                "contribution": [
+                    "con5"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Mark",
+            "given-names": "Karen E",
+            "id": "author-2470",
+            "references": {
+                "affiliation": [
+                    "aff4"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-6"
+                ],
+                "contribution": [
+                    "con6"
+                ],
+                "present-address": [
+                    "pa2"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Selke",
+            "given-names": "Stacy",
+            "id": "author-2471",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "contribution": [
+                    "con7"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Ocbamichael",
+            "given-names": "Negusse",
+            "id": "author-2472",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "contribution": [
+                    "con8"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Kuntz",
+            "given-names": "Steve",
+            "id": "author-2473",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "contribution": [
+                    "con9"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Zhu",
+            "given-names": "Jia",
+            "id": "author-2474",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff3"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-2"
+                ],
+                "contribution": [
+                    "con10"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Robinson",
+            "given-names": "Barry",
+            "id": "author-2475",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "contribution": [
+                    "con11"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Huang",
+            "given-names": "Meei-Li",
+            "id": "author-2476",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "funding": [
+                    "par-1"
+                ],
+                "contribution": [
+                    "con12"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Jerome",
+            "given-names": "Keith R",
+            "id": "author-2477",
+            "references": {
+                "affiliation": [
+                    "aff3"
+                ],
+                "contribution": [
+                    "con13"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Wald",
+            "given-names": "Anna",
+            "id": "author-2478",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff3",
+                    "aff4",
+                    "aff5"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-3"
+                ],
+                "contribution": [
+                    "con14"
+                ]
+            }
+        },
+        {
+            "type": "author",
+            "surname": "Corey",
+            "given-names": "Lawrence",
+            "id": "author-2479",
+            "references": {
+                "affiliation": [
+                    "aff1",
+                    "aff3",
+                    "aff4"
+                ],
+                "funding": [
+                    "par-1",
+                    "par-2"
+                ],
+                "contribution": [
+                    "con15"
+                ]
+            }
+        },
+        {
+            "type": "editor",
+            "surname": "Sgaier",
+            "given-names": "Sema",
+            "role": "Reviewing editor",
+            "affiliations": [
+                {
+                    "institution": "Bill & Melinda Gates Foundation",
+                    "country": "India"
+                }
+            ]
+        }
+    ],
+    "referenced": {
+        "affiliation": {
+            "aff1": {
+                "dept": "Vaccine and Infectious Diseases Division",
+                "institution": "Fred Hutchinson Cancer Research Center",
+                "city": "Seattle",
+                "country": "United States"
+            },
+            "aff2": {
+                "dept": "Department of Medicine",
+                "institution": "University of Washington",
+                "city": "Seattle",
+                "country": "United States"
+            },
+            "aff3": {
+                "dept": "Department of Laboratory Medicine",
+                "institution": "University of Washington",
+                "city": "Seattle",
+                "country": "United States"
+            },
+            "aff4": {
+                "dept": "Department of Medicine",
+                "institution": "University of Washington",
+                "city": "Seattle",
+                "country": "United States"
+            },
+            "aff5": {
+                "dept": "Department of Epidemiology",
+                "institution": "University of Washington",
+                "city": "Seattle",
+                "country": "United States"
+            }
+        },
+        "email": {
+            "cor1": "jschiffe@fhcrc.org"
+        },
+        "funding": {
+            "par-1": {
+                "institution": "National Institutes of Health",
+                "award-id": "P01 AI030731"
+            },
+            "par-2": {
+                "institution": "National Institutes of Health",
+                "award-id": "R37 AI042528"
+            },
+            "par-3": {
+                "institution": "National Institutes of Health",
+                "award-id": "K24 AI07113"
+            },
+            "par-4": {
+                "institution": "National Institutes of Health",
+                "award-id": "K23 AI087206"
+            },
+            "par-5": {
+                "institution": "National Institutes of Health",
+                "award-id": "K23 AI079394"
+            },
+            "par-6": {
+                "institution": "National Institutes of Health",
+                "award-id": "K23 AI071257"
+            },
+            "par-7": {
+                "institution": "National Center For Advancing Translational Sciences of the National Institutes of Health",
+                "award-id": "UL1TR000423"
+            }
+        },
+        "contribution": {
+            "con1": "JTS, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article, Contributed unpublished essential data or reagents",
+            "con2": "DS, Conception and design, Analysis and interpretation of data",
+            "con3": "RAS, Conception and design, Analysis and interpretation of data",
+            "con4": "AM, Analysis and interpretation of data, Drafting or revising the article",
+            "con5": "CJ, Conception and design, Acquisition of data, Analysis and interpretation of data, Drafting or revising the article",
+            "con6": "KEM, Conception and design, Acquisition of data",
+            "con7": "SS, Conception and design, Acquisition of data",
+            "con8": "NO, Conception and design, Acquisition of data",
+            "con9": "SK, Conception and design, Acquisition of data",
+            "con10": "JZ, Acquisition of data, Analysis and interpretation of data",
+            "con11": "BR, Acquisition of data, Analysis and interpretation of data",
+            "con12": "M-LH, Acquisition of data, Analysis and interpretation of data",
+            "con13": "KRJ, Conception and design, Drafting or revising the article",
+            "con14": "AW, Conception and design, Drafting or revising the article",
+            "con15": "LC, Conception and design, Drafting or revising the article"
+        },
+        "competing-interest": {
+            "conf1": "The authors declare that no competing interests exist."
+        },
+        "present-address": {
+            "pa1": "College of Nursing Global, New York University, New York, United States",
+            "pa2": "The Office of AIDS, California Department of Public Health, Sacramento, United States"
+        }
+    },
+    "fragments": [
+        {
+            "type": "abstract",
+            "doi": "10.7554/eLife.00288.001",
+            "path": "content/2/e00288v1/abstract"
+        },
+        {
+            "type": "abstract",
+            "doi": "10.7554/eLife.00288.002",
+            "title": "eLife digest",
+            "path": "content/2/e00288v1/abstract2"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.00288.003",
+            "title": "Table 1.",
+            "path": "content/2/e00288v1/table1"
+        },
+        {
+            "type": "boxed-text",
+            "doi": "10.7554/eLife.00288.004",
+            "title": "Box 1.",
+            "path": "content/2/e00288v1/box1"
+        },
+        {
+            "type": "boxed-text",
+            "doi": "10.7554/eLife.00288.005",
+            "title": "Box 2.",
+            "path": "content/2/e00288v1/box2"
+        },
+        {
+            "type": "boxed-text",
+            "doi": "10.7554/eLife.00288.006",
+            "title": "Box 3.",
+            "path": "content/2/e00288v1/box3"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.00288.007",
+            "title": "Figure 1.",
+            "fragments": [
+                {
+                    "type": "supplementary-material",
+                    "doi": "10.7554/eLife.00288.008",
+                    "title": "Figure 1—source data 1.",
+                    "path": "content/2/e00288v1/figure1/supp-material1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.009",
+                    "title": "Figure 1—figure supplement 1.",
+                    "path": "content/2/e00288v1/figure1/figure-supp1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.010",
+                    "title": "Figure 1—figure supplement 2.",
+                    "path": "content/2/e00288v1/figure1/figure-supp2"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.011",
+                    "title": "Figure 1—figure supplement 3.",
+                    "path": "content/2/e00288v1/figure1/figure-supp3"
+                }
+            ],
+            "path": "content/2/e00288v1/figure1"
+        },
+        {
+            "type": "boxed-text",
+            "doi": "10.7554/eLife.00288.012",
+            "title": "Box 4.",
+            "path": "content/2/e00288v1/box4"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.00288.013",
+            "title": "Figure 2.",
+            "fragments": [
+                {
+                    "type": "supplementary-material",
+                    "doi": "10.7554/eLife.00288.014",
+                    "title": "Figure 2—source data 1.",
+                    "path": "content/2/e00288v1/figure2/supp-material1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.015",
+                    "title": "Figure 2—figure supplement 1.",
+                    "path": "content/2/e00288v1/figure2/figure-supp1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.016",
+                    "title": "Figure 2—figure supplement 2.",
+                    "path": "content/2/e00288v1/figure2/figure-supp2"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.017",
+                    "title": "Figure 2—figure supplement 3.",
+                    "path": "content/2/e00288v1/figure2/figure-supp3"
+                }
+            ],
+            "path": "content/2/e00288v1/figure2"
+        },
+        {
+            "type": "boxed-text",
+            "doi": "10.7554/eLife.00288.018",
+            "title": "Box 5.",
+            "path": "content/2/e00288v1/box5"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.00288.019",
+            "title": "Figure 3.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.020",
+                    "title": "Figure 3—figure supplement 1.",
+                    "path": "content/2/e00288v1/figure3/figure-supp1"
+                }
+            ],
+            "path": "content/2/e00288v1/figure3"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.00288.021",
+            "title": "Figure 4.",
+            "fragments": [
+                {
+                    "type": "supplementary-material",
+                    "doi": "10.7554/eLife.00288.022",
+                    "title": "Figure 4—source data 1.",
+                    "path": "content/2/e00288v1/figure4/supp-material1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.023",
+                    "title": "Figure 4—figure supplement 1.",
+                    "path": "content/2/e00288v1/figure4/figure-supp1"
+                }
+            ],
+            "path": "content/2/e00288v1/figure4"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.00288.024",
+            "title": "Table 2.",
+            "path": "content/2/e00288v1/table2"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.025",
+            "title": "Video 1.",
+            "path": "content/2/e00288v1/media1"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.00288.026",
+            "title": "Figure 5.",
+            "path": "content/2/e00288v1/figure5"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.027",
+            "title": "Video 2.",
+            "path": "content/2/e00288v1/media2"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.028",
+            "title": "Video 3.",
+            "path": "content/2/e00288v1/media3"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.029",
+            "title": "Video 4.",
+            "path": "content/2/e00288v1/media4"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.030",
+            "title": "Video 5.",
+            "path": "content/2/e00288v1/media5"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.00288.031",
+            "title": "Table 3.",
+            "path": "content/2/e00288v1/table3"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.032",
+            "title": "Video 6.",
+            "path": "content/2/e00288v1/media6"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.033",
+            "title": "Video 7.",
+            "path": "content/2/e00288v1/media7"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.034",
+            "title": "Video 8.",
+            "path": "content/2/e00288v1/media8"
+        },
+        {
+            "type": "media",
+            "doi": "10.7554/eLife.00288.035",
+            "title": "Video 9.",
+            "path": "content/2/e00288v1/media9"
+        },
+        {
+            "type": "fig",
+            "doi": "10.7554/eLife.00288.036",
+            "title": "Figure 6.",
+            "fragments": [
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.037",
+                    "title": "Figure 6—figure supplement 1.",
+                    "path": "content/2/e00288v1/figure6/figure-supp1"
+                },
+                {
+                    "type": "fig",
+                    "doi": "10.7554/eLife.00288.038",
+                    "title": "Figure 6—figure supplement 2.",
+                    "path": "content/2/e00288v1/figure6/figure-supp2"
+                }
+            ],
+            "path": "content/2/e00288v1/figure6"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.00288.039",
+            "title": "Table 4.",
+            "path": "content/2/e00288v1/table4"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.00288.040",
+            "title": "Table 5.",
+            "path": "content/2/e00288v1/table5"
+        },
+        {
+            "type": "table-wrap",
+            "doi": "10.7554/eLife.00288.041",
+            "title": "Table 6.",
+            "path": "content/2/e00288v1/table6"
+        },
+        {
+            "type": "sub-article",
+            "doi": "10.7554/eLife.00288.042",
+            "title": "Decision letter",
+            "contributors": [
+                {
+                    "type": "editor",
+                    "surname": "Sgaier",
+                    "given-names": "Sema",
+                    "role": "Reviewing editor",
+                    "affiliations": [
+                        {
+                            "institution": "Bill & Melinda Gates Foundation",
+                            "country": "India"
+                        }
+                    ]
+                }
+            ],
+            "path": "content/2/e00288v1/decision"
+        },
+        {
+            "type": "sub-article",
+            "doi": "10.7554/eLife.00288.043",
+            "title": "Author response",
+            "path": "content/2/e00288v1/response"
+        }
+    ],
+    "citations": {
+        "bib1": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Bauer",
+                    "given-names": "AL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Beauchemin",
+                    "given-names": "CA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perelson",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2009",
+            "title": "Agent-based modeling of host-pathogen systems: the successes and challenges",
+            "source": "Inf Sci (Ny)",
+            "doi": "10.1016/j.ins.2008.11.012"
+        },
+        "bib2": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ciupe",
+                    "given-names": "SM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ribeiro",
+                    "given-names": "RM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Nelson",
+                    "given-names": "PW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perelson",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2007",
+            "title": "Modeling the mechanisms of acute hepatitis B virus infection",
+            "source": "J Theor Biol",
+            "doi": "10.1016/j.jtbi.2007.02.017"
+        },
+        "bib3": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Collins",
+                    "given-names": "WJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Johnson",
+                    "given-names": "DC"
+                }
+            ],
+            "year": "2003",
+            "title": "Herpes simplex virus gE/gI expressed in epithelial cells interferes with cell-to-cell spread",
+            "source": "J Virol",
+            "doi": "10.1128/JVI.77.4.2686-2695.2003"
+        },
+        "bib4": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Adams",
+                    "given-names": "HG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Brown",
+                    "given-names": "ZA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Holmes",
+                    "given-names": "KK"
+                }
+            ],
+            "year": "1983",
+            "title": "Genital herpes simplex virus infections: clinical manifestations, course, and complications",
+            "source": "Ann Intern Med"
+        },
+        "bib5": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Crespi",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cumberland",
+                    "given-names": "W"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Blower",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2007",
+            "title": "Longitudinal study of herpes simplex virus type 2 infection using viral dynamic modelling",
+            "source": "Sex Transm Infect",
+            "doi": "10.1136/sti.2006.022020"
+        },
+        "bib6": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Cunningham",
+                    "given-names": "AL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Turner",
+                    "given-names": "RR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Miller",
+                    "given-names": "AC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Para",
+                    "given-names": "MF"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Merigan",
+                    "given-names": "TC"
+                }
+            ],
+            "year": "1985",
+            "title": "Evolution of recurrent herpes simplex lesions. An immunohistologic study",
+            "source": "J Clin Invest",
+            "doi": "10.1172/JCI111678"
+        },
+        "bib7": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "De Boer",
+                    "given-names": "RJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Homann",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perelson",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2003",
+            "title": "Different dynamics of CD4+ and CD8+ T cell responses during and after acute lymphocytic choriomeningitis virus infection",
+            "source": "J Immunol"
+        },
+        "bib8": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Doceul",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hollinshead",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "van der Linden",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Smith",
+                    "given-names": "GL"
+                }
+            ],
+            "year": "2010",
+            "title": "Repulsion of superinfecting virions: a mechanism for rapid virus spread",
+            "source": "Science",
+            "doi": "10.1126/science.1183173"
+        },
+        "bib9": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Farnsworth",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Johnson",
+                    "given-names": "DC"
+                }
+            ],
+            "year": "2006",
+            "title": "Herpes simplex virus gE/gI must accumulate in the trans-Golgi network at early times and then redistribute to cell junctions to promote cell-cell spread",
+            "source": "J Virol",
+            "doi": "10.1128/JVI.80.7.3167-3179.2006"
+        },
+        "bib10": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Fraser",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Riley",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Anderson",
+                    "given-names": "RM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ferguson",
+                    "given-names": "NM"
+                }
+            ],
+            "year": "2004",
+            "title": "Factors that make an infectious disease outbreak controllable",
+            "source": "Proc Natl Acad Sci USA",
+            "doi": "10.1073/pnas.0307506101"
+        },
+        "bib11": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Gebhardt",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wakim",
+                    "given-names": "LM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Eidsmo",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Reading",
+                    "given-names": "PC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Heath",
+                    "given-names": "WR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Carbone",
+                    "given-names": "FR"
+                }
+            ],
+            "year": "2009",
+            "title": "Memory T cells in nonlymphoid tissue that provide enhanced local immunity during infection with herpes simplex virus",
+            "source": "Nat Immunol",
+            "doi": "10.1038/ni.1718"
+        },
+        "bib12": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ionides",
+                    "given-names": "EL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Breto",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "King",
+                    "given-names": "AA"
+                }
+            ],
+            "year": "2006",
+            "title": "Inference for nonlinear dynamical systems",
+            "source": "Proc Natl Acad Sci USA",
+            "doi": "10.1073/pnas.0603181103"
+        },
+        "bib13": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Jerome",
+                    "given-names": "KR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huang",
+                    "given-names": "ML"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                }
+            ],
+            "year": "2002",
+            "title": "Quantitative stability of DNA after extended storage of clinical specimens as determined by real-time PCR",
+            "source": "J Clin Microbiol",
+            "doi": "10.1128/JCM.40.7.2609-2611.2002"
+        },
+        "bib14": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Jiang",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hwang",
+                    "given-names": "YT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Randell",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Coen",
+                    "given-names": "DM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hwang",
+                    "given-names": "CB"
+                }
+            ],
+            "year": "2007",
+            "title": "Mutations that decrease DNA binding of the processivity factor of the herpes simplex virus DNA polymerase reduce viral yield, alter the kinetics of viral DNA replication, and decrease the fidelity of DNA replication",
+            "source": "J Virol",
+            "doi": "10.1128/JVI.02359-06"
+        },
+        "bib15": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Jiang",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hwang",
+                    "given-names": "YT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Randell",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Coen",
+                    "given-names": "DM"
+                }
+            ],
+            "year": "2007",
+            "title": "Herpes simplex virus mutants with multiple substitutions affecting DNA binding of UL42 are impaired for viral replication and DNA synthesis",
+            "source": "J Virol",
+            "doi": "10.1128/JVI.01133-07"
+        },
+        "bib16": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Magaret",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huang",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                }
+            ],
+            "year": "2007",
+            "title": "Optimizing PCR positivity criterion for detection of herpes simplex virus DNA on skin and mucosa",
+            "source": "J Clin Microbiol",
+            "doi": "10.1128/JCM.01405-06"
+        },
+        "bib17": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Marino",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hogue",
+                    "given-names": "IB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ray",
+                    "given-names": "CJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kirschner",
+                    "given-names": "DE"
+                }
+            ],
+            "year": "2008",
+            "title": "A methodology for performing global uncertainty and sensitivity analysis in systems biology",
+            "source": "J Theor Biol",
+            "doi": "10.1016/j.jtbi.2008.04.011"
+        },
+        "bib18": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Mark",
+                    "given-names": "KE"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Magaret",
+                    "given-names": "AS"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Olin",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huang",
+                    "given-names": "ML"
+                }
+            ],
+            "year": "2008",
+            "title": "Rapidly cleared episodes of herpes simplex virus reactivation in immunocompetent adults",
+            "source": "J Infect Dis",
+            "doi": "10.1086/591913"
+        },
+        "bib19": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Mertz",
+                    "given-names": "GJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Schmidt",
+                    "given-names": "O"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jourden",
+                    "given-names": "JL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Guinan",
+                    "given-names": "ME"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Remington",
+                    "given-names": "ML"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Fahnlander",
+                    "given-names": "A"
+                }
+            ],
+            "year": "1985",
+            "title": "Frequency of acquisition of first-episode genital infection with herpes simplex virus from symptomatic and asymptomatic source contacts",
+            "source": "Sex Transm Dis",
+            "doi": "10.1097/00007435-198501000-00007"
+        },
+        "bib20": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Mertz",
+                    "given-names": "GJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Coombs",
+                    "given-names": "RW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ashley",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Jourden",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Remington",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Winter",
+                    "given-names": "C"
+                }
+            ],
+            "year": "1988",
+            "title": "Transmission of genital herpes in couples with one symptomatic and one asymptomatic partner: a prospective study",
+            "source": "J Infect Dis",
+            "doi": "10.1093/infdis/157.6.1169"
+        },
+        "bib21": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Perelson",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Neumann",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Markowitz",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Leonard",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ho",
+                    "given-names": "D"
+                }
+            ],
+            "year": "1996",
+            "title": "HIV-1 dynamics in vivo: virion clearance rate, infected cell life-span, and viral generation time",
+            "source": "Science",
+            "doi": "10.1126/science.271.5255.1582"
+        },
+        "bib22": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Ribeiro",
+                    "given-names": "RM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Qin",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chavez",
+                    "given-names": "LL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Li",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Self",
+                    "given-names": "SG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Perelson",
+                    "given-names": "AS"
+                }
+            ],
+            "year": "2010",
+            "title": "Estimation of the initial viral growth rate and basic reproductive number during acute HIV-1 infection",
+            "source": "J Virol",
+            "doi": "10.1128/JVI.00127-10"
+        },
+        "bib23": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Roizman",
+                    "given-names": "BKD"
+                },
+                {
+                    "group-type": "editor",
+                    "surname": "Knipe",
+                    "given-names": "DM"
+                },
+                {
+                    "group-type": "editor",
+                    "surname": "Howley",
+                    "given-names": "PM"
+                },
+                {
+                    "group-type": "editor",
+                    "surname": "Griffin",
+                    "given-names": "DE"
+                },
+                {
+                    "group-type": "editor",
+                    "surname": "Martin",
+                    "given-names": "MA"
+                },
+                {
+                    "group-type": "editor",
+                    "surname": "Lamb",
+                    "given-names": "RA"
+                },
+                {
+                    "group-type": "editor",
+                    "surname": "Straus",
+                    "given-names": "SE"
+                }
+            ],
+            "year": "2007",
+            "title": "Herpes simplex viruses and their replication",
+            "source": "Fields Virology"
+        },
+        "bib24": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Sacks",
+                    "given-names": "WR"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Schaffer",
+                    "given-names": "PA"
+                }
+            ],
+            "year": "1987",
+            "title": "Deletion mutants in the gene encoding the herpes simplex virus type 1 immediate-early protein ICP0 exhibit impaired growth in cell culture",
+            "source": "J Virol"
+        },
+        "bib25": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schiffer",
+                    "given-names": "JT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Abu-Raddad",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mark",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhu",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Magaret",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2009",
+            "title": "Frequent release of low amounts of herpes simplex virus from neurons: results of a mathematical model",
+            "source": "Sci Transl Med",
+            "doi": "10.1126/scitranslmed.3000193"
+        },
+        "bib26": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schiffer",
+                    "given-names": "JT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Abu-Raddad",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mark",
+                    "given-names": "KE"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zhu",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Koelle",
+                    "given-names": "DM"
+                }
+            ],
+            "year": "2010",
+            "title": "Mucosal host immune response predicts the severity and duration of herpes simplex virus-2 genital tract shedding episodes",
+            "source": "Proc Natl Acad Sci USA",
+            "doi": "10.1073/pnas.1006614107"
+        },
+        "bib27": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schiffer",
+                    "given-names": "JT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Magaret",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2011",
+            "title": "Detailed analysis of mucosal herpes simplex virus-2 replication kinetics with and without antiviral therapy",
+            "source": "J Antimicrob Chemother",
+            "doi": "10.1093/jac/dkr346"
+        },
+        "bib28": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Schiffer",
+                    "given-names": "JT"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Magaret",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2011",
+            "title": "The kinetics of mucosal herpes simplex virus-2 infection in humans: evidence for rapid viral-host interactions",
+            "source": "J Infect Dis",
+            "doi": "10.1093/infdis/jir314"
+        },
+        "bib29": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Shin",
+                    "given-names": "H"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Iwasaki",
+                    "given-names": "A"
+                }
+            ],
+            "year": "2012",
+            "title": "A vaccine strategy that protects against genital herpes by establishing local memory T cells",
+            "source": "Nature",
+            "doi": "10.1038/nature11522"
+        },
+        "bib30": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Spruance",
+                    "given-names": "SL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Overall",
+                    "given-names": "JC",
+                    "suffix": "Jnr"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Kern",
+                    "given-names": "ER"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Krueger",
+                    "given-names": "GG"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pliam",
+                    "given-names": "V"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Miller",
+                    "given-names": "W"
+                }
+            ],
+            "year": "1977",
+            "title": "The natural history of recurrent herpes simplex labialis: implications for antiviral therapy",
+            "source": "N Engl J Med",
+            "doi": "10.1056/NEJM197707142970201"
+        },
+        "bib31": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Spruance",
+                    "given-names": "SL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Green",
+                    "given-names": "JA"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Chiu",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Yeh",
+                    "given-names": "TJ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Wenerstrom",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Overall",
+                    "given-names": "JC",
+                    "suffix": "Jr"
+                }
+            ],
+            "year": "1982",
+            "title": "Pathogenesis of herpes simplex labialis: correlation of vesicle fluid interferon with lesion age and virus titer",
+            "source": "Infect Immun"
+        },
+        "bib32": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Sylwester",
+                    "given-names": "AW"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mitchell",
+                    "given-names": "BL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Edgar",
+                    "given-names": "JB"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Taormina",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Pelte",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ruchti",
+                    "given-names": "F"
+                }
+            ],
+            "year": "2005",
+            "title": "Broadly targeted human cytomegalovirus-specific CD4+ and CD8+ T cells dominate the memory compartments of exposed subjects",
+            "source": "J Exp Med",
+            "doi": "10.1084/jem.20050882"
+        },
+        "bib33": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Tata",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Johnston",
+                    "given-names": "C"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huang",
+                    "given-names": "ML"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Magaret",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                }
+            ],
+            "year": "2010",
+            "title": "Overlapping reactivations of herpes simplex virus type 2 in the genital and perianal mucosa",
+            "source": "J Infect Dis",
+            "doi": "10.1086/650302"
+        },
+        "bib34": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Turner",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Shehab",
+                    "given-names": "Z"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Osborne",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hendley",
+                    "given-names": "JO"
+                }
+            ],
+            "year": "1982",
+            "title": "Shedding and survival of herpes simplex virus from ‘fever blisters’",
+            "source": "Pediatrics"
+        },
+        "bib35": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Verjans",
+                    "given-names": "GM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hintzen",
+                    "given-names": "RQ"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "van Dun",
+                    "given-names": "JM"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Poot",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Milikan",
+                    "given-names": "JC"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Laman",
+                    "given-names": "JD"
+                }
+            ],
+            "year": "2007",
+            "title": "Selective retention of herpes simplex virus-specific T cells in latently infected human trigeminal ganglia",
+            "source": "Proc Natl Acad Sci USA",
+            "doi": "10.1073/pnas.0610847104"
+        },
+        "bib36": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zeh",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ashley",
+                    "given-names": "RL"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                }
+            ],
+            "year": "1995",
+            "title": "Virologic characteristics of subclinical and symptomatic genital herpes infections",
+            "source": "N Engl J Med",
+            "doi": "10.1056/NEJM199509213331205"
+        },
+        "bib37": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Corey",
+                    "given-names": "L"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cone",
+                    "given-names": "R"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hobson",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Davis",
+                    "given-names": "G"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zeh",
+                    "given-names": "J"
+                }
+            ],
+            "year": "1997",
+            "title": "Frequent genital herpes simplex virus 2 shedding in immunocompetent women. Effect of acyclovir treatment",
+            "source": "J Clin Invest",
+            "doi": "10.1172/JCI119237"
+        },
+        "bib38": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wald",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Zeh",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Selke",
+                    "given-names": "S"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Warren",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ryncarz",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Ashley",
+                    "given-names": "R"
+                }
+            ],
+            "year": "2000",
+            "title": "Reactivation of genital herpes simplex virus type 2 infection in asymptomatic seropositive persons",
+            "source": "N Engl J Med",
+            "doi": "10.1056/NEJM200003233421203"
+        },
+        "bib39": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Wang",
+                    "given-names": "K"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Lau",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Morales",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Mont",
+                    "given-names": "E"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Straus",
+                    "given-names": "S"
+                }
+            ],
+            "year": "2005",
+            "title": "Laser-capture microdissection: refining estimates of the quantity and distribution of latent herpes simplex virus 1 and varicella-zoster virus DNA in human trigeminal Ganglia at the single-cell level",
+            "source": "J Virol",
+            "doi": "10.1128/JVI.79.22.14079-14087.2005"
+        },
+        "bib40": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Zhu",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Koelle",
+                    "given-names": "D"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Cao",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Vazquez",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Huang",
+                    "given-names": "M"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hladik",
+                    "given-names": "F"
+                }
+            ],
+            "year": "2007",
+            "title": "Virus-specific CD8+ T cells accumulate near sensory nerve endings in genital skin during subclinical HSV-2 reactivation",
+            "source": "J Exp Med",
+            "doi": "10.1084/jem.20061792"
+        },
+        "bib41": {
+            "authors": [
+                {
+                    "group-type": "author",
+                    "surname": "Zhu",
+                    "given-names": "J"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Hladik",
+                    "given-names": "F"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Woodward",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Klock",
+                    "given-names": "A"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Peng",
+                    "given-names": "T"
+                },
+                {
+                    "group-type": "author",
+                    "surname": "Johnston",
+                    "given-names": "C"
+                }
+            ],
+            "year": "2009",
+            "title": "Persistence of HIV-1 receptor-positive cells after HSV-2 reactivation is a potential mechanism for increased HIV-1 acquisition",
+            "source": "Nat Med",
+            "doi": "10.1038/nm.2006"
+        }
+    },
+    "version": "1",
+    "article-version-id": "00288.1"
+}

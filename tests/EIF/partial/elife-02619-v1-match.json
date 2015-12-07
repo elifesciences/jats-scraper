@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Affiliation can have email as top level value",
+    "data": {
+      "referenced": {
+        "affiliation": {
+          "aff1": {
+            "institution": "<italic>eLife</italic>",
+            "city": "Cambridge",
+            "country": "United Kingdom",
+            "email": "production@elifesciences.org"
+          }
+        },
+        "competing-interest": {
+          "conf1": "The author declares that no competing interests exist."
+        }
+      }
+    }
+  }
+]

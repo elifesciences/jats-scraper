@@ -10,12 +10,12 @@ install_virtualenv() {
 }
 
 install_update_articles() {
-    if [ -d elife-article-xml ]; then
+    if [ -d elife-articles ]; then
         echo "pulling any changes"
-        cd elife-article-xml && git reset --hard && git pull && cd ..
+        cd elife-articles && git reset --hard && git pull && cd ..
     else
-        echo "cloning elife-article-xml repo"
-        git clone https://github.com/elifesciences/elife-article-xml
+        echo "cloning elife-articles repo"
+        git clone https://github.com/elifesciences/elife-articles
     fi
 }
 
@@ -43,35 +43,15 @@ main() {
     passes=0
     fails=0
     invalids=0
-    for file in elife-article-xml/articles/*.xml; do
-        fname=`basename $file`
-        passes=$(( $passes + 1 ))
-        
-        printf "processing $fname ..."
-        python feeds.py ./$file > .tmp.json
-        ret=$?
-        if [ $ret != 0 ]; then
-            printf "FAILED\n"
-            mv .tmp.json $fname.error
-            fails=$(( $fails + 1 ))
-            continue
-        else
-            printf " generated!"
-        fi
 
-        jp.py -f .tmp.json "[0].article[0]" | node elife-eif-schema/validator.js > .err.out
-        ret=$?
-        if [ $ret != 0 ]; then
-            mv .err.out $fname.invalid
-            printf " FAILED\n"
-            invalids=$(( $invalids + 1 ))
-            continue
-        else
-            printf " validated!"
-        fi
-        
-        printf "\n"
-    done
+    find elife-articles/ -iname "*.xml" -print0 | xargs -0 --max-procs=4 -n 1 "./subarticletest.sh"
+
+    #for file in elife-articles/*.xml; do
+    #    ./subarticletest.sh $file
+    #    ret=$?
+    #    if [ $ret == 1 ]; then fails=$(( $fails + 1 )); fi
+    #    if [ $ret == 2 ]; then invalids=$(( $invalids + 1 )); fi
+    #done
     
     # bundle up any problems
     touch foo.error; cat *.error > all.error; rm foo.error
@@ -82,7 +62,7 @@ main() {
     echo "wrote $results";
 
     # delete temporary files
-    rm -f .tmp.json .err.out *.invalid *.error all-errors all-invalid
+    rm -f *.tmp.json *.err.out *.invalid *.error all-errors all-invalid
     
     echo "all done. ${passes} articles, ${fails} fails, ${invalids} invalid"
     if [ $fails != 0 ] || [ $invalids != 0 ]; then

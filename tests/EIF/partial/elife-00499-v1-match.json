@@ -1,0 +1,276 @@
+[
+  {
+    "description": "Verify that all fragments, except abstract, have a title",
+    "data": {
+      "fragments": [
+        {
+          "doi": "10.7554/eLife.00499.001",
+          "path": "content/2/e00499v1/abstract",
+          "type": "abstract"
+        },
+        {
+          "doi": "10.7554/eLife.00499.002",
+          "title": "eLife digest",
+          "path": "content/2/e00499v1/abstract2",
+          "type": "abstract"
+        },
+        {
+          "doi": "10.7554/eLife.00499.003",
+          "title": "Figure 1.",
+          "path": "content/2/e00499v1/figure1",
+          "fragments": [
+            {
+              "doi": "10.7554/eLife.00499.004",
+              "title": "Figure 1—figure supplement 1.",
+              "path": "content/2/e00499v1/figure1/figure-supp1",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.005",
+              "title": "Figure 1—figure supplement 2.",
+              "path": "content/2/e00499v1/figure1/figure-supp2",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.006",
+              "title": "Figure 1—figure supplement 3.",
+              "path": "content/2/e00499v1/figure1/figure-supp3",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.007",
+              "title": "Figure 1—figure supplement 4.",
+              "path": "content/2/e00499v1/figure1/figure-supp4",
+              "type": "fig"
+            }
+          ],
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.008",
+          "title": "Figure 2.",
+          "path": "content/2/e00499v1/figure2",
+          "fragments": [
+            {
+              "doi": "10.7554/eLife.00499.009",
+              "title": "Figure 2—figure supplement 1.",
+              "path": "content/2/e00499v1/figure2/figure-supp1",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.010",
+              "title": "Figure 2—figure supplement 2.",
+              "path": "content/2/e00499v1/figure2/figure-supp2",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.011",
+              "title": "Figure 2—figure supplement 3.",
+              "path": "content/2/e00499v1/figure2/figure-supp3",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.012",
+              "title": "Figure 2—figure supplement 4.",
+              "path": "content/2/e00499v1/figure2/figure-supp4",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.013",
+              "title": "Figure 2—figure supplement 5.",
+              "path": "content/2/e00499v1/figure2/figure-supp5",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.014",
+              "title": "Figure 2—figure supplement 6.",
+              "path": "content/2/e00499v1/figure2/figure-supp6",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.015",
+              "title": "Figure 2—figure supplement 7.",
+              "path": "content/2/e00499v1/figure2/figure-supp7",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.016",
+              "title": "Figure 2—figure supplement 8.",
+              "path": "content/2/e00499v1/figure2/figure-supp8",
+              "type": "fig"
+            }
+          ],
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.017",
+          "title": "Table 1.",
+          "path": "content/2/e00499v1/table1",
+          "type": "table-wrap"
+        },
+        {
+          "doi": "10.7554/eLife.00499.018",
+          "title": "Table 2.",
+          "path": "content/2/e00499v1/table2",
+          "type": "table-wrap"
+        },
+        {
+          "doi": "10.7554/eLife.00499.019",
+          "title": "Figure 3.",
+          "path": "content/2/e00499v1/figure3",
+          "fragments": [
+            {
+              "doi": "10.7554/eLife.00499.020",
+              "title": "Figure 3—figure supplement 1.",
+              "path": "content/2/e00499v1/figure3/figure-supp1",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.021",
+              "title": "Figure 3—figure supplement 2.",
+              "path": "content/2/e00499v1/figure3/figure-supp2",
+              "type": "fig"
+            }
+          ],
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.022",
+          "title": "Figure 4.",
+          "path": "content/2/e00499v1/figure4",
+          "fragments": [
+            {
+              "doi": "10.7554/eLife.00499.023",
+              "title": "Figure 4—figure supplement 1.",
+              "path": "content/2/e00499v1/figure4/figure-supp1",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.024",
+              "title": "Figure 4—figure supplement 2.",
+              "path": "content/2/e00499v1/figure4/figure-supp2",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.025",
+              "title": "Figure 4—figure supplement 3.",
+              "path": "content/2/e00499v1/figure4/figure-supp3",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.026",
+              "title": "Figure 4—figure supplement 4.",
+              "path": "content/2/e00499v1/figure4/figure-supp4",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.027",
+              "title": "Figure 4—figure supplement 5.",
+              "path": "content/2/e00499v1/figure4/figure-supp5",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.028",
+              "title": "Figure 4—figure supplement 6.",
+              "path": "content/2/e00499v1/figure4/figure-supp6",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.029",
+              "title": "Figure 4—figure supplement 7.",
+              "path": "content/2/e00499v1/figure4/figure-supp7",
+              "type": "fig"
+            },
+            {
+              "doi": "10.7554/eLife.00499.030",
+              "title": "Figure 4—figure supplement 8.",
+              "path": "content/2/e00499v1/figure4/figure-supp8",
+              "type": "fig"
+            }
+          ],
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.031",
+          "title": "General synthesis schema.",
+          "path": "content/2/e00499v1/figure5",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.032",
+          "title": "Chemical structure 1.",
+          "path": "content/2/e00499v1/figure6",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.033",
+          "title": "Chemical structure 2.",
+          "path": "content/2/e00499v1/figure7",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.034",
+          "title": "Chemical structure 3.",
+          "path": "content/2/e00499v1/figure8",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.035",
+          "title": "Chemical structure 4.",
+          "path": "content/2/e00499v1/figure9",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.036",
+          "title": "Chemical structure 5.",
+          "path": "content/2/e00499v1/figure10",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.037",
+          "title": "Chemical structure 6.",
+          "path": "content/2/e00499v1/figure11",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.038",
+          "title": "Chemical structure 7.",
+          "path": "content/2/e00499v1/figure12",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.039",
+          "title": "Chemical structure 8.",
+          "path": "content/2/e00499v1/figure13",
+          "type": "fig"
+        },
+        {
+          "doi": "10.7554/eLife.00499.040",
+          "contributors": [
+            {
+              "role": "Reviewing editor",
+              "surname": "Glass",
+              "given-names": "Christopher",
+              "type": "editor",
+              "affiliations": [
+                {
+                  "country": "United States",
+                  "institution": "University of California, San Diego"
+                }
+              ]
+            }
+          ],
+          "title": "Decision letter",
+          "path": "content/2/e00499v1/decision",
+          "type": "sub-article"
+        },
+        {
+          "doi": "10.7554/eLife.00499.041",
+          "title": "Author response",
+          "path": "content/2/e00499v1/response",
+          "type": "sub-article"
+        }
+      ]
+    }
+  }
+]
