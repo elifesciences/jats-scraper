@@ -4,7 +4,7 @@
     "status": "VOR",
     "publish": true,
     "doi": "10.7554/eLife.04580",
-    "pub-date": "2014-12-23T00:00:00.000Z",
+    "pub-date": "2014-12-23T00:00:00Z",
     "volume": 3,
     "elocation-id": "e04580",
     "path": "content/3/e04580v1",
@@ -37,7 +37,7 @@
             "surname": "Aso",
             "given-names": "Yoshinori",
             "id": "author-2209",
-            "corresp": "yes",
+            "corresp": true,
             "references": {
                 "affiliation": [
                     "aff1"
@@ -459,7 +459,7 @@
             "surname": "Rubin",
             "given-names": "Gerald M",
             "id": "author-10190",
-            "corresp": "yes",
+            "corresp": true,
             "references": {
                 "affiliation": [
                     "aff1"

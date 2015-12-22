@@ -506,6 +506,20 @@ def fragments(article):
     return fragments
 
 @fattrs('this as article')
+def contributors(article):
+    # Rewrite a few values of a contributor to match the target schema
+    contributor_list = article.contributors
+    for contributor in contributor_list:
+        
+        if 'equal-contrib' in contributor and contributor['equal-contrib'] == 'yes':
+            contributor['equal-contrib'] = True
+            
+        if 'corresp' in contributor and contributor['corresp'] == 'yes':
+                contributor['corresp'] = True
+        
+    return contributor_list
+
+@fattrs('this as article')
 def related_article(article):
     relateds = []
     related_articles = article.__getattr__('related_article')
@@ -541,7 +555,7 @@ DESCRIPTION = [
             'status': 'article_status',
             'categories': 'this.full_subject_area',
             'keywords': 'this.full_keyword_groups',
-            'contributors': 'this.contributors',
+            'contributors': 'contributors',
             'fragments': 'fragments',
             'citations': 'citations',
             'related-articles': 'related_article',

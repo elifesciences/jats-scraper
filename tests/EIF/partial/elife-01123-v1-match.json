@@ -35,7 +35,7 @@
           "surname": "Carlson",
           "given-names": "Jonathan M",
           "id": "author-6355",
-          "equal-contrib": "yes",
+          "equal-contrib": true,
           "references": {
             "affiliation": [
               "aff5"
@@ -60,7 +60,7 @@
           "surname": "Brumme",
           "given-names": "Chanson J",
           "id": "author-6356",
-          "equal-contrib": "yes",
+          "equal-contrib": true,
           "references": {
             "affiliation": [
               "aff6"
@@ -85,7 +85,7 @@
           "surname": "McLaren",
           "given-names": "Paul J",
           "id": "author-6357",
-          "equal-contrib": "yes",
+          "equal-contrib": true,
           "references": {
             "affiliation": [
               "aff1",
@@ -623,7 +623,7 @@
           "surname": "Telenti",
           "given-names": "Amalio",
           "id": "author-6383",
-          "corresp": "yes",
+          "corresp": true,
           "references": {
             "affiliation": [
               "aff2"
@@ -652,7 +652,7 @@
           "surname": "Fellay",
           "given-names": "Jacques",
           "id": "author-4798",
-          "corresp": "yes",
+          "corresp": true,
           "references": {
             "affiliation": [
               "aff1",
