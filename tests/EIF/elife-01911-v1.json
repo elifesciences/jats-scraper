@@ -2,10 +2,10 @@
     "article-type": "research-article",
     "title": "Targeted genome editing by lentiviral protein transduction of zinc-finger and TAL-effector nucleases",
     "status": "POA",
-    "publish": "1",
+    "publish": true,
     "doi": "10.7554/eLife.01911",
-    "pub-date": "2014-04-24",
-    "volume": "3",
+    "pub-date": "2014-04-24T00:00:00.000Z",
+    "volume": 3,
     "elocation-id": "e01911",
     "path": "content/3/e01911v1",
     "article-id": "01911",
@@ -99,6 +99,6 @@
             "conf1": "The authors declare that no competing interests exist."
         }
     },
-    "version": "1",
+    "version": 1,
     "article-version-id": "01911.1"
 }

@@ -2,10 +2,10 @@
     "article-type": "correction",
     "title": "Correction: A novel GTP-binding protein–adaptor protein complex responsible for export of Vangl2 from the <italic>trans</italic> Golgi network",
     "status": "VOR",
-    "publish": "1",
+    "publish": true,
     "doi": "10.7554/eLife.01328",
-    "pub-date": "2013-08-28",
-    "volume": "2",
+    "pub-date": "2013-08-28T00:00:00.000Z",
+    "volume": 2,
     "elocation-id": "e01328",
     "path": "content/2/e01328v1",
     "article-id": "01328",
@@ -65,6 +65,6 @@
             "href": "10.7554/eLife.00160"
         }
     ],
-    "version": "1",
+    "version": 1,
     "article-version-id": "01328.1"
 }
