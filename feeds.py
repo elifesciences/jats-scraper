@@ -534,7 +534,7 @@ DESCRIPTION = [
             'article-id': 'this.publisher_id',
             'article-version-id': 'article_full_version',
             'pub-date': ('this.pub_date', None, \
-                         lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%dT%H:%M:%S.000Z") \
+                         lambda t: time.strftime("%Y-%m-%dT%H:%M:%S.000Z", t) \
                          if t is not None else None),
             'path': 'article_path',
             'article-type': 'this.article_type',
