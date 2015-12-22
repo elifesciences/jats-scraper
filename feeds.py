@@ -528,7 +528,7 @@ DESCRIPTION = [
             'impact-statement': 'this.impact_statement',
             'version': ('version', None, int),
             'doi': 'this.doi',
-            'publish': ("True", True, bool),  # 1 or 0 means publish immediately or don't publish immediately
+            'publish': ("True", True, bool),  # True means publish immediately, or False don't publish immediately
             'volume': ('volume', "0", int),
             'elocation-id': 'this.elocation_id',
             'article-id': 'this.publisher_id',
