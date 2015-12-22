@@ -9,7 +9,7 @@
           "given-names": "Randy",
           "id": "author-1032",
           "role": "Editor-in-Chief",
-          "corresp": "yes",
+          "corresp": true,
           "email": "editorial@elifesciences.org",
           "references": {
             "competing-interest": [

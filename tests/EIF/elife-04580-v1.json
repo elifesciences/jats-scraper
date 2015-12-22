@@ -2,10 +2,10 @@
     "article-type": "research-article",
     "title": "Mushroom body output neurons encode valence and guide memory-based action selection in <italic>Drosophila</italic>",
     "status": "VOR",
-    "publish": "1",
+    "publish": true,
     "doi": "10.7554/eLife.04580",
-    "pub-date": "2014-12-23",
-    "volume": "3",
+    "pub-date": "2014-12-23T00:00:00Z",
+    "volume": 3,
     "elocation-id": "e04580",
     "path": "content/3/e04580v1",
     "article-id": "04580",
@@ -37,7 +37,7 @@
             "surname": "Aso",
             "given-names": "Yoshinori",
             "id": "author-2209",
-            "corresp": "yes",
+            "corresp": true,
             "references": {
                 "affiliation": [
                     "aff1"
@@ -459,7 +459,7 @@
             "surname": "Rubin",
             "given-names": "Gerald M",
             "id": "author-10190",
-            "corresp": "yes",
+            "corresp": true,
             "references": {
                 "affiliation": [
                     "aff1"
@@ -5755,6 +5755,6 @@
             "doi": "10.1016/j.cub.2009.02.053"
         }
     },
-    "version": "1",
+    "version": 1,
     "article-version-id": "04580.1"
 }

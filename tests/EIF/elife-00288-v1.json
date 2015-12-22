@@ -2,10 +2,10 @@
     "article-type": "research-article",
     "title": "Rapid localized spread and immunologic containment define Herpes simplex virus-2 reactivation in the human genital tract",
     "status": "VOR",
-    "publish": "1",
+    "publish": true,
     "doi": "10.7554/eLife.00288",
-    "pub-date": "2013-04-16",
-    "volume": "2",
+    "pub-date": "2013-04-16T00:00:00Z",
+    "volume": 2,
     "elocation-id": "e00288",
     "path": "content/2/e00288v1",
     "article-id": "00288",
@@ -37,7 +37,7 @@
             "surname": "Schiffer",
             "given-names": "Joshua T",
             "id": "author-1921",
-            "corresp": "yes",
+            "corresp": true,
             "references": {
                 "affiliation": [
                     "aff1",
@@ -2000,6 +2000,6 @@
             "doi": "10.1038/nm.2006"
         }
     },
-    "version": "1",
+    "version": 1,
     "article-version-id": "00288.1"
 }
