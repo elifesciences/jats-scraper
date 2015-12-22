@@ -516,6 +516,9 @@ def contributors(article):
             
         if 'corresp' in contributor and contributor['corresp'] == 'yes':
                 contributor['corresp'] = True
+                
+        if 'deceased' in contributor and contributor['deceased'] == 'yes':
+                contributor['deceased'] = True
         
     return contributor_list
 
