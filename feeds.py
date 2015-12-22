@@ -526,15 +526,15 @@ DESCRIPTION = [
         'attrs': {
             'title': ('this.full_title', None, tidy_whitespace),
             'impact-statement': 'this.impact_statement',
-            'version': 'version',
+            'version': ('version', None, int),
             'doi': 'this.doi',
-            'publish': ('"1"', "1", str),  # 1 or 0 means publish immediately or don't publish immediately
-            'volume': ('volume', "0", str),
+            'publish': ("True", True, bool),  # 1 or 0 means publish immediately or don't publish immediately
+            'volume': ('volume', "0", int),
             'elocation-id': 'this.elocation_id',
             'article-id': 'this.publisher_id',
             'article-version-id': 'article_full_version',
             'pub-date': ('this.pub_date', None, \
-                         lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%d") \
+                         lambda t: datetime.fromtimestamp(time.mktime(t)).strftime("%Y-%m-%dT%H:%M:%S.000Z") \
                          if t is not None else None),
             'path': 'article_path',
             'article-type': 'this.article_type',
