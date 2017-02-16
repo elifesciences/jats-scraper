@@ -519,6 +519,9 @@ def contributors(article):
                 
         if 'deceased' in contributor and contributor['deceased'] == 'yes':
                 contributor['deceased'] = True
+
+        if 'sub-group' in contributor:
+                del contributor['sub-group']
         
     return contributor_list
 
