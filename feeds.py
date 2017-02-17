@@ -522,6 +522,13 @@ def contributors(article):
 
         if 'sub-group' in contributor:
                 del contributor['sub-group']
+
+        # Remove some group authors values that are not allowed
+        if 'collab' in contributor:
+            for property in ['corresp', 'equal-contrib', 'email']:
+                if contributor.get(property):
+                    del contributor[property]
+
         
     return contributor_list
 
