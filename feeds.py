@@ -510,18 +510,18 @@ def contributors(article):
     # Rewrite a few values of a contributor to match the target schema
     contributor_list = article.contributors
     for contributor in contributor_list:
-        
+
         if 'equal-contrib' in contributor and contributor['equal-contrib'] == 'yes':
             contributor['equal-contrib'] = True
-            
+
         if 'corresp' in contributor and contributor['corresp'] == 'yes':
-                contributor['corresp'] = True
-                
+            contributor['corresp'] = True
+
         if 'deceased' in contributor and contributor['deceased'] == 'yes':
-                contributor['deceased'] = True
+            contributor['deceased'] = True
 
         if 'sub-group' in contributor:
-                del contributor['sub-group']
+            del contributor['sub-group']
 
         # Remove some group authors values that are not allowed
         if 'collab' in contributor:
@@ -529,7 +529,6 @@ def contributors(article):
                 if contributor.get(property):
                     del contributor[property]
 
-        
     return contributor_list
 
 @fattrs('this as article')
