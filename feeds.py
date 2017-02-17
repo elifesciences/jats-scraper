@@ -459,6 +459,11 @@ def clean_fragment(fragment):
 def email(article):
     cor = article.__getattr__('full_correspondence')
     if cor is not None:
+        # Support for only one email address per reference
+        for key, value in cor.iteritems():
+            if type(value) == list:
+                # Take the first email
+                cor[key] = value[0]
         return cor
     else:
         return {}
