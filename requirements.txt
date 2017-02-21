@@ -2,5 +2,5 @@ pylint==1.4.4
 pytz==2015.4
 deepdiff==0.5.9
 -e hg+https://bitbucket.org/lskibinski/scraper#egg=scraper
-elifetools==0.1.5
+elifetools==0.1.6
 jmespath==0.9.0
