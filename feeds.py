@@ -77,7 +77,9 @@ def tidy_citation_authors(authors):
     # Only keep authors that have a group-type
     for author in authors:
         if 'group-type' in author:
-            tidy_authors.append(author)
+            # Do not keep if etal is present
+            if not author.get('etal'):
+                tidy_authors.append(author)
     return tidy_authors
 
 def tidy_numeric(string):
