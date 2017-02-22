@@ -77,7 +77,9 @@ def tidy_citation_authors(authors):
     # Only keep authors that have a group-type
     for author in authors:
         if 'group-type' in author:
-            tidy_authors.append(author)
+            # Do not keep if etal is present
+            if not author.get('etal'):
+                tidy_authors.append(author)
     return tidy_authors
 
 def tidy_numeric(string):
@@ -459,6 +461,11 @@ def clean_fragment(fragment):
 def email(article):
     cor = article.__getattr__('full_correspondence')
     if cor is not None:
+        # Support for only one email address per reference
+        for key, value in cor.iteritems():
+            if type(value) == list:
+                # Take the first email
+                cor[key] = value[0]
         return cor
     else:
         return {}
@@ -510,16 +517,25 @@ def contributors(article):
     # Rewrite a few values of a contributor to match the target schema
     contributor_list = article.contributors
     for contributor in contributor_list:
-        
+
         if 'equal-contrib' in contributor and contributor['equal-contrib'] == 'yes':
             contributor['equal-contrib'] = True
-            
+
         if 'corresp' in contributor and contributor['corresp'] == 'yes':
-                contributor['corresp'] = True
-                
+            contributor['corresp'] = True
+
         if 'deceased' in contributor and contributor['deceased'] == 'yes':
-                contributor['deceased'] = True
-        
+            contributor['deceased'] = True
+
+        if 'sub-group' in contributor:
+            del contributor['sub-group']
+
+        # Remove some group authors values that are not allowed
+        if 'collab' in contributor:
+            for property in ['corresp', 'equal-contrib', 'email']:
+                if contributor.get(property):
+                    del contributor[property]
+
     return contributor_list
 
 @fattrs('this as article')
