@@ -536,6 +536,11 @@ def contributors(article):
                 if contributor.get(property):
                     del contributor[property]
 
+        if 'email' in contributor:
+            if type(contributor['email']) == list:
+                # Take the first email
+                contributor['email'] = contributor['email'][0]
+
     return contributor_list
 
 @fattrs('this as article')
