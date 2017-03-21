@@ -530,6 +530,9 @@ def contributors(article):
         if 'sub-group' in contributor:
             del contributor['sub-group']
 
+        if 'bio' in contributor:
+            del contributor['bio']
+
         # Remove some group authors values that are not allowed
         if 'collab' in contributor:
             for property in ['corresp', 'equal-contrib', 'email']:
