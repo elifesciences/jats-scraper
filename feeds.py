@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 __author__ = 'Luke Skibinski <l.skibinski@elifesciences.org>, John Root<john.root@digirati.co.uk>'
 __copyright__ = 'eLife Sciences'
 __licence__ = 'GNU General Public License (GPL)'
@@ -643,10 +645,10 @@ def scrape(docs_dir, process=None, article_version=None):
 
 def main(args):
     if not len(args) == 1:
-        print 'Usage: python feeds.py <xml [dir|file]>'
+        print('Usage: python feeds.py <xml [dir|file]>')
         exit(1)
     docs_dir = args[0]
-    print scrape(docs_dir)
+    print(scrape(docs_dir))
 
 
 if __name__ == '__main__':

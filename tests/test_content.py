@@ -1,4 +1,5 @@
-import base
+from __future__ import print_function
+from tests import base
 import json
 import os
 from os.path import join
@@ -61,9 +62,9 @@ class TestContent(base.BaseCase):
 
         if len(ddiffs):
             for attr, value in ddiffs.items():
-                print attr
+                print(attr)
                 pprint(value)
-                print "\n"
+                print("\n")
             self.assertTrue(False)
 
 
@@ -111,12 +112,12 @@ class TestContent(base.BaseCase):
 
         if len(ddiffs):
             for attr, values in ddiffs.items():
-                print attr
+                print(attr)
 
                 for desc, value in values.items():
-                    print desc.encode('utf-8')
+                    print(desc.encode('utf-8'))
                     pprint(value)
-                    print "\n"
+                    print("\n")
             self.assertTrue(False)
 
     def byteify(self, input):
